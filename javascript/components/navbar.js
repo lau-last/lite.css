@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let buttons = document.querySelectorAll('button[data-toggle="navbar"]');
-    buttons.forEach(button => {
+function toggleNavbar() {
+    let buttonsNavbar = document.querySelectorAll('button[data-toggle="navbar"]');
+    buttonsNavbar.forEach(button => {
         button.addEventListener('click', () => {
             const target = button.getAttribute('data-target');
             const content = document.querySelector(target);
@@ -8,4 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
             content.setAttribute('data-expanded', isOpen ? 'false' : 'true');
         });
     });
+}
+document.addEventListener('DOMContentLoaded', () => {
+    toggleNavbar();
 });
+

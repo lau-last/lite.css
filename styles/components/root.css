@@ -17,15 +17,23 @@
     --gray-dark: #6B6B6B;
 
     --link-color: var(--primary-color);
+
     --text-dark: var(--black);
     --text-light: var(--white);
+
     --color-mix-dark: var(--black);
     --color-mix-light: var(--white);
 
+    --border-color: var(--gray-medium);
     --table-border-color: var(--gray-light);
     --input-border-color: var(--gray-medium);
 
+    --hover-color: var(--gray-light);
+    --active-color: var(--gray-dark);
+
     --bg-color: var(--white);
+
+    --button-color: var(--gray-light);
 
     --navbar-height: 7rem;
     --input-height: 2.5rem;

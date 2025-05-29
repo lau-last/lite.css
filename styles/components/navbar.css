@@ -1,8 +1,7 @@
 .navbar {
     padding: 0.5rem 1rem;
-    border: 1px solid var(--gray-medium);
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-
 
     &.navbar-sm {
         @media (width < 576px) {
@@ -20,7 +19,7 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
-                    background-color: transparent;
+                    background-color: var(--transparent);
                     transition: 0.3s ease;
 
                     &:hover {
@@ -88,6 +87,7 @@
                     flex-grow: 1;
                     list-style: none;
                     justify-content: center;
+                    align-items: center;
                     gap: 2rem;
 
                     &.nav-start {
@@ -134,7 +134,7 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
-                    background-color: transparent;
+                    background-color: var(--transparent);
                     transition: 0.3s ease;
 
                     &:hover {
@@ -202,6 +202,7 @@
                     flex-grow: 1;
                     list-style: none;
                     justify-content: center;
+                    align-items: center;
                     gap: 2rem;
 
                     &.nav-start {
@@ -248,7 +249,7 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
-                    background-color: transparent;
+                    background-color: var(--transparent);
                     transition: 0.3s ease;
 
                     &:hover {
@@ -316,6 +317,7 @@
                     flex-grow: 1;
                     list-style: none;
                     justify-content: center;
+                    align-items: center;
                     gap: 2rem;
 
                     &.nav-start {
@@ -362,7 +364,7 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
-                    background-color: transparent;
+                    background-color: var(--transparent);
                     transition: 0.3s ease;
 
                     &:hover {
@@ -430,6 +432,7 @@
                     flex-grow: 1;
                     list-style: none;
                     justify-content: center;
+                    align-items: center;
                     gap: 2rem;
 
                     &.nav-start {
@@ -478,7 +481,7 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
-                background-color: transparent;
+                background-color: var(--transparent);
                 transition: 0.3s ease;
 
                 &:hover {
@@ -543,6 +546,7 @@
                 flex-grow: 1;
                 list-style: none;
                 justify-content: center;
+                align-items: center;
                 gap: 2rem;
 
                 &.nav-start {
@@ -572,3 +576,54 @@
         }
     }
 }
+
+
+.dropdown-wrapper {
+    width: fit-content;
+    float: left;
+    overflow: hidden;
+
+    &:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-btn:hover .dropdown-content {
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background: var(--white);
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+
+        .dropdown-header {
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dropdown-body {
+            padding: 1rem;
+
+            .dropdown-menu {
+                margin: 2rem 1rem 0 0;
+                display: inline-flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                &:has(.nav-item) {
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -18,7 +18,24 @@
     border-radius: var(--border-radius);
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .list-style-none {
     list-style: none;
+}
+
+.nav-item {
+    margin: 0;
+    list-style: none;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--hover-color);
+    }
 }
 

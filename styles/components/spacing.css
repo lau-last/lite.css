@@ -178,6 +178,20 @@
     margin-bottom: 5rem;
 }
 
+.m-auto {
+    margin: auto;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /* Paddings */
 .p-0 {
     padding: 0;
@@ -358,3 +372,29 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.gap-0 {
+    gap: 0;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.gap-5 {
+    gap: 5rem;
+}
+
+
