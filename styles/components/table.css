@@ -1,0 +1,165 @@
+table {
+    border: 1px solid var(--table-border-color);
+    border-collapse: collapse;
+    width: 100%;
+
+    thead {
+        tr {
+            th, td {
+                border-top: 1px solid var(--table-border-color);
+                text-align: left;
+                padding: .8rem;
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            th, td {
+                border-top: 1px solid var(--table-border-color);
+                text-align: left;
+                padding: .8rem;
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            th, td {
+                border-top: 1px solid var(--table-border-color);
+                text-align: left;
+                padding: .8rem;
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    &.table-primary {
+        thead tr, tfoot tr {
+            background-color: color-mix(in srgb, var(--primary-color) 30%, var(--color-mix-light));
+        }
+    }
+
+    &.table-secondary {
+        thead tr, tfoot tr {
+            background-color: color-mix(in srgb, var(--secondary-color) 30%, var(--color-mix-light));
+        }
+    }
+
+    &.table-success {
+        thead tr, tfoot tr {
+            background-color: color-mix(in srgb, var(--success-color) 30%, var(--color-mix-light));
+        }
+    }
+
+    &.table-info {
+        thead tr, tfoot tr {
+            background-color: color-mix(in srgb, var(--info-color) 30%, var(--color-mix-light));
+        }
+    }
+
+    &.table-warning {
+        thead tr, tfoot tr {
+            background-color: color-mix(in srgb, var(--warning-color) 30%, var(--color-mix-light));
+        }
+    }
+
+    &.table-danger {
+        thead tr, tfoot tr {
+            background-color: color-mix(in srgb, var(--danger-color) 30%, var(--color-mix-light));
+        }
+    }
+
+    &.table-neutral {
+        thead tr, tfoot tr {
+            background-color: color-mix(in srgb, var(--neutral-color) 30%, var(--color-mix-light));
+        }
+    }
+
+    &.table-striped {
+        tbody {
+            tr:nth-child(even) {
+                background-color: var(--gray-light);
+            }
+        }
+    }
+
+    &.table-borderless {
+        border: none !important;
+
+        thead,
+        tbody,
+        tfoot {
+            tr {
+                th, td {
+                    border: none !important;
+                }
+            }
+        }
+
+        &.table-hover {
+            tbody {
+                tr:hover {
+                    cursor: pointer;
+                    background-color: var(--gray-medium) !important;
+
+                    th:first-child, td:first-child {
+                        border: none !important;
+                    }
+
+                    th:last-child, td:last-child {
+                        border: none !important;
+                    }
+
+                    th, td {
+                        border: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &.table-bordered {
+        thead,
+        tbody,
+        tfoot {
+            tr {
+                th, td {
+                    border-top: 1px solid var(--table-border-color) !important;
+                    border-bottom: 1px solid var(--table-border-color) !important;
+                    border-left: 1px solid var(--table-border-color) !important;
+                    border-right: 1px solid var(--table-border-color) !important;
+                }
+            }
+        }
+    }
+
+    &.table-hover {
+        tbody {
+            tr:hover {
+                cursor: pointer;
+                background-color: var(--gray-medium) !important;
+
+                th:first-child, td:first-child {
+                    border-left: 1px solid var(--gray-medium) !important;
+                }
+
+                th:last-child, td:last-child {
+                    border-right: 1px solid var(--gray-medium) !important;
+                }
+
+                th, td {
+                    border-top: 1px solid black !important;
+                    border-bottom: 1px solid var(--gray-medium) !important;
+                }
+            }
+        }
+    }
+}
+
+.table-responsive {
+    padding-bottom: 1.5rem;
+    overflow-x: scroll;
+}

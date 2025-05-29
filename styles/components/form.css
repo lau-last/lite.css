@@ -1,0 +1,91 @@
+label.required::after {
+    content: ' *';
+    color: var(--red);
+}
+
+input, select, textarea {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border-color);
+    padding: 0 1.5rem;
+
+    &.form-control {
+        margin: .5rem 0;
+        display: block;
+        width: 100%;
+    }
+
+    &::placeholder {
+        color: var(--text-dark);
+    }
+}
+
+input, select {
+    height: var(--input-height);
+}
+
+input[type="color"] {
+    padding: 0;
+    cursor: pointer;
+
+    &::-webkit-color-swatch {
+        border: none;
+        border-radius: var(--border-radius);
+    }
+
+    &::-webkit-color-swatch-wrapper {
+        padding: .4rem;
+    }
+}
+
+input[type="file"] {
+    padding: 0 1.5rem 0 0;
+
+    &::-webkit-file-upload-button,
+    &::file-selector-button {
+        padding: 0 1.5rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border: none;
+        height: 100%;
+        align-items: self-start;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        margin-right: 1.5rem;
+    }
+}
+
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+    accent-color: var(--primary-color);
+
+    &:focus {
+        border-color: var(--transparent) !important;
+        box-shadow: none !important;
+    }
+}
+
+
+.form-check label + input[type="checkbox"],
+.form-check label + input[type="radio"] {
+    vertical-align: middle;
+}
+
+.form-check,
+.form-radio {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-color {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+
+
+

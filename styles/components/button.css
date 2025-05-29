@@ -1,0 +1,72 @@
+button,
+.btn {
+    margin: .2rem;
+    border-radius: var(--border-radius);
+    border: none;
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+
+
+    &.btn-primary {
+        background-color: var(--primary-color);
+        color: var(--white);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--primary-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-secondary {
+        background-color: var(--secondary-color);
+        color: var(--white);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--secondary-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-success {
+        background-color: var(--success-color);
+        color: var(--white);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--success-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-info {
+        background-color: var(--info-color);
+        color: var(--white);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--info-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-warning {
+        background-color: var(--warning-color);
+        color: var(--white);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--warning-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-danger {
+        background-color: var(--danger-color);
+        color: var(--white);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--danger-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-neutral {
+        background-color: var(--neutral-color);
+        color: var(--text-dark);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--neutral-color) 75%, var(--color-mix-dark));
+        }
+    }
+}

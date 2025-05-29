@@ -1,0 +1,24 @@
+.text-start {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-radius {
+    border-radius: var(--border-radius);
+}
+
+.list-style-none {
+    list-style: none;
+}
+
