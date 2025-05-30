@@ -35,6 +35,9 @@
 
     --button-color: var(--gray-light);
 
+    --navbar-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18L20 18' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 12L20 12' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 6L20 6' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+    --navbar-icon-hover: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18L20 18' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 12L20 12' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 6L20 6' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+
     --navbar-height: 7rem;
     --input-height: 2.5rem;
 

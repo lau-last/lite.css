@@ -2,6 +2,7 @@
 @import url('components/reset.css');
 @import url('components/base.css');
 @import url('components/utilities.css');
+@import url('components/size.css');
 @import url('components/layout.css');
 @import url('components/table.css');
 @import url('components/button.css');
@@ -13,3 +14,4 @@
 @import url('components/navbar.css');
 @import url('components/tab.css');
 @import url('components/modal.css');
+@import url('components/card.css');

@@ -1,26 +1,25 @@
 .tab {
     overflow: hidden;
-    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-}
+    display: inline-flex;
 
-.tab button {
-    margin: 0;
-    border-radius: 0;
-    float: left;
-}
+    button {
+        margin: 0;
+        border-radius: 0;
+        float: left;
 
-.tab button.active {
-    background-color: var(--active-color);
-    color: var(--white);
+        &.active {
+            background-color: var(--active-color);
+            color: var(--white);
+        }
+    }
 }
 
 .tab-content {
-    display: none;
-    padding: 6px 12px;
     border: 1px solid var(--border-color);
-    border-top: none;
     border-radius: var(--border-radius);
+    display: none;
+    padding: 1rem;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
 
@@ -30,11 +29,19 @@
 }
 
 @-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

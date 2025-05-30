@@ -1,5 +1,5 @@
 function showModal() {
-    let buttonsModal = document.querySelectorAll('button[data-toggle="modal"]');
+    let buttonsModal = document.querySelectorAll('[data-toggle="modal"]');
     buttonsModal.forEach(button => {
         button.addEventListener('click', () => {
             const target = button.getAttribute('data-target');

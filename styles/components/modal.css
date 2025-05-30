@@ -14,10 +14,14 @@
         overflow: auto;
         border-radius: var(--border-radius);
         position: relative;
-        width: 50%;
         animation-name: animate-from-top;
         animation-duration: 0.4s;
         background-color: var(--white);
+
+        @media (width <= 576px) {width: 95%;}
+        @media (576px <= width <= 768px) {width: 90%;}
+        @media (768px <= width <= 992px) {width: 70%;}
+        @media (width >= 992px) {width: 50%;}
 
         .modal-icon {
             border-radius: var(--border-radius);

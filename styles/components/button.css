@@ -1,7 +1,7 @@
 button,
 .btn {
+    margin: .15rem 0 0 0;
     display: inline-block;
-    margin: .2rem;
     border-radius: var(--border-radius);
     border: none;
     padding: .75rem 1.5rem;
@@ -19,7 +19,8 @@ button,
         background-color: var(--primary-color);
         color: var(--white);
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: color-mix(in srgb, var(--primary-color) 75%, var(--color-mix-dark));
         }
     }
@@ -28,7 +29,8 @@ button,
         background-color: var(--secondary-color);
         color: var(--white);
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: color-mix(in srgb, var(--secondary-color) 75%, var(--color-mix-dark));
         }
     }
@@ -37,7 +39,8 @@ button,
         background-color: var(--success-color);
         color: var(--white);
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: color-mix(in srgb, var(--success-color) 75%, var(--color-mix-dark));
         }
     }
@@ -46,7 +49,8 @@ button,
         background-color: var(--info-color);
         color: var(--white);
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: color-mix(in srgb, var(--info-color) 75%, var(--color-mix-dark));
         }
     }
@@ -55,7 +59,8 @@ button,
         background-color: var(--warning-color);
         color: var(--white);
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: color-mix(in srgb, var(--warning-color) 75%, var(--color-mix-dark));
         }
     }
@@ -64,7 +69,8 @@ button,
         background-color: var(--danger-color);
         color: var(--white);
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: color-mix(in srgb, var(--danger-color) 75%, var(--color-mix-dark));
         }
     }
@@ -73,7 +79,8 @@ button,
         background-color: var(--neutral-color);
         color: var(--text-dark);
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: color-mix(in srgb, var(--neutral-color) 75%, var(--color-mix-dark));
         }
     }

@@ -49,9 +49,19 @@ html {
             color: var(--link-color);
             text-decoration: none;
 
+            &:focus {
+                background-color: var(--transparent);
+                box-shadow: none !important;
+            }
+
             &:hover {
                 color: color-mix(in srgb, var(--link-color) 75%, var(--color-mix-light));
             }
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
         }
 
         section {
@@ -64,10 +74,6 @@ html {
             -webkit-text-fill-color: var(--text-light);
         }
 
-        a:focus {
-            border-color: var(--transparent) !important;
-            box-shadow: none !important;
-        }
 
         :focus {
             border-color: var(--primary-color);

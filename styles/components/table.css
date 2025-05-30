@@ -161,5 +161,5 @@ table {
 
 .table-responsive {
     padding-bottom: 1.5rem;
-    overflow-x: scroll;
+    overflow-x: auto;
 }

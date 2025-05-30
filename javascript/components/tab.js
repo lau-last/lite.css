@@ -1,5 +1,5 @@
 function removeActive() {
-    let buttonsTab = document.querySelectorAll('button[data-toggle="tab"]');
+    let buttonsTab = document.querySelectorAll('[data-toggle="tab"]');
     buttonsTab.forEach(button => {
         button.classList.remove('active');
     });
@@ -29,7 +29,7 @@ function removeDataActive() {
 }
 
 function init() {
-    let buttonsTab = document.querySelectorAll('button[data-toggle="tab"]');
+    let buttonsTab = document.querySelectorAll('[data-toggle="tab"]');
     buttonsTab.forEach(button => {
         button.addEventListener('click', () => {
             const target = button.getAttribute('data-target');

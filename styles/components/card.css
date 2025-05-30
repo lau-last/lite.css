@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+
+        .card-header {
+            padding: 0.5rem 1rem;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .card-footer {
+            padding: 0.5rem 1rem;
+            background-color: var(--gray-medium);
+            font-style: italic;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 /* Background */
 .bg-primary {
     background-color: var(--primary-color);
+    color: var(--text-light);
 }
 
 .bg-secondary {
