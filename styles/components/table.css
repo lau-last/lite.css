@@ -8,7 +8,7 @@ table {
             th, td {
                 border-top: 1px solid var(--table-border-color);
                 text-align: left;
-                padding: .8rem;
+                padding: var(--table-padding-md);
                 text-wrap: nowrap;
             }
         }
@@ -19,7 +19,7 @@ table {
             th, td {
                 border-top: 1px solid var(--table-border-color);
                 text-align: left;
-                padding: .8rem;
+                padding: var(--table-padding-md);
                 text-wrap: nowrap;
             }
         }
@@ -30,8 +30,44 @@ table {
             th, td {
                 border-top: 1px solid var(--table-border-color);
                 text-align: left;
-                padding: .8rem;
+                padding: var(--table-padding-md);
                 text-wrap: nowrap;
+            }
+        }
+    }
+
+    &.table-sm {
+        thead,
+        tbody,
+        tfoot {
+            tr {
+                th, td {
+                    padding: var(--table-padding-sm);
+                }
+            }
+        }
+    }
+
+    &.table-md {
+        thead,
+        tbody,
+        tfoot {
+            tr {
+                th, td {
+                    padding: var(--table-padding-md);
+                }
+            }
+        }
+    }
+
+    &.table-lg {
+        thead,
+        tbody,
+        tfoot {
+            tr {
+                th, td {
+                    padding: var(--table-padding-lg);
+                }
             }
         }
     }

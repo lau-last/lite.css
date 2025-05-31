@@ -6,6 +6,8 @@
     --warning-color: #D9B74A;
     --danger-color: #C96A6A;
     --neutral-color: #BBBBBB;
+    --dark-color: #333333;
+    --light-color: #e6e6e6;
 
     --white: #ffffff;
     --black: #000000;
@@ -47,6 +49,17 @@
     --button-padding-sm: .55rem 1.1rem;
     --button-padding-md: 0.8rem 1.6rem;
     --button-padding-lg: 1.05rem 2.1rem;
+
+    --badge-padding-sm: .2rem .4rem;
+    --badge-padding-md: .4rem .8rem;
+    --badge-padding-lg: .5rem 1rem;
+
+    --table-padding-sm: .6rem;
+    --table-padding-md: .8rem;
+    --table-padding-lg: 1rem;
+
+
+    padding: .4rem .8rem;
 
     --gap-base: 2.5rem;
 

@@ -27,6 +27,10 @@ button,
         padding: var(--button-padding-lg);
     }
 
+    &.btn-pill {
+        border-radius: 10rem;
+    }
+
 
     &.btn-primary {
         background-color: var(--primary-color);
@@ -35,6 +39,18 @@ button,
         &:hover,
         &.active {
             background-color: color-mix(in srgb, var(--primary-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-outline-primary {
+        background-color: var(--transparent);
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--primary-color);
+            color: var(--white);
         }
     }
 
@@ -48,6 +64,18 @@ button,
         }
     }
 
+    &.btn-outline-secondary {
+        background-color: var(--transparent);
+        border: 1px solid var(--secondary-color);
+        color: var(--secondary-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+    }
+
     &.btn-success {
         background-color: var(--success-color);
         color: var(--white);
@@ -55,6 +83,18 @@ button,
         &:hover,
         &.active {
             background-color: color-mix(in srgb, var(--success-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-outline-success {
+        background-color: var(--transparent);
+        border: 1px solid var(--success-color);
+        color: var(--success-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--success-color);
+            color: var(--white);
         }
     }
 
@@ -68,6 +108,18 @@ button,
         }
     }
 
+    &.btn-outline-info {
+        background-color: var(--transparent);
+        border: 1px solid var(--info-color);
+        color: var(--info-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--info-color);
+            color: var(--white);
+        }
+    }
+
     &.btn-warning {
         background-color: var(--warning-color);
         color: var(--white);
@@ -75,6 +127,18 @@ button,
         &:hover,
         &.active {
             background-color: color-mix(in srgb, var(--warning-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-outline-warning {
+        background-color: var(--transparent);
+        border: 1px solid var(--warning-color);
+        color: var(--warning-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--warning-color);
+            color: var(--white);
         }
     }
 
@@ -88,6 +152,18 @@ button,
         }
     }
 
+    &.btn-outline-danger {
+        background-color: var(--transparent);
+        border: 1px solid var(--danger-color);
+        color: var(--danger-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--danger-color);
+            color: var(--white);
+        }
+    }
+
     &.btn-neutral {
         background-color: var(--neutral-color);
         color: var(--text-dark);
@@ -95,6 +171,62 @@ button,
         &:hover,
         &.active {
             background-color: color-mix(in srgb, var(--neutral-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-outline-neutral {
+        background-color: var(--transparent);
+        border: 1px solid var(--neutral-color);
+        color: var(--neutral-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--neutral-color);
+            color: var(--text-dark);
+        }
+    }
+
+    &.btn-light {
+        background-color: var(--light-color);
+        color: var(--text-dark);
+
+        &:hover,
+        &.active {
+            background-color: color-mix(in srgb, var(--light-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-outline-light {
+        background-color: var(--transparent);
+        border: 1px solid var(--light-color);
+        color: var(--light-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--light-color);
+            color: var(--text-dark);
+        }
+    }
+
+    &.btn-dark {
+        background-color: var(--dark-color);
+        color: var(--text-light);
+
+        &:hover,
+        &.active {
+            background-color: color-mix(in srgb, var(--dark-color) 75%, var(--color-mix-dark));
+        }
+    }
+
+    &.btn-outline-dark {
+        background-color: var(--transparent);
+        border: 1px solid var(--dark-color);
+        color: var(--dark-color);
+
+        &:hover,
+        &.active {
+            background-color: var(--dark-color);
+            color: var(--text-light);
         }
     }
 }

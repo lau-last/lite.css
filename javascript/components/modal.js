@@ -12,7 +12,7 @@ function showModal() {
 }
 
 function isImageModal(button) {
-    if (!button instanceof HTMLImageElement) return;
+    if (!(button instanceof HTMLImageElement)) return;
     const modalImgTarget = document.querySelector(button.getAttribute('data-img'));
     modalImgTarget.src = button.src;
 }

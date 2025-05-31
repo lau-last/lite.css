@@ -35,6 +35,7 @@ function initNavbar() {
             if (!content) return;
             const isOpen = content.getAttribute('data-expanded') === 'true' || content.getAttribute('data-expanded') === null;
             isOpen ? collapseNavbar(content) : expandNavbar(content);
+            animateBurger(button);
         });
     });
 }
@@ -56,6 +57,12 @@ function getSideOfNavbarSide(content) {
     return content.getAttribute('data-navbar-side');
 }
 
+function animateBurger(button) {
+    let toAnimate = button.getAttribute('data-animated');
+    if (toAnimate !== 'true') return;
+    button.classList.toggle('animate-burger');
+}
+
 function initNavbarSide() {
     const buttonsNavbarSideOpen = document.querySelectorAll('[data-toggle="navbar-side"]');
     buttonsNavbarSideOpen.forEach(button => {
@@ -63,6 +70,7 @@ function initNavbarSide() {
             const target = button.getAttribute('data-target');
             const content = document.querySelector(target);
             showNavbarSide(content);
+            animateBurger(button);
         });
     });
     const buttonsNavbarSideClose = document.querySelectorAll('[data-function="close-navbar-side"]');
@@ -71,6 +79,7 @@ function initNavbarSide() {
             const target = button.getAttribute('data-target');
             const content = document.querySelector(target);
             hideNavbarSide(content);
+            animateBurger(button);
         });
     });
 }
