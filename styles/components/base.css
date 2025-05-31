@@ -68,6 +68,10 @@ html {
             padding: 3rem;
         }
 
+        img {
+            border-radius: var(--border-radius);
+        }
+
         ::selection {
             background-color: var(--primary-color);
             color: var(--text-light);

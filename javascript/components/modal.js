@@ -6,8 +6,15 @@ function showModal() {
             const content = document.querySelector(target);
             content.style.display = 'flex';
             addNoScroll();
+            isImageModal(button);
         });
     });
+}
+
+function isImageModal(button) {
+    if (!button instanceof HTMLImageElement) return;
+    const modalImgTarget = document.querySelector(button.getAttribute('data-img'));
+    modalImgTarget.src = button.src;
 }
 
 function hideModal() {

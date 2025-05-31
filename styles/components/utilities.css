@@ -50,3 +50,17 @@
 .sticky {
     position: sticky;
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-hover-opacity {
+    transition: 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

@@ -517,13 +517,6 @@
         position: absolute;
     }
 
-    .dropdown-content-push {
-
-        ul {
-            width: fit-content;
-        }
-    }
-
     .dropdown-content,
     .dropdown-content-push {
         width: 100%;
@@ -552,8 +545,6 @@
         }
     }
 }
-
-
 
 .list-group-item {
     list-style: none;
@@ -626,8 +617,6 @@
         color: var(--white);
     }
 }
-
-
 
 .dropdown-menu-wrapper {
     width: fit-content;
