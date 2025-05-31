@@ -7,8 +7,8 @@ export default class DropdownManager  {
         const buttons = document.querySelectorAll('[data-toggle="dropdown-button"]');
         buttons.forEach(button => {
             button.addEventListener('click', () => {
-                const target = button.getAttribute('data-target');
-                const content = document.querySelector(target);
+                const targetSelector = button.getAttribute('data-target');
+                const content = document.querySelector(targetSelector);
                 if (!content) return;
 
                 this.toggleArrow(button);
