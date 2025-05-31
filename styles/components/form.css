@@ -7,12 +7,26 @@ input, select, textarea {
     border-radius: var(--border-radius);
     border: 1px solid var(--input-border-color);
     padding: 0 1.5rem;
+    color: var(--text-dark);
 
     &.form-control {
-        margin: .5rem 0;
+        margin-block:.5rem;
         display: block;
         width: 100%;
     }
+
+    &.form-control-sm {
+        height: var(--input-height-sm);
+    }
+
+    &.form-control-md {
+        height: var(--input-height-md);
+    }
+
+    &.form-control-lg {
+        height: var(--input-height-lg);
+    }
+
 
     &::placeholder {
         color: var(--text-dark);
@@ -20,10 +34,11 @@ input, select, textarea {
 }
 
 input, select {
-    height: var(--input-height);
+    height: var(--input-height-md);
 }
 
 input[type="color"] {
+    margin-block: .5rem;
     padding: 0;
     cursor: pointer;
 
@@ -76,13 +91,12 @@ input[type="range"] {
 .form-radio {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: var(--gap-base);
 }
 
 .form-color {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
 }
 
 

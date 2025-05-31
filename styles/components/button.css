@@ -1,17 +1,30 @@
 button,
 .btn {
-    margin: .15rem 0 0 0;
+    margin-block: .15rem;
     display: inline-block;
     border-radius: var(--border-radius);
     border: none;
-    padding: .75rem 1.5rem;
+    padding: var(--button-padding-md);
     cursor: pointer;
     background-color: var(--button-color);
+    text-wrap: nowrap;
 
     &:focus {
         outline: none;
         box-shadow: none;
         background-color: var(--button-color);
+    }
+
+    &.btn-sm {
+        padding: var(--button-padding-sm);
+    }
+
+    &.btn-md {
+        padding: var(--button-padding-md);
+    }
+
+    &.btn-lg {
+        padding: var(--button-padding-lg);
     }
 
 

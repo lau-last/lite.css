@@ -28,7 +28,7 @@
     --table-border-color: var(--gray-light);
     --input-border-color: var(--gray-medium);
 
-    --hover-color: var(--gray-light);
+    --hover-color: color-mix(in srgb, var(--gray-light) 50%, var(--transparent));
     --active-color: var(--gray-dark);
 
     --bg-color: var(--white);
@@ -39,7 +39,16 @@
     --navbar-icon-hover: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18L20 18' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 12L20 12' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 6L20 6' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
 
     --navbar-height: 7rem;
-    --input-height: 2.5rem;
+
+    --input-height-sm: 2.5rem;
+    --input-height-md: 3rem;
+    --input-height-lg: 3.5rem;
+
+    --button-padding-sm: .55rem 1.1rem;
+    --button-padding-md: 0.8rem 1.6rem;
+    --button-padding-lg: 1.05rem 2.1rem;
+
+    --gap-base: 2.5rem;
 
     --border-radius: .3rem;
 
@@ -51,12 +60,12 @@
     --font-weight-bold: 700;
     --font-weight-black: 900;
 
-    --font-size-h1 : 4rem;
-    --font-size-h2 : 3.5rem;
-    --font-size-h3 : 3rem;
-    --font-size-h4 : 2.5rem;
-    --font-size-h5 : 2rem;
-    --font-size-h6 : 1.5rem;
+    --font-size-h1: 4rem;
+    --font-size-h2: 3.5rem;
+    --font-size-h3: 3rem;
+    --font-size-h4: 2.5rem;
+    --font-size-h5: 2rem;
+    --font-size-h6: 1.5rem;
 
     --font-family-titre: "Montserrat", sans-serif;
     --font-family-text: "Open Sans", sans-serif;

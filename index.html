@@ -47,34 +47,66 @@
         <div class="navbar-header">
             <div class="navbar-brand">Lorem.</div>
             <div>
-                <button class="navbar-icon" type="button" data-toggle="navbar-side" data-target="#navbar-side-1"></button>
-                <button class="navbar-icon" type="button" data-toggle="navbar-side" data-target="#navbar-side-2"></button>
+                <button class="navbar-icon" type="button" data-toggle="navbar-side"
+                        data-target="#navbar-side-1"></button>
+                <button class="navbar-icon" type="button" data-toggle="navbar-side"
+                        data-target="#navbar-side-2"></button>
             </div>
         </div>
     </nav>
     <aside id="navbar-side-1" data-navbar-side="start" class="bg-primary">
         <div class="navbar-side-header">
             <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="navbar-side-icon" data-function="close-navbar-side" data-target="#navbar-side-1">&times;</a>
+            <a href="javascript:void(0)" class="navbar-side-icon" data-function="close-navbar-side"
+               data-target="#navbar-side-1">&times;</a>
         </div>
-        <ul class="nav-item-group">
-            <li><a href="#" class="text-light">Lorem.</a></li>
-            <li><a href="#" class="text-light">Nostrum!</a></li>
-            <li><a href="#" class="text-light">Distinctio.</a></li>
-            <li><a href="#" class="text-light">DistinctioDistinctio.</a></li>
+        <ul class="list-group-item">
+            <li><a href="#" class="text-light nav-link">Lorem.</a></li>
+            <li><a href="#" class="text-light nav-link">Nostrum!</a></li>
+            <li><a href="#" class="text-light nav-link">Distinctio.</a></li>
+            <li><a href="#" class="text-light nav-link">DistinctioDistinctio.</a></li>
+            <li><a href="#" class="text-light nav-link">DistinctioDistinctio.</a></li>
         </ul>
+        <div class="dropdown-button-wrapper">
+            <a href="javascript:void(0)" class="dropdown-btn text-light nav-link" data-toggle="dropdown-button"
+               data-target="#dropdown-aside">Dropdown menu 1
+                <span class="dropdown-arrow" data-arrow="up"></span>
+            </a>
+            <div id="dropdown-aside" class="dropdown-content-push list-group-item">
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <ul>
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                    <li><a class="nav-link" href="">Lorem.</a></li>
+                </ul>
+                <hr>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+            </div>
+        </div>
+        <form class="d-flex align-items-center my-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn-secondary btn-md" type="submit">Search</button>
+        </form>
     </aside>
     <aside id="navbar-side-2" data-navbar-side="end" class="bg-secondary">
         <div class="navbar-side-header">
             <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="navbar-side-icon" data-function="close-navbar-side" data-target="#navbar-side-2">&times;</a>
+            <a href="javascript:void(0)" class="navbar-side-icon" data-function="close-navbar-side"
+               data-target="#navbar-side-2">&times;</a>
         </div>
-        <ul class="nav-item-group">
-            <li><a href="#" class="text-light">Lorem.</a></li>
-            <li><a href="#" class="text-light">Nostrum!</a></li>
-            <li><a href="#" class="text-light">Distinctio.</a></li>
-            <li><a href="#" class="text-light">DistinctioDistinctio.</a></li>
+        <ul class="list-group-item">
+            <li><a href="#" class="text-light nav-link">Lorem.</a></li>
+            <li><a href="#" class="text-light nav-link">Nostrum!</a></li>
+            <li><a href="#" class="text-light nav-link">Distinctio.</a></li>
+            <li><a href="#" class="text-light nav-link">DistinctioDistinctio.</a></li>
         </ul>
+        <form class="d-flex align-items-center my-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn-primary btn-md" type="submit">Search</button>
+        </form>
     </aside>
 </section>
 <section>
@@ -88,91 +120,93 @@
             <div class="nav">
                 <div><a class="btn btn-primary" href="#">Lorem.</a></div>
                 <div class="dropdown-menu-wrapper">
-                    <button class="btn btn-primary" type="button">Dropdown</button>
+                    <button class="dropdown-btn btn-primary" type="button">Dropdown
+                        <span class="dropdown-arrow" data-arrow="up"></span>
+                    </button>
                     <div class="dropdown-content">
                         <div class="dropdown-header bg-primary">
                             <p>Mega Menu</p>
                         </div>
                         <div class="dropdown-body">
-                            <div class="d-flex flex-wrap gap-2">
+                            <div class="d-flex flex-wrap gap-5">
                                 <div class="d-flex flex-column">
-                                    <h6>Category 1</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 1</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 2</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 2</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 3</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 3</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 4</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 4</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 5</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 5</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 6</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 6</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 7</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 7</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 8</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 8</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 9</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 9</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6>Category 10</h6>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                                    <h6 class="mb-2">Category 10</h6>
+                                    <ul class="list-group-item">
+                                        <li><a class="nav-link" href="#">Link 1</a></li>
+                                        <li><a class="nav-link" href="#">Link 2</a></li>
+                                        <li><a class="nav-link" href="#">Link 3</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -186,20 +220,46 @@
 </section>
 <section>
     <h2>Dropdown button</h2>
-    <div class="dropdown-button-wrapper">
-        <button type="button" class="btn btn-primary" data-toggle="dropdown-button" data-target="#dropdown-1">Dropdown menu 1</button>
-        <div id="dropdown-1" class="dropdown-content" >
-            <a class="nav-link" href="">Lorem ipsum.</a>
-            <a class="nav-link" href="">Lorem ipsum.</a>
-            <a class="nav-link" href="">Lorem ipsum.</a>
-            <a class="nav-link" href="">Lorem ipsum.</a>
-            <ul>
-                <li><a class="nav-link" href="">Home</a></li>
-                <li><a class="nav-link" href="">Lorem ipsum.</a></li>
-                <li><a class="nav-link" href="">Lorem.</a></li>
-            </ul>
-            <hr>
-            <a class="nav-link" href="">Lorem ipsum.</a>
+    <div class="relative d-flex flex-column">
+        <div class="dropdown-button-wrapper-sm">
+            <button type="button" class="dropdown-btn btn-primary" data-toggle="dropdown-button" data-target="#dropdown-1">
+                Dropdown
+                menu
+                <span class="dropdown-arrow" data-arrow="up"></span>
+            </button>
+            <div id="dropdown-1" class="dropdown-content">
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <ul>
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                    <li><a class="nav-link" href="">Lorem.</a></li>
+                </ul>
+                <hr>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+            </div>
+        </div>
+        <div class="dropdown-button-wrapper-sm">
+            <button type="button" class="dropdown-btn btn-primary" data-toggle="dropdown-button" data-target="#dropdown-2">
+                Dropdown
+                menu push
+                <span class="dropdown-arrow" data-arrow="up"></span>
+            </button>
+            <div id="dropdown-2" class="dropdown-content-push">
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+                <ul>
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                    <li><a class="nav-link" href="">Lorem.</a></li>
+                </ul>
+                <hr>
+                <a class="nav-link" href="">Lorem ipsum.</a>
+            </div>
         </div>
     </div>
 </section>
@@ -399,13 +459,39 @@
 </section>
 <section>
     <h2>Button</h2>
-    <button class="btn-primary">Go to page 1</button>
-    <button class="btn-secondary">Go to page 2</button>
-    <button class="btn-success">Go to page 3</button>
-    <button class="btn-info">Go to page 4</button>
-    <button class="btn-warning">Go to page 5</button>
-    <button class="btn-danger">Go to page 6</button>
-    <button class="btn-neutral">Go to page 7</button>
+    <div class="row">
+        <div class="col-12">
+            <button class="btn-primary btn-sm">Go to page 1</button>
+            <button class="btn-secondary btn-sm">Go to page 2</button>
+            <button class="btn-success btn-sm">Go to page 3</button>
+            <button class="btn-info btn-sm">Go to page 4</button>
+            <button class="btn-warning btn-sm">Go to page 5</button>
+            <button class="btn-danger btn-sm">Go to page 6</button>
+            <button class="btn-neutral btn-sm">Go to page 7</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="btn-primary btn-md">Go to page 1</button>
+            <button class="btn-secondary btn-md">Go to page 2</button>
+            <button class="btn-success btn-md">Go to page 3</button>
+            <button class="btn-info btn-md">Go to page 4</button>
+            <button class="btn-warning btn-md">Go to page 5</button>
+            <button class="btn-danger btn-md">Go to page 6</button>
+            <button class="btn-neutral btn-md">Go to page 7</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="btn-primary btn-lg">Go to page 1</button>
+            <button class="btn-secondary btn-lg">Go to page 2</button>
+            <button class="btn-success btn-lg">Go to page 3</button>
+            <button class="btn-info btn-lg">Go to page 4</button>
+            <button class="btn-warning btn-lg">Go to page 5</button>
+            <button class="btn-danger btn-lg">Go to page 6</button>
+            <button class="btn-neutral btn-lg">Go to page 7</button>
+        </div>
+    </div>
 </section>
 <section>
     <h2>Form</h2>

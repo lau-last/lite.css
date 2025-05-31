@@ -48,7 +48,7 @@ function showNavbarSide(content) {
 function hideNavbarSide(content) {
     if (!content) return;
     const side = getSideOfNavbarSide(content);
-    side === 'start' ? content.style.left = "-250px" : content.style.right = "-250px";
+    side === 'start' ? content.style.left = "-300px" : content.style.right = "-300px";
 }
 
 function getSideOfNavbarSide(content) {

@@ -5,8 +5,6 @@
     border-radius: var(--border-radius);
     white-space: nowrap;
     display: inline-flex;
-    gap: 0.5rem;
-
 
     &.badge-primary {
         background-color: var(--primary-color);

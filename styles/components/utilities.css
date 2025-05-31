@@ -14,6 +14,11 @@
     cursor: pointer;
 }
 
+.border {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
 .border-radius {
     border-radius: var(--border-radius);
 }
@@ -25,6 +30,23 @@
 .list-style-none {
     list-style: none;
 }
+
 .fit-content {
     width: fit-content;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
 }
