@@ -1,48 +1,48 @@
-function removeActive() {
-    let buttonsTab = document.querySelectorAll('[data-toggle="tab"]');
-    buttonsTab.forEach(button => {
-        button.classList.remove('active');
-    });
-}
+export default class TabsManager {
+    init() {
+        const tabButtons = document.querySelectorAll('[data-toggle="tab"]');
 
-function addActive(element) {
-    element.classList.add('active');
-}
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetSelector = button.getAttribute('data-target');
+                const content = document.querySelector(targetSelector);
 
-function hideContents() {
-    let contentsTab = document.querySelectorAll('.tab-content');
-    contentsTab.forEach(content => {
-        content.style.display = 'none';
-    });
-}
+                if (!content) return;
 
-function showContent(element) {
-    element.style.display = 'block';
-}
+                this.deactivateTabs();
+                this.hideAllContents();
+                this.clearActiveData();
 
-function removeDataActive() {
-    let contentsTab = document.querySelectorAll('.tab-content[data-active="true"]');
-    if (contentsTab.length === 0) {return;}
-    contentsTab.forEach(content => {
-        content.removeAttribute('data-active');
-    });
-}
-
-function init() {
-    let buttonsTab = document.querySelectorAll('[data-toggle="tab"]');
-    buttonsTab.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            removeDataActive();
-            hideContents();
-            removeActive();
-            addActive(button);
-            showContent(content);
+                this.activateTab(button);
+                this.showContent(content);
+            });
         });
-    });
-}
+    };
 
-document.addEventListener('DOMContentLoaded', () => {
-    init();
-});
+    deactivateTabs() {
+        const buttons = document.querySelectorAll('[data-toggle="tab"]');
+        buttons.forEach(button => button.classList.remove('active'));
+    };
+
+    activateTab(button) {
+        button.classList.add('active');
+    };
+
+    hideAllContents() {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => {
+            content.style.display = 'none';
+        });
+    };
+
+    showContent(content) {
+        content.style.display = 'block';
+    };
+
+    clearActiveData() {
+        const activeContents = document.querySelectorAll('.tab-content[data-active="true"]');
+        activeContents.forEach(content => {
+            content.removeAttribute('data-active');
+        });
+    };
+};

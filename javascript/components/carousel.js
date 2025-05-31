@@ -1,125 +1,92 @@
-// On stocke ici les index de chaque carrousel, identifiés par leur data-target
-const slideIndexes = {};
+export default class CarouselManager  {
+    constructor() {
+        this.slideIndexes = {};
+    }
 
-// Boutons "suivant"
-function nextSlide() {
-    const controlNext = document.querySelectorAll('[data-control="next"]');
-    controlNext.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            const slides = content.getElementsByClassName("slide");
+    init() {
+        this.initNextButtons();
+        this.initPrevButtons();
+        this.initDotControls();
+    };
 
-            // Si l'index n'est pas défini, on commence à 0
-            if (!(target in slideIndexes)) slideIndexes[target] = 0;
-
-            // Incrémenter l'index
-            slideIndexes[target]++;
-            if (slideIndexes[target] >= slides.length) slideIndexes[target] = 0;
-
-            // Mettre à jour l'affichage
-            hideAllSlides(slides);
-            showSlide(slides, slideIndexes[target]);
-            handleIndicator(target, slideIndexes[target]);
-        });
-    });
-}
-
-// Boutons "précédent"
-function prevSlide() {
-    const controlPrev = document.querySelectorAll('[data-control="prev"]');
-    controlPrev.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            const slides = content.getElementsByClassName("slide");
-
-            if (!(target in slideIndexes)) slideIndexes[target] = 0;
-
-            // Décrémenter l'index
-            slideIndexes[target]--;
-            if (slideIndexes[target] < 0) slideIndexes[target] = slides.length - 1;
-
-            // Mettre à jour l'affichage
-            hideAllSlides(slides);
-            showSlide(slides, slideIndexes[target]);
-            handleIndicator(target, slideIndexes[target]);
-        });
-    });
-}
-
-// Clic sur les indicateurs (dots)
-function goToSlide() {
-    const containerDotList = document.querySelectorAll('[data-dot]');
-    containerDotList.forEach(containerDot => {
-        const dots = containerDot.getElementsByClassName("dot");
-
-        Array.from(dots).forEach(dot => {
-            dot.addEventListener('click', () => {
-                const target = dot.parentElement.getAttribute('data-dot');
-                const content = document.querySelector(target);
-                const slideIndex = parseInt(dot.getAttribute('data-index'), 10);
-
-                // Mettre à jour l'index global du carrousel
-                slideIndexes[target] = slideIndex;
-
-                const slides = content.getElementsByClassName("slide");
-
-                // Mettre à jour l'affichage
-                hideAllSlides(slides);
-                showSlide(slides, slideIndex);
-                handleIndicator(target, slideIndex);
+    initNextButtons() {
+        const buttons = document.querySelectorAll('[data-control="next"]');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
+                this.changeSlide(target, 1);
             });
         });
-    });
-}
+    };
 
-// Affiche la slide à l'index donné
-function showSlide(slides, slideIndex) {
-    slides[slideIndex].classList.add('show-slide');
-    return slideIndex;
-}
+    initPrevButtons() {
+        const buttons = document.querySelectorAll('[data-control="prev"]');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
+                this.changeSlide(target, -1);
+            });
+        });
+    };
 
-// Cache toutes les slides
-function hideAllSlides(elements) {
-    Array.from(elements).forEach(element => {
-        element.classList.remove('show-slide');
-    });
-}
+    initDotControls() {
+        const containers = document.querySelectorAll('[data-dot]');
+        containers.forEach(container => {
+            const dots = container.getElementsByClassName('dot');
+            Array.from(dots).forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const target = container.getAttribute('data-dot');
+                    const index = parseInt(dot.getAttribute('data-index'), 10);
+                    this.goToSlide(target, index);
+                });
+            });
+        });
+    };
 
-// Active le bon point (dot) dans les indicateurs
-function handleIndicator(target, slideIndex) {
-    const dots = getCarouselDots(target);
-    removeActive(dots);
-    addActive(dots, slideIndex);
-}
+    changeSlide(target, direction) {
+        const content = document.querySelector(target);
+        const slides = content.getElementsByClassName('slide');
 
-// Récupère les "dots" pour un carrousel donné
-function getCarouselDots(target) {
-    const containerDot = document.querySelector(`[data-dot="${target}"]`);
-    return containerDot.getElementsByClassName("dot");
-}
+        if (!(target in this.slideIndexes)) this.slideIndexes[target] = 0;
 
-// Supprime la classe active des dots
-function removeActive(elements) {
-    Array.from(elements).forEach(element => {
-        element.classList.remove('active');
-    });
-}
+        let newIndex = this.slideIndexes[target] + direction;
+        if (newIndex >= slides.length) newIndex = 0;
+        if (newIndex < 0) newIndex = slides.length - 1;
 
-// Ajoute la classe active au bon dot
-function addActive(elements, slideIndex) {
-    elements[slideIndex].classList.add('active');
-}
+        this.updateDisplay(target, slides, newIndex);
+    };
 
-// Initialise tous les comportements
-function init() {
-    nextSlide();
-    prevSlide();
-    goToSlide();
-}
+    goToSlide(target, index) {
+        const content = document.querySelector(target);
+        const slides = content.getElementsByClassName('slide');
 
-// Lancement quand le DOM est prêt
-document.addEventListener('DOMContentLoaded', () => {
-    init();
-});
+        this.slideIndexes[target] = index;
+        this.updateDisplay(target, slides, index);
+    };
+
+    updateDisplay(target, slides, index) {
+        this.hideAll(slides);
+        this.show(slides, index);
+        this.updateIndicators(target, index);
+        this.slideIndexes[target] = index;
+    };
+
+    show(slides, index) {
+        slides[index].classList.add('show-slide');
+    };
+
+    hideAll(slides) {
+        Array.from(slides).forEach(slide => {
+            slide.classList.remove('show-slide');
+        });
+    };
+
+    updateIndicators(target, index) {
+        const container = document.querySelector(`[data-dot="${target}"]`);
+        if (!container) return;
+
+        const dots = container.getElementsByClassName('dot');
+        Array.from(dots).forEach(dot => dot.classList.remove('active'));
+        if (dots[index]) dots[index].classList.add('active');
+    }
+};

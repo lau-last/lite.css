@@ -1,95 +1,110 @@
-function expandNavbar(content) {
-    if (!content) return;
-    const startHeight = 0;
-    const endHeight = content.scrollHeight;
-    content.setAttribute('data-expanded', 'true');
-    content.animate([
-        {height: `${startHeight}px`},
-        {height: `${endHeight}px`}
-    ], {
-        duration: 300,
-        easing: 'ease'
-    });
-}
-
-function collapseNavbar(content) {
-    if (!content) return;
-    const startHeight = content.scrollHeight;
-    content.animate([
-        {height: `${startHeight}px`},
-        {height: '0px'}
-    ], {
-        duration: 300,
-        easing: 'ease'
-    }).onfinish = () => {
-        content.setAttribute('data-expanded', 'false');
+export default class NavbarManager {
+    init() {
+        this.initToggleNavbar();
+        this.initSideNavbar();
     };
-}
 
-function initNavbar() {
-    const buttonsNavbar = document.querySelectorAll('[data-toggle="navbar"]');
-    buttonsNavbar.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            if (!content) return;
-            const isOpen = content.getAttribute('data-expanded') === 'true' || content.getAttribute('data-expanded') === null;
-            isOpen ? collapseNavbar(content) : expandNavbar(content);
-            animateBurger(button);
+    // --- NAVBAR COLLAPSIBLE (TYPE ACCORDÉON / MOBILE) ---
+    initToggleNavbar() {
+        const buttons = document.querySelectorAll('[data-toggle="navbar"]');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetSelector = button.getAttribute('data-target');
+                const content = document.querySelector(targetSelector);
+                if (!content) return;
+
+                const isOpen = content.getAttribute('data-expanded') === 'true' || content.getAttribute('data-expanded') === null;
+                isOpen ? this.collapse(content) : this.expand(content);
+
+                this.toggleBurger(button);
+            });
         });
-    });
-}
+    };
 
-function showNavbarSide(content) {
-    if (!content) return;
-    const side = getSideOfNavbarSide(content);
-    side === 'start' ? content.style.left = "0" : content.style.right = "0";
-}
+    expand(content) {
+        const startHeight = 0;
+        const endHeight = content.scrollHeight;
 
-function hideNavbarSide(content) {
-    if (!content) return;
-    const side = getSideOfNavbarSide(content);
-    side === 'start' ? content.style.left = "-300px" : content.style.right = "-300px";
-}
-
-function getSideOfNavbarSide(content) {
-    if (!content) return;
-    return content.getAttribute('data-navbar-side');
-}
-
-function animateBurger(button) {
-    let toAnimate = button.getAttribute('data-animated');
-    if (toAnimate !== 'true') return;
-    button.classList.toggle('animate-burger');
-}
-
-function initNavbarSide() {
-    const buttonsNavbarSideOpen = document.querySelectorAll('[data-toggle="navbar-side"]');
-    buttonsNavbarSideOpen.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            showNavbarSide(content);
-            animateBurger(button);
+        content.setAttribute('data-expanded', 'true');
+        content.animate([
+            { height: `${startHeight}px` },
+            { height: `${endHeight}px` }
+        ], {
+            duration: 300,
+            easing: 'ease'
         });
-    });
-    const buttonsNavbarSideClose = document.querySelectorAll('[data-function="close-navbar-side"]');
-    buttonsNavbarSideClose.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            hideNavbarSide(content);
-            animateBurger(button);
+    };
+
+    collapse(content) {
+        const startHeight = content.scrollHeight;
+
+        const animation = content.animate([
+            { height: `${startHeight}px` },
+            { height: '0px' }
+        ], {
+            duration: 300,
+            easing: 'ease'
         });
-    });
-}
 
+        animation.onfinish = () => {
+            content.setAttribute('data-expanded', 'false');
+        };
+    };
 
-document.addEventListener('DOMContentLoaded', () => {
-    initNavbar();
-    initNavbarSide();
-});
+    // --- NAVBAR LATÉRALE (SLIDE IN/OUT) ---
+    initSideNavbar() {
+        const openButtons = document.querySelectorAll('[data-toggle="navbar-side"]');
+        openButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
+                const content = document.querySelector(target);
+                if (!content) return;
 
+                this.showSide(content);
+                this.toggleBurger(button);
+            });
+        });
 
+        const closeButtons = document.querySelectorAll('[data-function="close-navbar-side"]');
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
+                const content = document.querySelector(target);
+                if (!content) return;
 
+                this.hideSide(content);
+                this.toggleBurger(button);
+            });
+        });
+    };
 
+    showSide(content) {
+        const side = this.getSide(content);
+        if (side === 'start') {
+            content.style.left = '0';
+        } else {
+            content.style.right = '0';
+        }
+    };
+
+    hideSide(content) {
+        const side = this.getSide(content);
+        if (side === 'start') {
+            content.style.left = '-300px';
+        } else {
+            content.style.right = '-300px';
+        }
+    };
+
+    getSide(content) {
+        return content.getAttribute('data-navbar-side');
+    };
+
+    // --- BURGER BUTTON ---
+    toggleBurger(button) {
+        const shouldAnimate = button.getAttribute('data-animated') === 'true';
+        if (shouldAnimate) {
+            button.classList.toggle('animate-burger');
+        }
+    };
+};

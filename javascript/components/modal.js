@@ -1,47 +1,53 @@
-function showModal() {
-    let buttonsModal = document.querySelectorAll('[data-toggle="modal"]');
-    buttonsModal.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            content.style.display = 'flex';
-            addNoScroll();
-            isImageModal(button);
+export default class ModalManager {
+    init() {
+        this.initOpenButtons();
+        this.initCloseButtons();
+    };
+
+    initOpenButtons() {
+        const buttons = document.querySelectorAll('[data-toggle="modal"]');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetSelector = button.getAttribute('data-target');
+                const modal = document.querySelector(targetSelector);
+                if (!modal) return;
+
+                modal.style.display = 'flex';
+                this.disableScroll();
+                this.handleImageModal(button);
+            });
         });
-    });
-}
+    };
 
-function isImageModal(button) {
-    if (!(button instanceof HTMLImageElement)) return;
-    const modalImgTarget = document.querySelector(button.getAttribute('data-img'));
-    modalImgTarget.src = button.src;
-}
+    initCloseButtons() {
+        const closeButtons = document.querySelectorAll('[data-function="close-modal"]');
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetSelector = button.getAttribute('data-target');
+                const modal = document.querySelector(targetSelector);
+                if (!modal) return;
 
-function hideModal() {
-    let buttonsCloseModal = document.querySelectorAll('[data-function="close-modal"]');
-    buttonsCloseModal.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            const content = document.querySelector(target);
-            content.style.display = 'none';
-            removeNoScroll();
+                modal.style.display = 'none';
+                this.enableScroll();
+            });
         });
-    });
-}
+    };
 
-function addNoScroll() {
-    document.body.classList.add('no-scroll');
-}
+    handleImageModal(button) {
+        if (!(button instanceof HTMLImageElement)) return;
 
-function removeNoScroll() {
-    document.body.classList.remove('no-scroll');
-}
+        const imgTargetSelector = button.getAttribute('data-img');
+        const modalImg = document.querySelector(imgTargetSelector);
+        if (modalImg) {
+            modalImg.src = button.src;
+        }
+    };
 
-function init() {
-    showModal();
-    hideModal();
-}
+    disableScroll() {
+        document.body.classList.add('no-scroll');
+    };
 
-document.addEventListener('DOMContentLoaded', () => {
-    init();
-});
+    enableScroll() {
+        document.body.classList.remove('no-scroll');
+    };
+};
