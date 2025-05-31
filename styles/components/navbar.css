@@ -72,6 +72,9 @@
                 .navbar-icon {
                     display: none;
                 }
+                .container-burger-menu {
+                    display: none;
+                }
             }
 
             .navbar-content {
@@ -172,6 +175,9 @@
                 align-items: center;
 
                 .navbar-icon {
+                    display: none;
+                }
+                .container-burger-menu {
                     display: none;
                 }
             }
@@ -276,6 +282,9 @@
                 .navbar-icon {
                     display: none;
                 }
+                .container-burger-menu {
+                    display: none;
+                }
             }
 
             .navbar-content {
@@ -376,6 +385,9 @@
                 align-items: center;
 
                 .navbar-icon {
+                    display: none;
+                }
+                .container-burger-menu {
                     display: none;
                 }
             }
