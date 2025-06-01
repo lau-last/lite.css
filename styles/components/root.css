@@ -66,11 +66,12 @@
     --table-bg-hover-color: color-mix(in srgb, var(--gray-300) 25%, var(--transparent));
 
     --input-border-color: var(--gray-300);
-    --input-bg-color: var(--transparent);
-    /*--input-placeholder-color: var(--gray-300);*/
-    /*--input-color: var(--gray-100);*/
-    --switch-bg-color: var(--gray-100);
-    /*--checkbox-bg-color: var(--gray-500);*/
+    --input-bg-color: var(--gray-0);
+    --input-placeholder-color: var(--gray-1000);
+    --input-color: var(--gray-1000);
+    --switch-bg-color: var(--gray-0);
+    --switch-btn-color: var(--gray-300);
+    --switch-border-color: var(--gray-300);
 
     --hover-color: color-mix(in srgb, var(--gray-300) 25%, var(--transparent));
     --active-color: var(--gray-500);
@@ -197,17 +198,18 @@
     --input-placeholder-color: var(--gray-0);
     --input-color: var(--gray-200);
     --switch-bg-color: var(--gray-600);
-    --checkbox-bg-color: var(--gray-600);
+    --switch-btn-color: var(--gray-0);
+    --switch-border-color: var(--gray-450);
 
     --hover-color: color-mix(in srgb, var(--gray-400) 25%, var(--transparent));
     --active-color: var(--gray-600);
-    --bg-color: #212121;
+    --bg-color: var(--gray-800);
     --button-color: var(--gray-200);
     --card-footer-color: var(--gray-600);
     --modal-footer-color: var(--gray-600);
 
     --carousel-dot-bg-color: var(--gray-400);
-    --carousel-dot-bg-color-active: var(--gray-600);
+    --carousel-dot-bg-color-active: var(--primary-color);
     --carousel-dot-bg-color-hover: var(--gray-600);
     --carousel-control-color: var(--gray-0);
     --carousel-control-color-hover: color-mix(in srgb, var(--gray-1000) 50%, var(--transparent));
