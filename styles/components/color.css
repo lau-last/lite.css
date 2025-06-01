@@ -112,13 +112,17 @@
 }
 
 .bg-white {
-    background-color: var(--white);
+    background-color: var(--gray-0);
     color: var(--text-black);
 }
 
 .bg-black {
-    background-color: var(--black);
+    background-color: var(--gray-1000);
     color: var(--text-white);
+}
+
+.bg-transparent-theme {
+    background-color: var(--transparent-theme);
 }
 
 .bg-transparent-white {
@@ -131,67 +135,67 @@
 
 /* Text */
 .text-primary,
-.text-primary *{
+.text-primary * {
     color: var(--primary-color);
 }
 
 .text-secondary,
-.text-secondary *{
+.text-secondary * {
     color: var(--secondary-color);
 }
 
 .text-success,
-.text-success *{
+.text-success * {
     color: var(--success-color);
 }
 
 .text-info,
-.text-info *{
+.text-info * {
     color: var(--info-color);
 }
 
 .text-warning,
-.text-warning *{
+.text-warning * {
     color: var(--warning-color);
 }
 
 .text-danger,
-.text-danger *{
+.text-danger * {
     color: var(--danger-color);
 }
 
 .text-neutral,
-.text-neutral *{
+.text-neutral * {
     color: var(--neutral-color);
 }
 
 .text-light,
-.text-light *{
+.text-light * {
     color: var(--light-color);
 }
 
 .text-dark,
-.text-dark *{
+.text-dark * {
     color: var(--dark-color);
 }
 
 .text-white,
-.text-white *{
+.text-white * {
     color: var(--text-white);
 }
 
 .text-black,
-.text-black *{
+.text-black * {
     color: var(--text-black);
 }
 
 .text-white-hover:hover,
-.text-white-hover:hover *{
+.text-white-hover:hover * {
     color: var(--text-white);
 }
 
 .text-black-hover:hover,
-.text-black-hover:hover *{
+.text-black-hover:hover * {
     color: var(--text-black);
 }
 
@@ -446,20 +450,22 @@ button,
     }
 }
 
-.light{
-    border-color: var(--white);
+.light {
+    border-color: var(--gray-0);
     color: var(--text-white);
-    &:hover{
-        border-color: var(--white);
+
+    &:hover {
+        border-color: var(--gray-0);
         color: var(--text-white);
     }
 }
 
-.dark{
-    border-color: var(--black);
+.dark {
+    border-color: var(--gray-1000);
     color: var(--text-black);
-    &:hover{
-        border-color: var(--black);
+
+    &:hover {
+        border-color: var(--gray-1000);
         color: var(--text-black);
     }
 }

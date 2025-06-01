@@ -74,50 +74,62 @@ table {
 
     &.table-primary {
         thead tr, tfoot tr {
-            background-color: color-mix(in srgb, var(--primary-color) 30%, var(--color-mix-light));
+            background-color: var(--table-primary-color);
         }
     }
 
     &.table-secondary {
         thead tr, tfoot tr {
-            background-color: color-mix(in srgb, var(--secondary-color) 30%, var(--color-mix-light));
+            background-color: var(--table-secondary-color);
         }
     }
 
     &.table-success {
         thead tr, tfoot tr {
-            background-color: color-mix(in srgb, var(--success-color) 30%, var(--color-mix-light));
+            background-color: var(--table-success-color);
         }
     }
 
     &.table-info {
         thead tr, tfoot tr {
-            background-color: color-mix(in srgb, var(--info-color) 30%, var(--color-mix-light));
+            background-color: var(--table-info-color);
         }
     }
 
     &.table-warning {
         thead tr, tfoot tr {
-            background-color: color-mix(in srgb, var(--warning-color) 30%, var(--color-mix-light));
+            background-color: var(--table-warning-color);
         }
     }
 
     &.table-danger {
         thead tr, tfoot tr {
-            background-color: color-mix(in srgb, var(--danger-color) 30%, var(--color-mix-light));
+            background-color: var(--table-danger-color);
         }
     }
 
     &.table-neutral {
         thead tr, tfoot tr {
-            background-color: color-mix(in srgb, var(--neutral-color) 30%, var(--color-mix-light));
+            background-color: var(--table-neutral-color);
+        }
+    }
+
+    &.table-dark {
+        thead tr, tfoot tr {
+            background-color: var(--table-dark-color);
+        }
+    }
+
+    &.table-light {
+        thead tr, tfoot tr {
+            background-color: var(--table-light-color);
         }
     }
 
     &.table-striped {
         tbody {
             tr:nth-child(even) {
-                background-color: var(--gray-light);
+                background-color: var(--table-striped-bg-color);
             }
         }
     }
@@ -139,7 +151,7 @@ table {
             tbody {
                 tr:hover {
                     cursor: pointer;
-                    background-color: var(--gray-medium) !important;
+                    background-color: var(--table-bg-hover-color) !important;
 
                     th:first-child, td:first-child {
                         border: none !important;
@@ -176,19 +188,19 @@ table {
         tbody {
             tr:hover {
                 cursor: pointer;
-                background-color: var(--gray-medium) !important;
+                background-color: var(--table-bg-hover-color) !important;
 
                 th:first-child, td:first-child {
-                    border-left: 1px solid var(--gray-medium) !important;
+                    border-left: 1px solid var(--table-border-color) !important;
                 }
 
                 th:last-child, td:last-child {
-                    border-right: 1px solid var(--gray-medium) !important;
+                    border-right: 1px solid var(--table-border-color) !important;
                 }
 
                 th, td {
-                    border-top: 1px solid black !important;
-                    border-bottom: 1px solid var(--gray-medium) !important;
+                    border-top: 1px solid var(--table-border-color) !important;
+                    border-bottom: 1px solid var(--table-border-color) !important;
                 }
             }
         }

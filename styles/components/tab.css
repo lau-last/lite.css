@@ -11,7 +11,7 @@
 }
 
 .tab-content {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-medium);
     border-radius: var(--border-radius);
     display: none;
     padding: 1rem;

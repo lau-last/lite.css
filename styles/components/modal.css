@@ -6,9 +6,29 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: color-mix(in srgb, black 75%, var(--transparent));
+    background-color: color-mix(in srgb, var(--gray-1000) 75%, var(--transparent));
     justify-content: center;
     align-items: center;
+
+
+    .modal-icon {
+        border-radius: var(--border-radius);
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+
+        &::after {
+            content: "×";
+        }
+    }
 
     .modal-content-img {
         position: relative;
@@ -42,22 +62,9 @@
         }
 
         .modal-icon {
-            color: var(--white);
             position: absolute;
             top: 1rem;
             right: 1rem;
-            border-radius: var(--border-radius);
-            border: 1px solid var(--white);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 2.5rem;
-            height: 2.5rem;
-            cursor: pointer;
-
-            &::after {
-                content: "×";
-            }
         }
     }
 
@@ -65,7 +72,7 @@
         overflow: auto;
         border-radius: var(--border-radius);
         position: relative;
-        background-color: var(--white);
+        background-color: var(--bg-color);
         animation-name: animate-from-top;
         animation-duration: 0.4s;
 
@@ -82,26 +89,10 @@
             width: 50%;
         }
 
-        .modal-icon {
-            border-radius: var(--border-radius);
-            border: 1px solid var(--white);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 2.5rem;
-            height: 2.5rem;
-            cursor: pointer;
-
-            &::after {
-                content: "×";
-            }
-        }
-
         .modal-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: var(--white);
             padding: 0.5rem 1rem;
         }
 
@@ -111,7 +102,7 @@
 
         .modal-footer {
             padding: 0.5rem 1rem;
-            background-color: var(--gray-medium);
+            background-color: var(--modal-footer-color);
             font-style: italic;
         }
     }

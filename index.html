@@ -11,6 +11,17 @@
 </head>
 <body>
 <section>
+    <h2>Theme</h2>
+    <div class="form-check">
+        <span class="fs-5 cursor-pointer" data-btn-theme="light" data-target="#switch-theme">☀️</span>
+        <label class="switch">
+            <input id="switch-theme" name="switch-theme" type="checkbox">
+            <span class="switch-slider round"></span>
+        </label>
+        <span class="fs-5 cursor-pointer" data-btn-theme="dark" data-target="#switch-theme">🌙</span>
+    </div>
+</section>
+<section>
     <h2>Menu</h2>
     <nav class="navbar navbar-lg">
         <div class="navbar-header">
@@ -83,7 +94,7 @@
                data-target="#dropdown-aside">Dropdown menu 1
                 <span class="dropdown-arrow" data-arrow="up"></span>
             </a>
-            <div id="dropdown-aside" class="dropdown-content-push list-group-item bg-transparent-white">
+            <div id="dropdown-aside" class="dropdown-content-push list-group-item bg-transparent-theme">
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
@@ -119,7 +130,7 @@
                data-target="#dropdown-aside-2">Dropdown menu 1
                 <span class="dropdown-arrow" data-arrow="up"></span>
             </a>
-            <div id="dropdown-aside-2" class="dropdown-content-push list-group-item bg-transparent-white">
+            <div id="dropdown-aside-2" class="dropdown-content-push list-group-item bg-transparent-theme">
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
@@ -398,7 +409,7 @@
 
     <div class="modal" id="modal-img">
         <div class="modal-content-img">
-            <span class="modal-icon" data-function="close-modal" data-target="#modal-img"></span>
+            <span class="modal-icon light" data-function="close-modal" data-target="#modal-img"></span>
             <img id="img-target" src="" alt="">
         </div>
     </div>
@@ -449,7 +460,7 @@
         <div class="modal-content">
             <div class="modal-header bg-primary">
                 <h6>Modal Header</h6>
-                <span class="modal-icon" data-function="close-modal" data-target="#modal-1"></span>
+                <span class="modal-icon light" data-function="close-modal" data-target="#modal-1"></span>
             </div>
             <div class="modal-body">
                 <p>Some text in the Modal Body</p>
@@ -491,9 +502,9 @@
 </section>
 <section>
     <h2>Table</h2>
-    <h3>Table small, striped</h3>
+    <h3>Table small, striped, hover</h3>
     <div class="table-responsive">
-        <table class="table-primary table-sm table-striped">
+        <table class="table-primary table-sm table-striped table-hover">
             <thead>
             <tr>
                 <th>Person</th>
@@ -537,9 +548,9 @@
             </tfoot>
         </table>
     </div>
-    <h3>Table medium, bordered</h3>
+    <h3>Table medium, bordered, hover</h3>
     <div class="table-responsive">
-        <table class="table-primary table-md table-bordered">
+        <table class="table-secondary table-md table-bordered table-hover">
             <thead>
             <tr>
                 <th>Person</th>
@@ -585,7 +596,7 @@
     </div>
     <h3>Table large, borderless, hover</h3>
     <div class="table-responsive">
-        <table class="table-primary table-lg table-borderless table-hover">
+        <table class="table-danger table-lg table-borderless table-hover">
             <thead>
             <tr>
                 <th>Person</th>
@@ -916,25 +927,59 @@
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <!-- Cases à cocher -->
                 <p>Choix multiples :</p>
-                <div class="form-check">
+                <div class="form-check form-check-sm">
                     <input type="checkbox" id="option-a" name="check1" value="1">
                     <label for="option-a">Option A</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-md">
                     <input type="checkbox" id="option-b" name="check2" value="2">
                     <label for="option-b">Option B</label>
                 </div>
+                <div class="form-check form-check-lg">
+                    <input type="checkbox" id="option-c" name="check3" value="2">
+                    <label for="option-c">Option C</label>
+                </div>
             </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="form-check my-1">
+                    <label class="switch switch-sm">
+                        <input id="switch-1" name="switch-1" type="checkbox">
+                        <span class="switch-slider round"></span>
+                    </label>
+                    <span class="switch-label" data-label="switch-1">Switch small</span>
+                </div>
+
+                <div class="form-check my-1">
+                    <label class="switch switch-md">
+                        <input id="switch-2" name="switch-2" type="checkbox">
+                        <span class="switch-slider round"></span>
+                    </label>
+                    <span class="switch-label" data-label="switch-2">Switch medium</span>
+                </div>
+
+                <div class="form-check my-1">
+                    <label class="switch switch-lg">
+                        <input id="switch-3" name="switch-3" type="checkbox">
+                        <span class="switch-slider round"></span>
+                    </label>
+                    <span class="switch-label" data-label="switch-3">Switch large</span>
+                </div>
+            </div>
+
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <!-- Boutons radio -->
                 <p>Choix unique :</p>
-                <div class="form-radio">
+                <div class="form-radio form-radio-sm">
                     <input type="radio" id="radio-oui" name="choice" value="yes">
                     <label for="radio-oui">Oui</label>
                 </div>
-                <div class="form-radio">
+                <div class="form-radio form-radio-md">
                     <input type="radio" id="radio-non" name="choice" value="no">
                     <label for="radio-non">Non</label>
+                </div>
+                <div class="form-radio form-radio-lg">
+                    <input type="radio" id="radio-other" name="choice" value="other">
+                    <label for="radio-other">Autre</label>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
