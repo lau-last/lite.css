@@ -1,6 +1,7 @@
 export default class CarouselManager {
     constructor() {
         this.slideIndexes = {};
+        this.interval = 5000;
     }
 
     init() {
@@ -16,14 +17,19 @@ export default class CarouselManager {
         const carousels = document.querySelectorAll('[data-carousel="slide"]');
         for (const carousel of carousels) {
             const autoPlay = carousel.getAttribute('data-auto-play');
+            const interval = carousel.getAttribute('data-interval');
+            if (interval) {
+                this.interval = interval;
+            }
             if (autoPlay === 'true') {
                 setInterval(() => {
                     const target = '#' + carousel.id;
                     this.changeSlide(target, 1);
-                }, 5000);
+                }, this.interval);
             }
         }
     }
+
 
     activeFirstSlideAndDot() {
         const carousels = document.querySelectorAll('[data-carousel="slide"]');

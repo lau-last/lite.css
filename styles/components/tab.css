@@ -7,11 +7,6 @@
         margin: 0;
         border-radius: 0;
         float: left;
-
-        &.active {
-            background-color: var(--active-color);
-            color: var(--white);
-        }
     }
 }
 

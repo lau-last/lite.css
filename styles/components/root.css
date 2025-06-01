@@ -1,4 +1,5 @@
 :root {
+    /* Colors */
     --primary-color: #8A4F7D;
     --secondary-color: #88A096;
     --success-color: #7BAE7F;
@@ -17,30 +18,34 @@
     --gray-light: #F2F2F2;
     --gray-medium: #C4C4C4;
     --gray-dark: #6B6B6B;
-
+    /* Colors components */
     --link-color: var(--primary-color);
 
-    --text-dark: var(--black);
-    --text-light: var(--white);
+    --text-white: var(--white);
+    --text-black: var(--black);
 
     --color-mix-dark: var(--black);
     --color-mix-light: var(--white);
 
+    --transparent-white: rgba(255, 255, 255, 0.1);
+    --transparent-black: rgba(0, 0, 0, 0.1);
+
+    --border-color-light: color-mix(in srgb, var(--gray-medium) 25%, var(--transparent));
     --border-color: var(--gray-medium);
+    --border-color-dark: var(--gray-dark);
+
+
     --table-border-color: var(--gray-light);
     --input-border-color: var(--gray-medium);
-
-    --hover-color: color-mix(in srgb, var(--gray-light) 50%, var(--transparent));
+    /*--hover-color: transparent;*/
+    --hover-color: color-mix(in srgb, var(--gray-medium) 25%, var(--transparent));
     --active-color: var(--gray-dark);
-
     --bg-color: var(--white);
-
     --button-color: var(--gray-light);
 
-    --navbar-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18L20 18' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 12L20 12' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 6L20 6' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
-    --navbar-icon-hover: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18L20 18' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 12L20 12' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M4 6L20 6' stroke='%236B6B6B' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+    --border-radius: .3rem;
 
-    --navbar-height: 7rem;
+    --gap-base: 2.5rem;
 
     --input-height-sm: 2.5rem;
     --input-height-md: 3rem;
@@ -58,12 +63,6 @@
     --table-padding-md: .8rem;
     --table-padding-lg: 1rem;
 
-    --gap-base: 2.5rem;
-
-    --border-radius: .3rem;
-
-    --font-size-base: 1.2rem;
-
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -76,6 +75,8 @@
     --font-size-h4: 2.5rem;
     --font-size-h5: 2rem;
     --font-size-h6: 1.5rem;
+
+    --font-size-base: 1.2rem;
 
     --font-family-titre: "Montserrat", sans-serif;
     --font-family-text: "Open Sans", sans-serif;

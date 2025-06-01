@@ -7,7 +7,6 @@ html {
         font-family: var(--font-family-text), sans-serif;
         font-size: var(--font-size-base);
         font-weight: var(--font-weight-regular);
-        color: var(--text-dark);
         background-color: var(--bg-color);
 
         button, input, select, textarea {
@@ -50,12 +49,12 @@ html {
             text-decoration: none;
 
             &:focus {
-                background-color: var(--transparent);
+                /*background-color: var(--transparent);*/
                 box-shadow: none !important;
             }
 
             &:hover {
-                color: color-mix(in srgb, var(--link-color) 75%, var(--color-mix-light));
+                color: color-mix(in srgb, var(--link-color) 50%, var(--transparent));
             }
         }
 
@@ -74,16 +73,7 @@ html {
 
         ::selection {
             background-color: var(--primary-color);
-            color: var(--text-light);
-            -webkit-text-fill-color: var(--text-light);
-        }
-
-
-        :focus {
-            border-color: var(--primary-color);
-            outline: none;
-            box-shadow: 0 0 0.2rem 0.1rem color-mix(in srgb, var(--primary-color) 50%, var(--transparent));
-            background-color: var(--white);
+            -webkit-text-fill-color: var(--text-white);
         }
     }
 }

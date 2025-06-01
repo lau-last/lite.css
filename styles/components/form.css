@@ -7,10 +7,15 @@ input, select, textarea {
     border-radius: var(--border-radius);
     border: 1px solid var(--input-border-color);
     padding: 0 1.5rem;
-    color: var(--text-dark);
+
+    &:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0.2rem 0.1rem color-mix(in srgb, var(--primary-color) 50%, var(--transparent));
+    }
 
     &.form-control {
-        margin-block:.5rem;
+        margin-block: .5rem;
         display: block;
         width: 100%;
     }
@@ -27,10 +32,6 @@ input, select, textarea {
         height: var(--input-height-lg);
     }
 
-
-    &::placeholder {
-        color: var(--text-dark);
-    }
 }
 
 input, select {
@@ -59,7 +60,7 @@ input[type="file"] {
     &::file-selector-button {
         padding: 0 1.5rem;
         background-color: var(--primary-color);
-        color: var(--white);
+        color: var(--text-white);
         border: none;
         height: 100%;
         align-items: self-start;

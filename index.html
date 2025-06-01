@@ -15,7 +15,7 @@
     <nav class="navbar navbar-lg">
         <div class="navbar-header">
             <div class="navbar-brand">Lorem.</div>
-            <div class="container-burger-menu" data-toggle="navbar" data-target="#navbar-3" data-animated="true">
+            <div class="navbar-burger" data-toggle="navbar" data-target="#navbar-3" data-animated="true">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -51,31 +51,39 @@
         <div class="navbar-header">
             <div class="navbar-brand">Lorem.</div>
             <div>
-                <button class="navbar-icon" type="button" data-toggle="navbar-side"
-                        data-target="#navbar-side-1"></button>
-                <button class="navbar-icon" type="button" data-toggle="navbar-side"
-                        data-target="#navbar-side-2"></button>
+                <div class="navbar-burger" data-toggle="navbar-side" data-target="#navbar-side-1"
+                     data-animated="false">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-burger" data-toggle="navbar-side" data-target="#navbar-side-2"
+                     data-animated="false">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </div>
     </nav>
     <aside id="navbar-side-1" data-navbar-side="start" class="bg-primary">
         <div class="navbar-side-header">
             <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="navbar-side-icon" data-function="close-navbar-side"
+            <a href="javascript:void(0)" class="navbar-side-icon light" data-function="close-navbar-side"
                data-target="#navbar-side-1">&times;</a>
         </div>
-        <ul class="list-group-item">
-            <li><a href="#" class="text-light nav-link">Lorem.</a></li>
-            <li><a href="#" class="text-light nav-link">Nostrum!</a></li>
-            <li><a href="#" class="text-light nav-link">Distinctio.</a></li>
-            <li><a href="#" class="text-light nav-link">DistinctioDistinctio.</a></li>
+        <ul class="list-group-item text-white">
+            <li><a href="#" class="nav-link">Lorem.</a></li>
+            <li><a href="#" class="nav-link">Nostrum!</a></li>
+            <li><a href="#" class="nav-link">Distinctio.</a></li>
+            <li><a href="#" class="nav-link">DistinctioDistinctio.</a></li>
         </ul>
-        <div class="dropdown-button-wrapper">
-            <a href="javascript:void(0)" class="dropdown-btn text-light nav-link" data-toggle="dropdown-button"
+        <div class="dropdown-button-wrapper text-white">
+            <a href="javascript:void(0)" class="dropdown-btn nav-link" data-toggle="dropdown-button"
                data-target="#dropdown-aside">Dropdown menu 1
                 <span class="dropdown-arrow" data-arrow="up"></span>
             </a>
-            <div id="dropdown-aside" class="dropdown-content-push list-group-item">
+            <div id="dropdown-aside" class="dropdown-content-push list-group-item bg-transparent-white">
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
@@ -97,21 +105,21 @@
     <aside id="navbar-side-2" data-navbar-side="end" class="bg-secondary">
         <div class="navbar-side-header">
             <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="navbar-side-icon" data-function="close-navbar-side"
+            <a href="javascript:void(0)" class="navbar-side-icon dark" data-function="close-navbar-side"
                data-target="#navbar-side-2">&times;</a>
         </div>
         <ul class="list-group-item">
-            <li><a href="#" class="text-light nav-link">Lorem.</a></li>
-            <li><a href="#" class="text-light nav-link">Nostrum!</a></li>
-            <li><a href="#" class="text-light nav-link">Distinctio.</a></li>
-            <li><a href="#" class="text-light nav-link">DistinctioDistinctio.</a></li>
+            <li><a href="#" class="nav-link">Lorem.</a></li>
+            <li><a href="#" class="nav-link">Nostrum!</a></li>
+            <li><a href="#" class="nav-link">Distinctio.</a></li>
+            <li><a href="#" class="nav-link">DistinctioDistinctio.</a></li>
         </ul>
         <div class="dropdown-button-wrapper">
-            <a href="javascript:void(0)" class="dropdown-btn text-light nav-link" data-toggle="dropdown-button"
+            <a href="javascript:void(0)" class="dropdown-btn nav-link" data-toggle="dropdown-button"
                data-target="#dropdown-aside-2">Dropdown menu 1
                 <span class="dropdown-arrow" data-arrow="up"></span>
             </a>
-            <div id="dropdown-aside-2" class="dropdown-content-push list-group-item">
+            <div id="dropdown-aside-2" class="dropdown-content-push list-group-item bg-transparent-white">
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
                 <a class="nav-link" href="">Lorem ipsum.</a>
@@ -136,7 +144,12 @@
     <nav class="navbar navbar-lg">
         <div class="navbar-header">
             <div class="navbar-brand">Lorem.</div>
-            <button class="navbar-icon" type="button" data-toggle="navbar" data-target="#navbar-2"></button>
+            <div class="navbar-burger" data-toggle="navbar" data-target="#navbar-2"
+                 data-animated="true">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
         <div class="navbar-content" id="navbar-2" data-expanded="false">
             <div class="nav">
@@ -242,7 +255,7 @@
 </section>
 <section>
     <h2>Carousel</h2>
-    <div class="container-carousel" id="carousel" data-carousel="slide" data-auto-play="true">
+    <div class="container-carousel" id="carousel" data-carousel="slide" data-auto-play="true" data-interval="5000">
         <div class="slide slide-fade">
             <div class="slide-number">1 / 3</div>
             <img src="https://images.unsplash.com/photo-1743942439157-2194bd47bd1f?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -380,7 +393,7 @@
          data-img="#img-target"
          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
          class="img-fluid img-hover-opacity"
-         style="max-width: 300px"
+         style="width: 350px;"
          alt="">
 
     <div class="modal" id="modal-img">
@@ -393,7 +406,7 @@
 <section>
     <div class="card-container">
         <div class="card" style="width: 25rem;">
-            <div class="card-header bg-primary text-light">
+            <div class="card-header bg-primary">
                 <h5>Card title</h5>
             </div>
             <div class="card-body">
@@ -404,7 +417,7 @@
             </div>
         </div>
         <div class="card" style="width: 25rem;">
-            <div class="card-header bg-primary text-light">
+            <div class="card-header bg-primary">
                 <h5>Card title</h5>
             </div>
             <div class="card-body">
@@ -416,7 +429,7 @@
             </div>
         </div>
         <div class="card" style="width: 25rem;">
-            <div class="card-header bg-primary text-light">
+            <div class="card-header bg-primary">
                 <h5>Card title</h5>
             </div>
             <div class="card-body">
@@ -621,15 +634,15 @@
     <h2>Badge</h2>
     <div class="row">
         <div class="col-12">
-            <span class="badge badge-pill badge-sm badge-primary">Primary</span>
-            <span class="badge badge-pill badge-sm badge-secondary">Secondary</span>
-            <span class="badge badge-pill badge-sm badge-success">Success</span>
-            <span class="badge badge-pill badge-sm badge-info">Info</span>
-            <span class="badge badge-pill badge-sm badge-warning">Warning</span>
-            <span class="badge badge-pill badge-sm badge-danger">Danger</span>
-            <span class="badge badge-pill badge-sm badge-neutral">Neutral</span>
-            <span class="badge badge-pill badge-sm badge-light">Light</span>
-            <span class="badge badge-pill badge-sm badge-dark">Dark</span>
+            <span class="badge badge-pill badge-sm bg-primary">Primary</span>
+            <span class="badge badge-pill badge-sm bg-secondary">Secondary</span>
+            <span class="badge badge-pill badge-sm bg-success">Success</span>
+            <span class="badge badge-pill badge-sm bg-info">Info</span>
+            <span class="badge badge-pill badge-sm bg-warning">Warning</span>
+            <span class="badge badge-pill badge-sm bg-danger">Danger</span>
+            <span class="badge badge-pill badge-sm bg-neutral">Neutral</span>
+            <span class="badge badge-pill badge-sm bg-light">Light</span>
+            <span class="badge badge-pill badge-sm bg-dark">Dark</span>
         </div>
         <div class="col-12">
             <span class="badge badge-sm badge-primary">Primary</span>
