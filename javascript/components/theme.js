@@ -9,11 +9,20 @@ export default class ThemeManager {
 
     initCheckbox() {
         const checkbox = document.getElementById('switch-theme');
-        checkbox.checked = localStorage.getItem('theme') === 'dark';
+        let theme = localStorage.getItem('theme');
+        if (theme === null) {
+            theme = this.getSystemTheme();
+        }
+        checkbox.checked = theme === 'dark';
     }
 
     getSystemTheme() {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    setSystemTheme() {
+        const checkbox = document.getElementById('switch-theme');
+        checkbox.checked = this.getSystemTheme() === 'dark';
     }
 
     applyTheme(theme) {

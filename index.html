@@ -11,6 +11,21 @@
 </head>
 <body>
 <section>
+    <h2>JS element</h2>
+    <card-element>
+        <card-header>
+            <div class="d-flex justify-content-between">
+                Hello JS element
+                <icon-close></icon-close>
+                <icon-burger data-animated="true"></icon-burger>
+            </div>
+        </card-header>
+        <card-body>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus!</card-body>
+        <card-footer>My footer</card-footer>
+    </card-element>
+</section>
+
+<section>
     <h2>Theme</h2>
     <div class="form-check">
         <span class="fs-5 cursor-pointer" data-btn-theme="light" data-target="#switch-theme">☀️</span>
@@ -80,8 +95,8 @@
     <aside id="navbar-side-1" data-navbar-side="start" class="bg-primary">
         <div class="navbar-side-header">
             <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="navbar-side-icon light" data-function="close-navbar-side"
-               data-target="#navbar-side-1">&times;</a>
+            <a href="javascript:void(0)" class="icon-close light" data-function="close-navbar-side"
+               data-target="#navbar-side-1"></a>
         </div>
         <ul class="list-group-item text-white">
             <li><a href="#" class="nav-link">Lorem.</a></li>
@@ -116,8 +131,8 @@
     <aside id="navbar-side-2" data-navbar-side="end" class="bg-secondary">
         <div class="navbar-side-header">
             <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="navbar-side-icon dark" data-function="close-navbar-side"
-               data-target="#navbar-side-2">&times;</a>
+            <a href="javascript:void(0)" class="icon-close dark" data-function="close-navbar-side"
+               data-target="#navbar-side-2"></a>
         </div>
         <ul class="list-group-item">
             <li><a href="#" class="nav-link">Lorem.</a></li>
@@ -409,7 +424,7 @@
 
     <div class="modal" id="modal-img">
         <div class="modal-content-img">
-            <span class="modal-icon light" data-function="close-modal" data-target="#modal-img"></span>
+            <span class="icon-close light" data-function="close-modal" data-target="#modal-img"></span>
             <img id="img-target" src="" alt="">
         </div>
     </div>
@@ -460,7 +475,7 @@
         <div class="modal-content">
             <div class="modal-header bg-primary">
                 <h6>Modal Header</h6>
-                <span class="modal-icon light" data-function="close-modal" data-target="#modal-1"></span>
+                <span class="icon-close light" data-function="close-modal" data-target="#modal-1"></span>
             </div>
             <div class="modal-body">
                 <p>Some text in the Modal Body</p>

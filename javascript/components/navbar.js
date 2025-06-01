@@ -2,6 +2,7 @@ export default class NavbarManager {
     init() {
         this.initToggleNavbar();
         this.initSideNavbar();
+        this.initAnimateBurger();
     };
 
     // --- NAVBAR COLLAPSIBLE (TYPE ACCORDÉON / MOBILE) ---
@@ -16,7 +17,7 @@ export default class NavbarManager {
                 const isOpen = content.getAttribute('data-expanded') === 'true' || content.getAttribute('data-expanded') === null;
                 isOpen ? this.collapse(content) : this.expand(content);
 
-                this.toggleBurger(button);
+                // this.toggleBurger(button);
             });
         });
     };
@@ -27,8 +28,8 @@ export default class NavbarManager {
 
         content.setAttribute('data-expanded', 'true');
         content.animate([
-            { height: `${startHeight}px` },
-            { height: `${endHeight}px` }
+            {height: `${startHeight}px`},
+            {height: `${endHeight}px`}
         ], {
             duration: 300,
             easing: 'ease'
@@ -39,8 +40,8 @@ export default class NavbarManager {
         const startHeight = content.scrollHeight;
 
         const animation = content.animate([
-            { height: `${startHeight}px` },
-            { height: '0px' }
+            {height: `${startHeight}px`},
+            {height: '0px'}
         ], {
             duration: 300,
             easing: 'ease'
@@ -58,10 +59,11 @@ export default class NavbarManager {
             button.addEventListener('click', () => {
                 const target = button.getAttribute('data-target');
                 const content = document.querySelector(target);
+
                 if (!content) return;
 
                 this.showSide(content);
-                this.toggleBurger(button);
+                // this.toggleBurger(button);
             });
         });
 
@@ -70,10 +72,11 @@ export default class NavbarManager {
             button.addEventListener('click', () => {
                 const target = button.getAttribute('data-target');
                 const content = document.querySelector(target);
+
                 if (!content) return;
 
                 this.hideSide(content);
-                this.toggleBurger(button);
+                // this.toggleBurger(button);
             });
         });
     };
@@ -106,5 +109,13 @@ export default class NavbarManager {
         if (shouldAnimate) {
             button.classList.toggle('animate-burger');
         }
+    };
+
+    initAnimateBurger() {
+        document.querySelectorAll('[data-toggle="navbar"]').forEach(button => {
+            button.addEventListener('click', () => {
+                this.toggleBurger(button);
+            });
+        });
     };
 };

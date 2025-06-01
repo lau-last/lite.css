@@ -67,3 +67,22 @@
         opacity: 0.8;
     }
 }
+
+.icon-close {
+    border-radius: var(--border-radius);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+
+    &::after {
+        content: "×";
+    }
+
+    &:hover {
+        background-color: var(--hover-color);
+    }
+}

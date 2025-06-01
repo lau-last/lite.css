@@ -6,6 +6,10 @@ import CarouselManager from "./components/carousel.js";
 import ThemeManager from "./components/theme.js";
 import InputManager from "./components/input.js";
 
+import "./elements/icon_burger.js";
+import "./elements/icon_close.js";
+import "./elements/card.js";
+
 
 const navbar = new NavbarManager();
 const tabs = new TabsManager();

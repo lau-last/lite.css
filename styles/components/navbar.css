@@ -528,26 +528,6 @@
         align-items: center;
         margin-bottom: 2rem;
     }
-
-    .navbar-side-icon {
-        border-radius: var(--border-radius);
-        border: 1px solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        cursor: pointer;
-        /*border-color: var(--gray-1000);*/
-        /*color: var(--text-black);*/
-
-
-        &:hover {
-            /*border-color: var(--gray-1000);*/
-            /*color: var(--text-black);*/
-            background-color: var(--hover-color);
-        }
-    }
 }
 
 .dropdown-menu-wrapper {
@@ -570,7 +550,6 @@
         animation: fadeEffect 0.4s;
         transition: 0.3s ease;
         margin-top: -0.15rem;
-        /*border: 1px solid var(--border-color-medium);*/
         border: 1px solid var(--border-color-light);
         border-radius: var(--border-radius);
         background-color: var(--bg-color);
