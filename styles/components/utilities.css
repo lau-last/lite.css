@@ -14,8 +14,18 @@
     cursor: pointer;
 }
 
-.border {
+.border-light {
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--border-radius);
+}
+
+.border-medium {
     border: 1px solid var(--border-color-medium);
+    border-radius: var(--border-radius);
+}
+
+.border-dark {
+    border: 1px solid var(--border-color-dark);
     border-radius: var(--border-radius);
 }
 
@@ -68,7 +78,9 @@
     }
 }
 
-.icon-close {
+.icon-close-light,
+.icon-close-dark,
+.icon-close-theme {
     border-radius: var(--border-radius);
     border: 1px solid;
     display: flex;
@@ -81,8 +93,127 @@
     &::after {
         content: "×";
     }
+}
+
+.icon-close-light {
+    border-color: var(--gray-0);
+    color: var(--text-white);
 
     &:hover {
+        border-color: var(--gray-0);
+        color: var(--text-white);
         background-color: var(--hover-color);
     }
+}
+
+.icon-close-dark {
+    border-color: var(--gray-1000);
+    color: var(--text-black);
+
+    &:hover {
+        border-color: var(--gray-1000);
+        color: var(--text-black);
+        background-color: var(--hover-color);
+    }
+}
+
+
+[data-action="copy"] {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        transform: translateY(-100%);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: .5rem 1rem;
+        border: 1px solid var(--border-color-light);
+        border-radius: var(--border-radius);
+        opacity: 0;
+        white-space: nowrap;
+        transition: opacity 0.2s ease-in-out;
+        z-index: 10;
+    }
+
+    /* Position à gauche */
+
+    &.tooltip-top::after {
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: .5rem;
+    }
+
+    /* Position à droite */
+
+    &.tooltip-right::after {
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        margin-left: .5rem;
+    }
+
+    /* Position en bas */
+
+    &.tooltip-bottom::after {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: .5rem;
+    }
+
+    /* Position à gauche */
+
+    &.tooltip-left::after {
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        margin-right: .5rem;
+    }
+
+    &.tooltip-visible::after {
+        opacity: 1;
+    }
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.position-sticky {
+    position: sticky;
 }

@@ -1,6 +1,6 @@
 /* Badge */
 .badge {
-    margin: .2rem;
+    margin: .15rem;
     padding: var(--badge-padding-md);
     border-radius: var(--border-radius);
     white-space: nowrap;

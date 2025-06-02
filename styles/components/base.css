@@ -78,5 +78,15 @@ html {
             background-color: var(--primary-color);
             -webkit-text-fill-color: var(--text-white);
         }
+
+        pre{
+            overflow-x: auto;
+            /*border : 1px solid var(--border-color-light);*/
+        }
+
+        code {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
     }
 }

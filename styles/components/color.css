@@ -1,4 +1,5 @@
 /* Background */
+aside.bg-primary,
 .bg-primary,
 .badge-primary,
 .btn-primary {
@@ -11,6 +12,7 @@
     }
 }
 
+aside.bg-secondary,
 .bg-secondary,
 .badge-secondary,
 .btn-secondary {
@@ -23,6 +25,7 @@
     }
 }
 
+aside.bg-success,
 .bg-success,
 .badge-success,
 .btn-success {
@@ -35,6 +38,7 @@
     }
 }
 
+aside.bg-info,
 .bg-info,
 .badge-info,
 .btn-info {
@@ -47,6 +51,7 @@
     }
 }
 
+aside.bg-warning,
 .bg-warning,
 .badge-warning,
 .btn-warning {
@@ -59,6 +64,7 @@
     }
 }
 
+aside.bg-danger,
 .bg-danger,
 .badge-danger,
 .btn-danger {
@@ -71,6 +77,7 @@
     }
 }
 
+aside.bg-neutral,
 .bg-neutral,
 .badge-neutral,
 .btn-neutral {
@@ -83,6 +90,7 @@
     }
 }
 
+aside.bg-light,
 .bg-light,
 .badge-light,
 .btn-light {
@@ -95,6 +103,7 @@
     }
 }
 
+aside.bg-dark,
 .bg-dark,
 .badge-dark,
 .btn-dark {
@@ -106,6 +115,7 @@
         color: var(--text-white);
     }
 }
+
 
 .bg-transparent {
     background-color: var(--transparent);
@@ -447,25 +457,5 @@ button,
     &.btn-outline-dark:hover {
         background-color: var(--dark-color);
         color: var(--text-white);
-    }
-}
-
-.light {
-    border-color: var(--gray-0);
-    color: var(--text-white);
-
-    &:hover {
-        border-color: var(--gray-0);
-        color: var(--text-white);
-    }
-}
-
-.dark {
-    border-color: var(--gray-1000);
-    color: var(--text-black);
-
-    &:hover {
-        border-color: var(--gray-1000);
-        color: var(--text-black);
     }
 }

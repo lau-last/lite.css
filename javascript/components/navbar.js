@@ -63,7 +63,6 @@ export default class NavbarManager {
                 if (!content) return;
 
                 this.showSide(content);
-                // this.toggleBurger(button);
             });
         });
 
@@ -76,7 +75,6 @@ export default class NavbarManager {
                 if (!content) return;
 
                 this.hideSide(content);
-                // this.toggleBurger(button);
             });
         });
     };
@@ -100,7 +98,7 @@ export default class NavbarManager {
     };
 
     getSide(content) {
-        return content.getAttribute('data-navbar-side');
+        return content.getAttribute('data-position');
     };
 
     // --- BURGER BUTTON ---

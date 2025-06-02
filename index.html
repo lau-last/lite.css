@@ -10,41 +10,79 @@
     <script type="module" src="javascript/app.js"></script>
 </head>
 <body>
-<section>
-    <h2>JS element</h2>
-    <div class="card-container">
-        <card-element>
-            <card-header>
-                <div class="d-flex justify-content-between">
-                    <h4>Hello JS element</h4>
-                    <icon-close></icon-close>
-                </div>
-            </card-header>
-            <card-body>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus!</card-body>
-            <card-footer>My footer</card-footer>
-        </card-element>
-        <card-element>
-            <card-header>
-                <div class="d-flex justify-content-between">
-                    <h4>Hello JS element</h4>
-                    <icon-burger data-animated="true"></icon-burger>
-                </div>
-            </card-header>
-            <card-body>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus!Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Placeat, possimus!Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Placeat, possimus!
-            </card-body>
-            <card-footer>My footer</card-footer>
-        </card-element>
-        <card-element>
-            <card-header><h4>Hello JS element</h4></card-header>
-            <card-body>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus!</card-body>
-            <card-footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto atque, beatae culpa
-                doloremque ducimus eligendi explicabo illo incidunt ipsam ipsum laboriosam modi.
-            </card-footer>
-        </card-element>
-    </div>
-</section>
+<!--<section>-->
+<!--    &lt;!&ndash;Navbar-start&ndash;&gt;-->
+<!--    <nav class="navbar mb-2">-->
+
+<!--        &lt;!&ndash;Navbar-header&ndash;&gt;-->
+<!--        <div class="navbar-header">-->
+
+<!--            &lt;!&ndash;Navbar-brand&ndash;&gt;-->
+<!--            <div>Lorem.</div>-->
+
+<!--            &lt;!&ndash;Navbar-burger&ndash;&gt;-->
+<!--            <div class="navbar-burger" data-toggle="navbar-side" data-target="#navbar-side-example"-->
+<!--                 data-animated="false">-->
+<!--                <div class="bar1"></div>-->
+<!--                <div class="bar2"></div>-->
+<!--                <div class="bar3"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+
+<!--    &lt;!&ndash;Aside&ndash;&gt;-->
+<!--    <aside id="navbar-side-example" data-position="start">-->
+
+<!--        &lt;!&ndash;Aside-header&ndash;&gt;-->
+<!--        <div class="aside-header">-->
+<!--            <a href="javascript:void(0)" class="icon-close-light" data-function="close-navbar-side"-->
+<!--               data-target="#navbar-side-example"></a>-->
+<!--            <h5>Lorem.</h5>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash;Aside-content&ndash;&gt;-->
+<!--        &lt;!&ndash;Aside-liste&ndash;&gt;-->
+<!--        <ul class="list-group-item text-white">-->
+<!--            <li><a href="#" class="nav-link">Lorem.</a></li>-->
+<!--            <li><a href="#" class="nav-link">Nostrum!</a></li>-->
+<!--            <li><a href="#" class="nav-link">Distinctio.</a></li>-->
+<!--            <li><a href="#" class="nav-link">DistinctioDistinctio.</a></li>-->
+<!--        </ul>-->
+
+<!--        &lt;!&ndash;Dropdown&ndash;&gt;-->
+<!--        <div class="dropdown-button-wrapper text-white">-->
+
+<!--            &lt;!&ndash;Dropdown-button&ndash;&gt;-->
+<!--            <a href="javascript:void(0)" class="dropdown-btn nav-link" data-toggle="dropdown-button"-->
+<!--               data-target="#dropdown-aside">Dropdown menu 1-->
+<!--                <span class="dropdown-arrow" data-arrow="up"></span>-->
+<!--            </a>-->
+
+<!--            &lt;!&ndash;Dropdown-content&ndash;&gt;-->
+<!--            <div id="dropdown-aside" class="dropdown-content-push list-group-item bg-transparent-theme">-->
+<!--                <ul class="list-group-item">-->
+<!--                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>-->
+<!--                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>-->
+<!--                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>-->
+<!--                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>-->
+<!--                    <li><a class="nav-link" href="">Home</a></li>-->
+<!--                    <li><a class="nav-link" href="">Lorem ipsum.</a></li>-->
+<!--                    <li><a class="nav-link" href="">Lorem.</a></li>-->
+<!--                </ul>-->
+<!--                <hr>-->
+<!--                <a class="nav-link" href="">Lorem ipsum.</a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash;Form&ndash;&gt;-->
+<!--        <form class="d-flex align-items-center my-2" role="search">-->
+<!--            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>-->
+<!--            <button class="btn-primary" type="submit">Search</button>-->
+<!--        </form>-->
+<!--    </aside>-->
+<!--</section>-->
+
+
 <section>
     <h2>Theme</h2>
     <div class="form-check">
@@ -58,9 +96,9 @@
 </section>
 <section>
     <h2>Menu</h2>
-    <nav class="navbar navbar-lg">
+    <nav class="navbar navbar-lg mb-2">
         <div class="navbar-header">
-            <div class="navbar-brand">Lorem.</div>
+            <div>Lorem.</div>
             <div class="navbar-burger" data-toggle="navbar" data-target="#navbar-3" data-animated="true">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -90,12 +128,71 @@
             </ul>
         </div>
     </nav>
+    <div class="border-light position-relative">
+        <button class="btn-primary tooltip-left top-right"
+                type="button"
+                data-action="copy"
+                data-target="#code-navbar"
+                data-tooltip="Copié !">Copier
+        </button>
+        <pre><code id="code-navbar" data-type="code">
+        <!--Navbar-start-->
+        <nav class="navbar navbar-lg">
+
+            <!--Navbar-header-->
+            <div class="navbar-header">
+
+                <!--Navbar-brand-->
+                <div>Lorem.</div>
+
+                <!--Navbar-burger-->
+                <div class="navbar-burger" data-toggle="navbar" data-target="#navbar-example" data-animated="true">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+            <!--Navbar-content-->
+            <div class="navbar-content" id="navbar-example" data-expanded="false">
+
+                <!--Nav-start-->
+                <ul class="nav nav-start">
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Nostrum!</a></li>
+                    <li><a href="#">Distinctio.</a></li>
+                </ul>
+
+                <!--Nav-center-->
+                <ul class="nav nav-center">
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Nostrum!</a></li>
+                    <li><a href="#">Distinctio.</a></li>
+                </ul>
+
+                <!--Nav-center-->
+                <ul class="nav nav-center">
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Nostrum!</a></li>
+                    <li><a href="#">Distinctio.</a></li>
+                </ul>
+
+                <!--Nav-center-->
+                <ul class="nav nav-end">
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Nostrum!</a></li>
+                    <li><a href="#">Distinctio.</a></li>
+                </ul>
+            </div>
+        </nav>
+        </code></pre>
+    </div>
 </section>
 <section>
     <h2>Menu side</h2>
-    <nav class="navbar">
+    <nav class="navbar mb-2">
         <div class="navbar-header">
-            <div class="navbar-brand">Lorem.</div>
+            <div>Lorem.</div>
             <div>
                 <div class="navbar-burger" data-toggle="navbar-side" data-target="#navbar-side-1"
                      data-animated="false">
@@ -112,11 +209,11 @@
             </div>
         </div>
     </nav>
-    <aside id="navbar-side-1" data-navbar-side="start" class="bg-primary">
-        <div class="navbar-side-header">
-            <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="icon-close light" data-function="close-navbar-side"
+    <aside id="navbar-side-1" data-position="start" class="bg-primary">
+        <div class="aside-header">
+            <a href="javascript:void(0)" class="icon-close-light" data-function="close-navbar-side"
                data-target="#navbar-side-1"></a>
+            <h5>Lorem.</h5>
         </div>
         <ul class="list-group-item text-white">
             <li><a href="#" class="nav-link">Lorem.</a></li>
@@ -148,11 +245,11 @@
             <button class="btn-secondary btn-md" type="submit">Search</button>
         </form>
     </aside>
-    <aside id="navbar-side-2" data-navbar-side="end" class="bg-secondary">
-        <div class="navbar-side-header">
-            <h5 class="navbar-brand">Lorem.</h5>
-            <a href="javascript:void(0)" class="icon-close dark" data-function="close-navbar-side"
+    <aside id="navbar-side-2" data-position="end" class="bg-secondary">
+        <div class="aside-header">
+            <a href="javascript:void(0)" class="icon-close-dark" data-function="close-navbar-side"
                data-target="#navbar-side-2"></a>
+            <h5>Lorem.</h5>
         </div>
         <ul class="list-group-item">
             <li><a href="#" class="nav-link">Lorem.</a></li>
@@ -184,6 +281,86 @@
             <button class="btn-primary btn-md" type="submit">Search</button>
         </form>
     </aside>
+
+    <div class="border-light position-relative">
+        <button class="btn-primary tooltip-left top-right"
+                type="button"
+                data-action="copy"
+                data-target="#code-navbar-side"
+                data-tooltip="Copié !">Copier
+        </button>
+        <pre><code id="code-navbar-side" data-type="code">
+        <!--Navbar-start-->
+        <nav class="navbar">
+
+            <!--Navbar-header-->
+            <div class="navbar-header">
+
+                <!--Navbar-brand-->
+                <div>Lorem.</div>
+
+                <!--Navbar-burger-->
+                <div class="navbar-burger" data-toggle="navbar-side" data-target="#navbar-side-example"
+                     data-animated="false">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Aside-->
+        <aside id="navbar-side-example" data-position="start" class="bg-primary">
+
+            <!--Aside-header-->
+            <div class="aside-header">
+                <a href="javascript:void(0)" class="icon-close-light" data-function="close-navbar-side"
+                   data-target="#navbar-side-example"></a>
+                <h5>Lorem.</h5>
+            </div>
+
+            <!--Aside-content-->
+            <!--Aside-liste-->
+            <ul class="list-group-item text-white">
+                <li><a href="#" class="nav-link">Lorem.</a></li>
+                <li><a href="#" class="nav-link">Nostrum!</a></li>
+                <li><a href="#" class="nav-link">Distinctio.</a></li>
+                <li><a href="#" class="nav-link">DistinctioDistinctio.</a></li>
+            </ul>
+
+            <!--Dropdown-->
+            <div class="dropdown-button-wrapper text-white">
+
+                <!--Dropdown-button-->
+                <a href="javascript:void(0)" class="dropdown-btn nav-link" data-toggle="dropdown-aside-example"
+                   data-target="#dropdown-aside">Dropdown menu 1
+                    <span class="dropdown-arrow" data-arrow="up"></span>
+                </a>
+
+                <!--Dropdown-content-->
+                <div id="dropdown-aside-example" class="dropdown-content-push list-group-item bg-transparent-theme">
+                    <ul class="list-group-item">
+                        <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                        <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                        <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                        <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                        <li><a class="nav-link" href="">Home</a></li>
+                        <li><a class="nav-link" href="">Lorem ipsum.</a></li>
+                        <li><a class="nav-link" href="">Lorem.</a></li>
+                    </ul>
+                    <hr>
+                    <a class="nav-link" href="">Lorem ipsum.</a>
+                </div>
+            </div>
+
+            <!--Form-->
+            <form class="d-flex align-items-center my-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn-secondary btn-md" type="submit">Search</button>
+            </form>
+        </aside>
+        </code></pre>
+    </div>
 </section>
 <section>
     <h2>Big dropdown in menu</h2>
@@ -444,7 +621,7 @@
 
     <div class="modal" id="modal-img">
         <div class="modal-content-img">
-            <span class="icon-close light" data-function="close-modal" data-target="#modal-img"></span>
+            <span class="icon-close-light" data-function="close-modal" data-target="#modal-img"></span>
             <img id="img-target" src="" alt="">
         </div>
     </div>
@@ -495,7 +672,7 @@
         <div class="modal-content">
             <div class="modal-header bg-primary">
                 <h6>Modal Header</h6>
-                <span class="icon-close light" data-function="close-modal" data-target="#modal-1"></span>
+                <span class="icon-close-light" data-function="close-modal" data-target="#modal-1"></span>
             </div>
             <div class="modal-body">
                 <p>Some text in the Modal Body</p>
@@ -799,7 +976,7 @@
 <section>
     <h2>Button</h2>
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 gap-1">
             <button class="btn-primary btn-pill btn-sm">Go to page 1</button>
             <button class="btn-secondary btn-pill btn-sm">Go to page 2</button>
             <button class="btn-success btn-pill btn-sm">Go to page 3</button>
@@ -979,7 +1156,7 @@
                 <div class="form-check my-1">
                     <label class="switch switch-sm">
                         <input id="switch-1" name="switch-1" type="checkbox">
-                        <span class="switch-slider round"></span>
+                        <span class="switch-slider slider round"></span>
                     </label>
                     <span class="switch-label" data-label="switch-1">Switch small</span>
                 </div>
@@ -987,7 +1164,7 @@
                 <div class="form-check my-1">
                     <label class="switch switch-md">
                         <input id="switch-2" name="switch-2" type="checkbox">
-                        <span class="switch-slider round"></span>
+                        <span class="switch-slider slider round"></span>
                     </label>
                     <span class="switch-label" data-label="switch-2">Switch medium</span>
                 </div>
@@ -995,7 +1172,7 @@
                 <div class="form-check my-1">
                     <label class="switch switch-lg">
                         <input id="switch-3" name="switch-3" type="checkbox">
-                        <span class="switch-slider round"></span>
+                        <span class="switch-slider slider round"></span>
                     </label>
                     <span class="switch-label" data-label="switch-3">Switch large</span>
                 </div>
@@ -1027,6 +1204,41 @@
         <button class="btn btn-primary" type="submit">Envoyer</button>
         <button class="btn btn-danger" type="reset">Réinitialiser</button>
     </form>
+</section>
+<section>
+    <h2>JS element</h2>
+    <div class="card-container">
+        <card-element>
+            <card-header>
+                <div class="d-flex justify-content-between">
+                    <h4>Hello JS element</h4>
+                    <icon-close></icon-close>
+                </div>
+            </card-header>
+            <card-body>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus!</card-body>
+            <card-footer>My footer</card-footer>
+        </card-element>
+        <card-element>
+            <card-header>
+                <div class="d-flex justify-content-between">
+                    <h4>Hello JS element</h4>
+                    <icon-burger data-animated="true"></icon-burger>
+                </div>
+            </card-header>
+            <card-body>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus!Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Placeat, possimus!Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Placeat, possimus!
+            </card-body>
+            <card-footer>My footer</card-footer>
+        </card-element>
+        <card-element>
+            <card-header><h4>Hello JS element</h4></card-header>
+            <card-body>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus!</card-body>
+            <card-footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto atque, beatae culpa
+                doloremque ducimus eligendi explicabo illo incidunt ipsam ipsum laboriosam modi.
+            </card-footer>
+        </card-element>
+    </div>
 </section>
 </body>
 </html>

@@ -1,6 +1,6 @@
 button,
 .btn {
-    margin-block: .15rem;
+    margin: .15rem;
     display: inline-block;
     border-radius: var(--border-radius);
     border: none;

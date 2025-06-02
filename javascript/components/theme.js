@@ -9,6 +9,7 @@ export default class ThemeManager {
 
     initCheckbox() {
         const checkbox = document.getElementById('switch-theme');
+        if (!checkbox) return;
         let theme = localStorage.getItem('theme');
         if (theme === null) {
             theme = this.getSystemTheme();
@@ -38,6 +39,7 @@ export default class ThemeManager {
 
     toggleTheme() {
         const checkbox = document.getElementById('switch-theme');
+        if (!checkbox) return;
         checkbox.addEventListener('change', () => {
             const theme = checkbox.checked ? 'dark' : 'light';
             this.applyTheme(theme);
