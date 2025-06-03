@@ -2,6 +2,7 @@ button,
 .btn {
     margin: .15rem;
     display: inline-block;
+    width: fit-content;
     border-radius: var(--border-radius);
     border: none;
     padding: var(--button-padding-md);

@@ -3,7 +3,9 @@ label.required::after {
     color: var(--red);
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     border-radius: var(--border-radius);
     border: 1px solid var(--input-border-color);
     padding: 0 1.5rem;
@@ -40,7 +42,8 @@ input, select, textarea {
 
 }
 
-input, select {
+input,
+select {
     height: var(--input-height-md);
 }
 
@@ -78,6 +81,7 @@ input[type="file"] {
 
 .form-check-sm,
 .form-radio-sm {
+
     input[type="checkbox"],
     input[type="radio"] {
         transform: scale(0.8);
@@ -86,6 +90,7 @@ input[type="file"] {
 
 .form-check-md,
 .form-radio-md {
+
     input[type="checkbox"],
     input[type="radio"] {
         transform: scale(1);
@@ -94,6 +99,7 @@ input[type="file"] {
 
 .form-check-lg,
 .form-radio-lg {
+
     input[type="checkbox"],
     input[type="radio"] {
         transform: scale(1.2);
@@ -113,8 +119,8 @@ input[type="range"] {
 }
 
 
-.form-check label + input[type="checkbox"],
-.form-check label + input[type="radio"] {
+.form-check label+input[type="checkbox"],
+.form-check label+input[type="radio"] {
     vertical-align: middle;
 }
 
@@ -158,10 +164,10 @@ input[type="range"] {
         &:before {
             position: absolute;
             content: "";
-            height: 1rem;
-            width: 1rem;
-            left: .15rem;
-            bottom: .15rem;
+            height: 1.1rem;
+            width: 1.1rem;
+            left: .1rem;
+            bottom: .1rem;
             background-color: var(--switch-btn-color);
             -webkit-transition: .4s;
             transition: .4s;
@@ -176,12 +182,12 @@ input[type="range"] {
         }
     }
 
-    input:checked + .switch-slider {
+    input:checked+.switch-slider {
         background-color: var(--primary-color);
     }
 
 
-    input:checked + .switch-slider:before {
+    input:checked+.switch-slider:before {
         -webkit-transform: translateX(1.5rem);
         -ms-transform: translateX(1.5rem);
         transform: translateX(1.5rem);
@@ -189,21 +195,7 @@ input[type="range"] {
 
 
     &.switch-sm {
-        width: 2rem;
-        height: 1.075rem;
-
-        .switch-slider:before {
-            height: .66667rem;
-            width: .66667rem;
-            left: .1rem;
-            bottom: .1rem;
-        }
-
-        input:checked + .switch-slider:before {
-            -webkit-transform: translateX(.9rem);
-            -ms-transform: translateX(.9rem);
-            transform: translateX(.9rem);
-        }
+        transform: scale(0.8);
     }
 
     &.switch-md {
@@ -211,13 +203,13 @@ input[type="range"] {
         height: 1.5rem;
 
         .switch-slider:before {
-            height: 1rem;
-            width: 1rem;
-            left: .15rem;
-            bottom: .15rem;
+            height: 1.1rem;
+            width: 1.1rem;
+            left: .1rem;
+            bottom: .1rem;
         }
 
-        input:checked + .switch-slider:before {
+        input:checked+.switch-slider:before {
             -webkit-transform: translateX(1.5rem);
             -ms-transform: translateX(1.5rem);
             transform: translateX(1.5rem);
@@ -225,25 +217,12 @@ input[type="range"] {
     }
 
     &.switch-lg {
-        width: 4rem;
-        height: 2rem;
-
-        .switch-slider:before {
-            height: 1.5rem;
-            width: 1.5rem;
-            left: .15rem;
-            bottom: .15rem;
-        }
-
-        input:checked + .switch-slider:before {
-            -webkit-transform: translateX(2.05rem);
-            -ms-transform: translateX(2.05rem);
-            transform: translateX(2.05rem);
-        }
+        transform: scale(1.2);
     }
+
 }
 
-.theme-light .switch input:focus:checked + .switch-slider {
+.theme-light .switch input:focus:checked+.switch-slider {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0.2rem 0.1rem color-mix(in srgb, var(--primary-color) 50%, var(--transparent));

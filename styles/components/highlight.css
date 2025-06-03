@@ -1,3 +1,10 @@
+.container-code {
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color-code);
+    position: relative;
+}
+
 .highlight-tag {
     color: var(--highlight-tag-color);
 }
@@ -24,4 +31,8 @@
 
 .highlight-equal-sign {
     color: var(--highlight-equal-symbol-color);
+}
+
+.highlight-text {
+    color: var(--highlight-text-color);
 }

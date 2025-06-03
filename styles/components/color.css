@@ -143,6 +143,10 @@ aside.bg-dark,
     background-color: var(--transparent-black);
 }
 
+.bg-code-theme {
+    background-color: var(--bg-color-code);
+}
+
 /* Text */
 .text-primary,
 .text-primary * {

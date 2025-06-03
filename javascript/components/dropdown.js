@@ -20,7 +20,7 @@ export default class DropdownManager  {
     };
 
     toggleArrow(button) {
-        const arrow = button.querySelector('.dropdown-arrow');
+        const arrow = button.querySelector('[data-arrow]');
         if (!arrow) return;
         const current = arrow.getAttribute('data-arrow');
         arrow.setAttribute('data-arrow', current === 'up' ? 'down' : 'up');

@@ -5,8 +5,8 @@ import DropdownManager from './components/dropdown.js';
 import CarouselManager from "./components/carousel.js";
 import ThemeManager from "./components/theme.js";
 import InputManager from "./components/input.js";
-import CopyToClipboardManager from "./components/copy_clipboard.js";
-import SyntaxHighlighterManager from "./components/syntax_highlighter.js";
+import CopyToClipboardManager from "./components/clipboard.js";
+import SyntaxHighlighterManager from "./components/highlighter.js";
 
 import "./elements/icon_burger.js";
 import "./elements/icon_close.js";

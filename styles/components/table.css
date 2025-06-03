@@ -208,6 +208,5 @@ table {
 }
 
 .table-responsive {
-    padding-bottom: 1.5rem;
     overflow-x: auto;
 }

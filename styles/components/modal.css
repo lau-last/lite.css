@@ -41,7 +41,9 @@
             }
         }
 
-        .icon-close {
+        .icon-close-light,
+        .icon-close-dark,
+        .icon-close-theme{
             position: absolute;
             top: 1rem;
             right: 1rem;

@@ -1,4 +1,4 @@
-.card-container {
+.container-card {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-base);
