@@ -40,6 +40,6 @@
                 doloremque ducimus eligendi explicabo illo incidunt ipsam ipsum laboriosam modi.
             </card-footer>
         </card-element>
-        
+
     </div>
 </section>

@@ -6,7 +6,7 @@
     -->
 
     <div class="d-flex align-items-center">
-        <h2>Table small, striped, hover</h2>
+        <h3>Table small, striped, hover</h3>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-table-small"></div>
     </div>
 
@@ -14,6 +14,8 @@
         <!--Table-small-->
         <div class="table-responsive">
             <table class="table-primary table-sm table-striped table-hover">
+
+                <!--Table-thead-->
                 <thead>
                 <tr>
                     <th>Person</th>
@@ -21,43 +23,41 @@
                     <th>Age</th>
                 </tr>
                 </thead>
+
+                <!--Table-body-->
                 <tbody>
                 <tr>
                     <th>Chris</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>22</td>
                 </tr>
                 <tr>
                     <th>Dennis</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>45</td>
                 </tr>
                 <tr>
                     <th>Sarah</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>29</td>
                 </tr>
                 <tr>
                     <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 <tr>
                     <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit orem ipsum dolor sit Lorem ipsum dolor sit..
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 </tbody>
+
+                <!--Table-footer-->
                 <tfoot>
                 <tr>
                     <th>Average age</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 </tfoot>
@@ -77,8 +77,8 @@
     table-medium
     -->
 
-    <div class="d-flex align-items-center">
-        <h2>Table medium, bordered, hover</h2>
+    <div class="d-flex align-items-center mt-2">
+        <h3>Table medium, bordered, hover</h3>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-table-medium"></div>
     </div>
 
@@ -86,6 +86,8 @@
         <!--Table-medium-->
         <div class="table-responsive">
             <table class="table-secondary table-md table-bordered table-hover">
+
+                <!--Table-thead-->
                 <thead>
                 <tr>
                     <th>Person</th>
@@ -93,43 +95,41 @@
                     <th>Age</th>
                 </tr>
                 </thead>
+
+                <!--Table-body-->
                 <tbody>
                 <tr>
                     <th>Chris</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>22</td>
                 </tr>
                 <tr>
                     <th>Dennis</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>45</td>
                 </tr>
                 <tr>
                     <th>Sarah</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>29</td>
                 </tr>
                 <tr>
                     <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 <tr>
                     <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit orem ipsum dolor sit Lorem ipsum dolor sit..
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 </tbody>
+
+                <!--Table-footer-->
                 <tfoot>
                 <tr>
                     <th>Average age</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 </tfoot>
@@ -149,8 +149,8 @@
     table-large
     -->
 
-    <div class="d-flex align-items-center">
-        <h2>Table large, borderless, hover</h2>
+    <div class="d-flex align-items-center mt-2">
+        <h3>Table large, borderless, hover</h3>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-table-large"></div>
     </div>
 
@@ -158,6 +158,8 @@
         <!--Table-large-->
         <div class="table-responsive">
             <table class="table-danger table-lg table-borderless table-hover">
+
+                <!--Table-thead-->
                 <thead>
                 <tr>
                     <th>Person</th>
@@ -165,43 +167,41 @@
                     <th>Age</th>
                 </tr>
                 </thead>
+
+                <!--Table-body-->
                 <tbody>
                 <tr>
                     <th>Chris</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>22</td>
                 </tr>
                 <tr>
                     <th>Dennis</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>45</td>
                 </tr>
                 <tr>
                     <th>Sarah</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>29</td>
                 </tr>
                 <tr>
                     <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 <tr>
                     <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit orem ipsum dolor sit Lorem ipsum dolor sit..
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 </tbody>
+
+                <!--Table-footer-->
                 <tfoot>
                 <tr>
                     <th>Average age</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
+                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.</td>
                     <td>36</td>
                 </tr>
                 </tfoot>

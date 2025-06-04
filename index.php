@@ -28,10 +28,10 @@
 <?php include 'templates/modal.php'; ?>
 <?php include 'templates/tab.php'; ?>
 <?php include 'templates/table.php'; ?>
-<hr class="my-5">
 <?php include 'templates/badge.php'; ?>
 <?php include 'templates/badge_linked.php'; ?>
 <?php include 'templates/button.php'; ?>
+<hr class="my-5">
 <?php include 'templates/form.php'; ?>
 <?php include 'templates/js_element.php'; ?>
 </body>
