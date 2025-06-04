@@ -82,6 +82,7 @@ html {
 
         pre{
             overflow-x: auto;
+            padding: 2rem;
         }
 
         [data-btn-theme]{

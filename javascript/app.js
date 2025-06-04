@@ -7,6 +7,7 @@ import ThemeManager from "./components/theme.js";
 import InputManager from "./components/input.js";
 import CopyToClipboardManager from "./components/clipboard.js";
 import SyntaxHighlighterManager from "./components/highlighter.js";
+import ToggleManager from "./components/toggle.js";
 
 import "./elements/icon_burger.js";
 import "./elements/icon_close.js";
@@ -22,6 +23,7 @@ const theme = new ThemeManager();
 const input = new InputManager();
 const copyToClipboard = new CopyToClipboardManager();
 const syntaxHighlighter = new SyntaxHighlighterManager();
+const toggle = new ToggleManager();
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -34,4 +36,5 @@ document.addEventListener('DOMContentLoaded', function () {
     input.init();
     copyToClipboard.init();
     syntaxHighlighter.init();
+    toggle.init();
 });

@@ -159,7 +159,7 @@
 
     /* Position à droite */
 
-   &[data-position-tooltip="right"]::after {
+    &[data-position-tooltip="right"]::after {
         top: 50%;
         left: 100%;
         transform: translateY(-50%);
@@ -177,7 +177,7 @@
 
     /* Position à gauche */
 
-  &[data-position-tooltip="left"]::after {
+    &[data-position-tooltip="left"]::after {
         top: 50%;
         right: 100%;
         transform: translateY(-50%);
@@ -229,3 +229,37 @@
     position: sticky;
 }
 
+
+.icon-logout-power {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -80%) scale(0.8);
+        width: .2rem;
+        height: 1.25rem;
+        background-color: var(--text-color);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid var(--text-color);
+        border-top-color: transparent;
+        border-radius: 50%;
+    }
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}

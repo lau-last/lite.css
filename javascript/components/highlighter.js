@@ -16,6 +16,7 @@ export default class SyntaxHighlighterManager {
      * à tous les éléments du DOM qui ont l'attribut data-type="code"
      */
     init() {
+        this.copyCodeInBlockCode();
         document.querySelectorAll('[data-type="code"]').forEach(element => {
             this.highlight(element);
         });
@@ -138,5 +139,13 @@ export default class SyntaxHighlighterManager {
 
             return `${p1}<span class="${SyntaxHighlighterManager.class.text}">${content}</span>${p3}`;
         });
-    }
+    };
+
+    copyCodeInBlockCode(){
+        document.querySelectorAll('[data-code-target]').forEach(element => {
+            let targetSelector = element.getAttribute('data-code-target');
+            let target = document.querySelector(targetSelector);
+            target.innerHTML = element.innerHTML;
+        });
+    };
 }
