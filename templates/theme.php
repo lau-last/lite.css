@@ -7,7 +7,7 @@
 
     <div data-code-target="#code-theme">
         <!--Container form switch-->
-        <div class="form-check">
+        <div class="form-inline">
 
             <!--Theme light-->
             <span class="fs-5" data-btn-theme="light" data-target="#switch-theme">☀️</span>
@@ -24,10 +24,9 @@
     </div>
 
 
-
     <div class="container-code mt-2 d-none" id="container-code-theme">
         <button class="btn-primary position-top-right" type="button" data-position-tooltip="left" data-action="copy"
-            data-target="#code-theme" data-tooltip="Copié !">Copier
+                data-target="#code-theme" data-tooltip="Copié !">Copier
         </button>
         <pre><code id="code-theme" data-type="code">
         </code></pre>

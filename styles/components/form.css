@@ -3,6 +3,11 @@ label.required::after {
     color: var(--red);
 }
 
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
 input,
 select,
 textarea {
@@ -11,6 +16,10 @@ textarea {
     padding: 0 1.5rem;
     background-color: var(--input-bg-color);
     color: var(--input-color);
+
+    &:not(textarea):not([type="checkbox"]):not([type="radio"]) {
+        height: var(--input-height-md);
+    }
 
     &::placeholder {
         color: var(--input-placeholder-color);
@@ -26,25 +35,43 @@ textarea {
         margin-block: .5rem;
         display: block;
         width: 100%;
-    }
 
-    &.form-control-sm {
-        height: var(--input-height-sm);
-    }
+        &.input-sm:not(input[type="range"]) {
+            height: var(--input-height-sm);
+        }
 
-    &.form-control-md {
-        height: var(--input-height-md);
-    }
+        &.input-md:not(input[type="range"]) {
+            height: var(--input-height-md);
+        }
 
-    &.form-control-lg {
-        height: var(--input-height-lg);
+        &.input-lg:not(input[type="range"]) {
+            height: var(--input-height-lg);
+        }
     }
-
 }
 
-input,
-select {
-    height: var(--input-height-md);
+input[type="range"] {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    transform-origin: left center;
+
+    &.input-sm {
+        width: 125%;
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+
+    &.input-md {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+    &.input-lg {
+        width: 83.33%;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
 }
 
 input[type="color"] {
@@ -59,6 +86,21 @@ input[type="color"] {
 
     &::-webkit-color-swatch-wrapper {
         padding: .4rem;
+    }
+
+    &.color-sm {
+        height: var(--input-height-sm);
+        width: revert;
+    }
+
+    &.color-md {
+        height: var(--input-height-md);
+        width: revert;
+    }
+
+    &.color-lg {
+        height: var(--input-height-lg);
+        width: revert;
     }
 }
 
@@ -79,71 +121,64 @@ input[type="file"] {
     }
 }
 
-.form-check-sm,
-.form-radio-sm {
-
-    input[type="checkbox"],
-    input[type="radio"] {
-        transform-origin: left center;
+input[type="checkbox"] {
+    &.checkbox-sm {
         transform: scale(0.8);
+        -webkit-transform: scale(0.8);
     }
-}
 
-.form-check-md,
-.form-radio-md {
-
-    input[type="checkbox"],
-    input[type="radio"] {
+    &.checkbox-md {
         transform: scale(1);
+        -webkit-transform: scale(1);
     }
-}
 
-.form-check-lg,
-.form-radio-lg {
-
-    input[type="checkbox"],
-    input[type="radio"] {
-        transform-origin: left center;
+    &.checkbox-lg {
         transform: scale(1.2);
+        -webkit-transform: scale(1.2);
     }
 }
 
+input[type="radio"] {
+    &.radio-sm {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+
+    &.radio-md {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+    &.radio-lg {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+}
+
+input[type="range"]:focus,
+input[type="radio"]:focus {
+    border-color: var(--transparent) !important;
+    box-shadow: none !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-block: .5rem;
+    width: fit-content;
+}
 
 input[type="checkbox"],
 input[type="radio"],
 input[type="range"] {
     accent-color: var(--primary-color);
-
-    &:focus {
-        border-color: var(--transparent) !important;
-        box-shadow: none !important;
-    }
 }
-
-
-.form-check label+input[type="checkbox"],
-.form-check label+input[type="radio"] {
-    vertical-align: middle;
-}
-
-.form-check,
-.form-radio {
-    display: flex;
-    align-items: center;
-    gap: var(--gap-base);
-}
-
-.form-color {
-    display: flex;
-    flex-direction: column;
-}
-
 
 .switch {
     position: relative;
     display: inline-block;
     width: 3rem;
     height: 1.5rem;
+    margin-block: .5rem;
 
     input {
         opacity: 0;
@@ -184,17 +219,23 @@ input[type="range"] {
         }
     }
 
-    input:checked+.switch-slider {
-        background-color: var(--primary-color);
+
+    .switch-slider:before {
+        height: 1.1rem;
+        width: 1.1rem;
+        left: .1rem;
+        bottom: .1rem;
     }
 
-
-    input:checked+.switch-slider:before {
+    input:checked + .switch-slider:before {
         -webkit-transform: translateX(1.5rem);
         -ms-transform: translateX(1.5rem);
         transform: translateX(1.5rem);
     }
 
+    input:checked + .switch-slider {
+        background-color: var(--primary-color);
+    }
 
     &.switch-sm {
         transform-origin: left center;
@@ -202,36 +243,43 @@ input[type="range"] {
     }
 
     &.switch-md {
-        width: 3rem;
-        height: 1.5rem;
-
-        .switch-slider:before {
-            height: 1.1rem;
-            width: 1.1rem;
-            left: .1rem;
-            bottom: .1rem;
-        }
-
-        input:checked+.switch-slider:before {
-            -webkit-transform: translateX(1.5rem);
-            -ms-transform: translateX(1.5rem);
-            transform: translateX(1.5rem);
-        }
+        transform-origin: left center;
+        transform: scale(1);
     }
 
     &.switch-lg {
         transform-origin: left center;
         transform: scale(1.2);
     }
-
-}
-
-.theme-light .switch input:focus:checked+.switch-slider {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0.2rem 0.1rem color-mix(in srgb, var(--primary-color) 50%, var(--transparent));
 }
 
 .switch-label {
-    cursor: pointer;
+    cursor: default;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+
+    label:not(.switch) {
+        width: fit-content;
+    }
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    gap: var(--gap-base);
+
+    label:not(.switch) {
+        text-wrap: nowrap;
+        /*width: fit-content;*/
+        /*flex: 0 0 auto;*/
+    }
+
+    input:not([type="color"]):not([type="radio"]):not([type="checkbox"]) {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
 }

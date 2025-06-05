@@ -263,3 +263,16 @@
 .text-nowrap {
     white-space: nowrap;
 }
+
+.no-resize {
+    resize: none;
+}
+
+.vertical-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
