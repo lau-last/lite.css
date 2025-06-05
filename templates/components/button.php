@@ -1,5 +1,5 @@
-<section>
-    <h2>Badges</h2>
+<section id="button">
+    <h2>Button</h2>
 
     <!--
     Button pill

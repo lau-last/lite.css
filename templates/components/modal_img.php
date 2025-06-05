@@ -1,4 +1,4 @@
-<section>
+<section id="modal-img">
     <div class="d-flex align-items-center">
         <h2>Image modal</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-modal-img"></div>

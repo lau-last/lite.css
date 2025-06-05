@@ -57,11 +57,27 @@
     position: fixed;
 }
 
+.position-relative {
+    position: relative ! important;
+}
+
+.position-absolute {
+    position: absolute ! important;
+}
+
+.position-fixed {
+    position: fixed ! important;
+}
+
+.position-sticky {
+    position: sticky ! important;
+}
+
 .sticky {
     top: 0;
     position: sticky;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .img-fluid {
@@ -213,22 +229,6 @@
     right: 0;
 }
 
-.position-relative {
-    position: relative;
-}
-
-.position-absolute {
-    position: absolute;
-}
-
-.position-fixed {
-    position: fixed;
-}
-
-.position-sticky {
-    position: sticky;
-}
-
 
 .icon-logout-power {
     position: relative;
@@ -275,4 +275,16 @@
     height: 100%;
 }
 
+.border-0 {
+    border: 0 !important;
+}
+
+.border-radius-0 {
+    border-radius: 0 !important;
+}
+
+.transition-theme {
+    /*transition: 1s ease;*/
+    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+}
 

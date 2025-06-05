@@ -42,9 +42,17 @@ export default class ThemeManager {
         if (!checkbox) return;
         checkbox.addEventListener('change', () => {
             const theme = checkbox.checked ? 'dark' : 'light';
+            this.handleTransition();
             this.applyTheme(theme);
             localStorage.setItem('theme', theme);
         });
+    }
+
+    handleTransition() {
+        document.body.classList.add('transition-theme');
+        setTimeout(() => {
+            document.body.classList.remove('transition-theme');
+        }, 400);
     }
 
     handleClickButtonTheme() {
@@ -59,7 +67,7 @@ export default class ThemeManager {
                 if (target && target.type === 'checkbox') {
                     target.checked = (desiredTheme === 'dark');
                 }
-
+                this.handleTransition();
                 this.applyTheme(desiredTheme);
                 localStorage.setItem('theme', desiredTheme);
             });

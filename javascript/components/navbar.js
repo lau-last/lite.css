@@ -81,6 +81,7 @@ export default class NavbarManager {
 
     showSide(content) {
         const side = this.getSide(content);
+
         if (side === 'start') {
             content.style.left = '0';
         } else {
@@ -90,12 +91,15 @@ export default class NavbarManager {
 
     hideSide(content) {
         const side = this.getSide(content);
+
         if (side === 'start') {
             content.style.left = '-300px';
+
         } else {
             content.style.right = '-300px';
         }
     };
+
 
     getSide(content) {
         return content.getAttribute('data-position');

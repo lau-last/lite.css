@@ -1,4 +1,4 @@
-<section>
+<section id="paragraph">
     <div class="d-flex align-items-center">
         <h2>Paragraph</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-paragraph"></div>

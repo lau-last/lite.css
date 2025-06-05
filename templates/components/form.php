@@ -1,4 +1,4 @@
-<section>
+<section id="form">
     <h2>Form</h2>
     <div class="d-flex align-items-center">
         <h3>Form input</h3>
@@ -83,7 +83,7 @@
                     <input class="form-control" type="week" id="week" name="week">
 
                     <!--Range-->
-                    <label for="range">Range :</label>
+                    <label for="range">Range</label>
                     <input class="form-control" type="range" id="range" name="range" min="0"
                            max="100">
                 </div>
@@ -306,7 +306,7 @@ Form input size
                         <input type="color" id="color-inline" name="color">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 align-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
 
                     <!--Form radio inline-->
                     <div class="form-inline">
@@ -314,7 +314,7 @@ Form input size
                         <input type="radio" id="radio-inline" name="choice" value="yes">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 align-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
 
                     <!--Form checkbox inline-->
                     <div class="form-inline">

@@ -1,4 +1,4 @@
-<section>
+<section id="tab">
     <div class="d-flex align-items-center">
         <h2>Tabs</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-tab"></div>

@@ -1,4 +1,4 @@
-<section>
+<section id="navbar-side">
     <div class="d-flex align-items-center">
         <h2>Navbar side</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-navbar-side"></div>
