@@ -1,5 +1,5 @@
 <!--Navbar-start-->
-<nav class="navbar bg-primary border-0 border-radius-0 sticky">
+<nav class="navbar bg-primary sticky">
 
     <!--Navbar-header-->
     <div class="navbar-header">
@@ -8,7 +8,7 @@
         <div>Lorem.</div>
 
         <!--Navbar-burger-->
-        <div class="navbar-burger" data-toggle="navbar-side" data-target="#menu-principal" data-animated="false">
+        <div class="navbar-burger" data-toggle="navbar-side" data-target="#menu-principal" data-animated="true">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -17,7 +17,7 @@
 </nav>
 
 <!--Aside-->
-<aside id="menu-principal" data-position="start">
+<aside id="menu-principal" data-position="start" data-mode="push">
 
     <!--Aside-header-->
     <div class="aside-header">
@@ -39,26 +39,25 @@
 
         <!--List-->
         <ul class="list-group-item">
-            <li><a href="#theme" class="nav-link">Theme</a></li>
-            <li><a href="#navbar" class="nav-link">Navbar</a></li>
-            <li><a href="#navbar-side" class="nav-link">Navbar side</a></li>
-            <li><a href="#big-dropdown" class="nav-link">Big dropdown in menu</a></li>
-            <li><a href="#carousel" class="nav-link">Carousel</a></li>
-            <li><a href="#dropdown" class="nav-link">Dropdown button</a></li>
-            <li><a href="#title" class="nav-link">Title</a></li>
-            <li><a href="#link" class="nav-link">Link</a></li>
-            <li><a href="#list-ul" class="nav-link">List ul</a></li>
-            <li><a href="#list-ol" class="nav-link">List ol</a></li>
-            <li><a href="#paragraph" class="nav-link">Paragraph</a></li>
-            <li><a href="#modal-img" class="nav-link">Modal image</a></li>
-            <li><a href="#card" class="nav-link">Card</a></li>
-            <li><a href="#modal" class="nav-link">Modal</a></li>
-            <li><a href="#tab" class="nav-link">Tabs</a></li>
-            <li><a href="#table" class="nav-link">Table</a></li>
-            <li><a href="#badge" class="nav-link">Badges</a></li>
-            <li><a href="#badge-linked" class="nav-link">Badges linked</a></li>
-            <li><a href="#button" class="nav-link">Badges</a></li>
-            <li><a href="#form" class="nav-link">Form</a></li>
+            <li><a href="#theme-section" class="nav-link">Theme</a></li>
+            <li><a href="#navbar-section" class="nav-link">Navbar</a></li>
+            <li><a href="#navbar-side-section" class="nav-link">Navbar side</a></li>
+            <li><a href="#big-dropdown-section" class="nav-link">Big dropdown in menu</a></li>
+            <li><a href="#carousel-section" class="nav-link">Carousel</a></li>
+            <li><a href="#dropdown-section" class="nav-link">Dropdown button</a></li>
+            <li><a href="#title-section" class="nav-link">Title</a></li>
+            <li><a href="#link-section" class="nav-link">Link</a></li>
+            <li><a href="#list-section" class="nav-link">List</a></li>
+            <li><a href="#paragraph-section" class="nav-link">Paragraph</a></li>
+            <li><a href="#modal-img-section" class="nav-link">Modal image</a></li>
+            <li><a href="#card-section" class="nav-link">Card</a></li>
+            <li><a href="#modal-section" class="nav-link">Modal</a></li>
+            <li><a href="#tab-section" class="nav-link">Tabs</a></li>
+            <li><a href="#table-section" class="nav-link">Table</a></li>
+            <li><a href="#badge-section" class="nav-link">Badges</a></li>
+            <li><a href="#badge-linked-section" class="nav-link">Badges linked</a></li>
+            <li><a href="#button-section" class="nav-link">Badges</a></li>
+            <li><a href="#form-section" class="nav-link">Form</a></li>
         </ul>
     </div>
 </aside>

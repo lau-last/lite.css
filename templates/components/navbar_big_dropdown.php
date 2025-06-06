@@ -1,4 +1,4 @@
-<section id="big-dropdown">
+<section id="big-dropdown-section">
     <div class="d-flex align-items-center">
         <h2>Big dropdown in menu</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-navbar-big-dropdown">
@@ -7,7 +7,7 @@
 
     <div data-code-target="#code-navbar-big-dropdown">
         <!--Navbar-->
-        <nav class="navbar navbar-lg">
+        <nav class="navbar navbar-lg  bg-warning border-radius">
 
             <!--Navbar-header-->
             <div class="navbar-header">

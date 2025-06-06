@@ -60,7 +60,7 @@ export default class ThemeManager {
 
         buttons.forEach(button => {
             button.addEventListener('click', () => {
-                const desiredTheme = button.getAttribute('data-btn-theme'); // 'dark' ou 'light'
+                const desiredTheme = button.getAttribute('data-btn-theme');
                 const targetSelector = button.getAttribute('data-target');
                 const target = document.querySelector(targetSelector);
 

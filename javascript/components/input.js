@@ -1,4 +1,5 @@
 export default class InputManager {
+
     init() {
         this.handleSwitchLabelClick();
     };

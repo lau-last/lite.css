@@ -11,6 +11,10 @@ html {
         font-weight: var(--font-weight-regular);
         background-color: var(--bg-color);
         color: var(--text-color);
+        transition: margin-left 0.3s ease, margin-right 0.3s ease;
+        container-type: inline-size;
+        container-name: body;
+
 
 
 
@@ -59,7 +63,7 @@ html {
             }
 
             &:hover {
-                color: color-mix(in srgb, var(--link-color) 50%, var(--transparent));
+                color: var(--link-hover-color);
             }
         }
 
@@ -78,17 +82,13 @@ html {
 
         ::selection {
             background-color: var(--primary-color);
-            color: var(--text-white);
-            -webkit-text-fill-color: var(--text-white);
+            color: var(--text-light);
+            -webkit-text-fill-color: var(--text-light);
         }
 
         pre{
             overflow-x: auto;
             padding: 2rem;
-        }
-
-        [data-btn-theme]{
-            cursor: pointer;
         }
 
     }

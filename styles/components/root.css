@@ -1,15 +1,5 @@
 :root {
     /* Colors */
-    --primary-color: #8A4F7D;
-    --secondary-color: #88A096;
-    --success-color: #7BAE7F;
-    --info-color: #6BAACD;
-    --warning-color: #D9B74A;
-    --danger-color: #C96A6A;
-    --neutral-color: #BBBBBB;
-    --dark-color: #333333;
-    --light-color: #e6e6e6;
-
     --gray-0: #ffffff;
     --gray-50: #fafafa;
     --gray-100: #f5f5f5;
@@ -32,23 +22,36 @@
     --gray-950: #0b0b0b;
     --gray-1000: #000000;
 
+    --primary-color: #8A4F7D;
+    --secondary-color: #88A096;
+    --success-color: #7BAE7F;
+    --info-color: #6BAACD;
+    --warning-color: #D9B74A;
+    --danger-color: #C96A6A;
+    --neutral-color: #BBBBBB;
+    --dark-color: var(--gray-800);
+    --light-color: var(--gray-200);
+
     --red: #FF0000FF;
     --transparent: transparent;
 
     --color-mix-dark: var(--gray-1000);
     --color-mix-light: var(--gray-0);
 
-    --link-color: var(--primary-color);
+    --link-color: var(--text-color);
+    --link-hover-color: color-mix(in srgb, var(--text-color) 50%, var(--transparent));
 
     --text-white: var(--gray-0);
     --text-black: var(--gray-1000);
-    --text-color: var(--text-black);
+    --text-light: var(--light-color);
+    --text-dark: var(--dark-color);
+    --text-color: var(--text-dark);
 
     --transparent-white: rgba(255, 255, 255, 0.1);
     --transparent-black: rgba(0, 0, 0, 0.1);
     --transparent-theme: var(--transparent-white);
 
-    --border-color-light: color-mix(in srgb, var(--gray-300) 25%, var(--transparent));
+    --border-color-light: var(--gray-150);
     --border-color-medium: var(--gray-300);
     --border-color-dark: var(--gray-500);
 
@@ -144,17 +147,20 @@
     --warning-color: color-mix(in srgb, #D9B74A 90%, black);
     --danger-color: color-mix(in srgb, #C96A6A 90%, black);
     --neutral-color: color-mix(in srgb, #BBBBBB 90%, black);
-    --dark-color: color-mix(in srgb, #333333 90%, black);
-    --light-color: color-mix(in srgb, #e6e6e6 90%, black);
+    --dark-color: var(--gray-800);
+    --light-color: var(--gray-200);
 
     --color-mix-dark: var(--gray-0);
     --color-mix-light: var(--gray-1000);
 
-    --link-color: #C47DAA;
+    --link-color: var(--text-color);
+    --link-hover-color: color-mix(in srgb, var(--text-color) 50%, var(--transparent));
 
     --text-white: var(--gray-0);
     --text-black: var(--gray-1000);
-    --text-color: var(--text-white);
+    --text-light: var(--light-color);
+    --text-dark: var(--dark-color);
+    --text-color: var(--text-light);
 
     --transparent-white: rgba(255, 255, 255, 0.1);
     --transparent-black: rgba(0, 0, 0, 0.1);

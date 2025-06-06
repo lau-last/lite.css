@@ -4,11 +4,11 @@ aside.bg-primary,
 .badge-primary,
 .btn-primary {
     background-color: var(--primary-color);
-    color: var(--text-white);
+    color: var(--text-light);
 
     &.active {
         background-color: color-mix(in srgb, var(--primary-color) 75%, var(--color-mix-dark));
-        color: var(--text-white);
+        color: var(--text-light);
     }
 }
 
@@ -17,11 +17,11 @@ aside.bg-secondary,
 .badge-secondary,
 .btn-secondary {
     background-color: var(--secondary-color);
-    color: var(--text-black);
+    color: var(--text-dark);
 
     &.active {
         background-color: color-mix(in srgb, var(--secondary-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -30,11 +30,11 @@ aside.bg-success,
 .badge-success,
 .btn-success {
     background-color: var(--success-color);
-    color: var(--text-black);
+    color: var(--text-dark);
 
     &.active {
         background-color: color-mix(in srgb, var(--success-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -43,11 +43,11 @@ aside.bg-info,
 .badge-info,
 .btn-info {
     background-color: var(--info-color);
-    color: var(--text-black);
+    color: var(--text-dark);
 
     &.active {
         background-color: color-mix(in srgb, var(--info-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -56,11 +56,11 @@ aside.bg-warning,
 .badge-warning,
 .btn-warning {
     background-color: var(--warning-color);
-    color: var(--text-black);
+    color: var(--text-dark);
 
     &.active {
         background-color: color-mix(in srgb, var(--warning-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -69,11 +69,11 @@ aside.bg-danger,
 .badge-danger,
 .btn-danger {
     background-color: var(--danger-color);
-    color: var(--text-black);
+    color: var(--text-dark);
 
     &.active {
         background-color: color-mix(in srgb, var(--danger-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -82,11 +82,11 @@ aside.bg-neutral,
 .badge-neutral,
 .btn-neutral {
     background-color: var(--neutral-color);
-    color: var(--text-black);
+    color: var(--text-dark);
 
     &.active {
         background-color: color-mix(in srgb, var(--neutral-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -95,11 +95,11 @@ aside.bg-light,
 .badge-light,
 .btn-light {
     background-color: var(--light-color);
-    color: var(--text-black);
+    color: var(--text-dark);
 
     &.active {
         background-color: color-mix(in srgb, var(--light-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -108,11 +108,11 @@ aside.bg-dark,
 .badge-dark,
 .btn-dark {
     background-color: var(--dark-color);
-    color: var(--text-white);
+    color: var(--text-light);
 
     &.active {
         background-color: color-mix(in srgb, var(--dark-color) 75%, var(--color-mix-dark));
-        color: var(--text-white);
+        color: var(--text-light);
     }
 }
 
@@ -123,12 +123,12 @@ aside.bg-dark,
 
 .bg-white {
     background-color: var(--gray-0);
-    color: var(--text-black);
+    color: var(--text-dark);
 }
 
 .bg-black {
     background-color: var(--gray-1000);
-    color: var(--text-white);
+    color: var(--text-light);
 }
 
 .bg-transparent-theme {
@@ -203,16 +203,6 @@ aside.bg-dark,
     color: var(--text-black);
 }
 
-.text-white-hover:hover,
-.text-white-hover:hover * {
-    color: var(--text-white);
-}
-
-.text-black-hover:hover,
-.text-black-hover:hover * {
-    color: var(--text-black);
-}
-
 .outline-primary,
 .badge-outline-primary,
 .btn-outline-primary {
@@ -222,7 +212,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--primary-color);
-        color: var(--text-white);
+        color: var(--text-light);
     }
 }
 
@@ -235,7 +225,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--secondary-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
 }
@@ -249,7 +239,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--success-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -262,7 +252,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--info-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -275,7 +265,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--warning-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -288,7 +278,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--danger-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -301,7 +291,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--neutral-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -314,7 +304,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--light-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 }
 
@@ -327,7 +317,7 @@ aside.bg-dark,
 
     &.active {
         background-color: var(--dark-color);
-        color: var(--text-white);
+        color: var(--text-light);
     }
 }
 
@@ -340,63 +330,63 @@ button,
     &.badge-primary:hover,
     &.btn-primary:hover {
         background-color: color-mix(in srgb, var(--primary-color) 75%, var(--color-mix-dark));
-        color: var(--text-white);
+        color: var(--text-light);
     }
 
     &.bg-secondary:hover,
     &.badge-secondary:hover,
     &.btn-secondary:hover {
         background-color: color-mix(in srgb, var(--secondary-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.bg-success:hover,
     &.badge-success:hover,
     &.btn-success:hover {
         background-color: color-mix(in srgb, var(--success-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.bg-info:hover,
     &.badge-info:hover,
     &.btn-info:hover {
         background-color: color-mix(in srgb, var(--info-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.bg-warning:hover,
     &.badge-warning:hover,
     &.btn-warning:hover {
         background-color: color-mix(in srgb, var(--warning-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.bg-danger:hover,
     &.badge-danger:hover,
     &.btn-danger:hover {
         background-color: color-mix(in srgb, var(--danger-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.bg-neutral:hover,
     &.badge-neutral:hover,
     &.btn-neutral:hover {
         background-color: color-mix(in srgb, var(--neutral-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.bg-light:hover,
     &.badge-light:hover,
     &.btn-light:hover {
         background-color: color-mix(in srgb, var(--light-color) 75%, var(--color-mix-dark));
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.bg-dark:hover,
     &.badge-dark:hover,
     &.btn-dark:hover {
         background-color: color-mix(in srgb, var(--dark-color) 75%, var(--color-mix-dark));
-        color: var(--text-white);
+        color: var(--text-light);
     }
 
 
@@ -404,62 +394,62 @@ button,
     &.badge-outline-primary:hover,
     &.btn-outline-primary:hover {
         background-color: var(--primary-color);
-        color: var(--text-white);
+        color: var(--text-light);
     }
 
     &.outline-secondary:hover,
     &.badge-outline-secondary:hover,
     &.btn-outline-secondary:hover {
         background-color: var(--secondary-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.outline-success:hover,
     &.badge-outline-success:hover,
     &.btn-outline-success:hover {
         background-color: var(--success-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.outline-info:hover,
     &.badge-outline-info:hover,
     &.btn-outline-info:hover {
         background-color: var(--info-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.outline-warning:hover,
     &.badge-outline-warning:hover,
     &.btn-outline-warning:hover {
         background-color: var(--warning-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.outline-danger:hover,
     &.badge-outline-danger:hover,
     &.btn-outline-danger:hover {
         background-color: var(--danger-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.outline-neutral:hover,
     &.badge-outline-neutral:hover,
     &.btn-outline-neutral:hover {
         background-color: var(--neutral-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.outline-light:hover,
     &.badge-outline-light:hover,
     &.btn-outline-light:hover {
         background-color: var(--light-color);
-        color: var(--text-black);
+        color: var(--text-dark);
     }
 
     &.outline-dark:hover,
     &.badge-outline-dark:hover,
     &.btn-outline-dark:hover {
         background-color: var(--dark-color);
-        color: var(--text-white);
+        color: var(--text-light);
     }
 }

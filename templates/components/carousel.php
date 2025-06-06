@@ -1,4 +1,4 @@
-<section id="carousel">
+<section id="carousel-section">
    <div class="d-flex align-items-center">
         <h2>Carousel</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-carousel"></div>

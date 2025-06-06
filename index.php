@@ -22,8 +22,7 @@
     <?php include 'templates/components/button_dropdown.php'; ?>
     <?php include 'templates/components/title.php'; ?>
     <?php include 'templates/components/link.php'; ?>
-    <?php include 'templates/components/list_ul.php'; ?>
-    <?php include 'templates/components/list_ol.php'; ?>
+    <?php include 'templates/components/list.php'; ?>
     <?php include 'templates/components/paragraph.php'; ?>
     <?php include 'templates/components/modal_img.php'; ?>
     <?php include 'templates/components/card.php'; ?>

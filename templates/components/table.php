@@ -1,4 +1,4 @@
-<section id="table">
+<section id="table-section">
     <h2>Table</h2>
 
     <!--

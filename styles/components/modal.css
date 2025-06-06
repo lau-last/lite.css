@@ -1,4 +1,5 @@
 .modal {
+    padding: 2rem;
     display: none;
     position: fixed;
     z-index: 1;
@@ -9,6 +10,7 @@
     background-color: color-mix(in srgb, var(--gray-1000) 75%, var(--transparent));
     justify-content: center;
     align-items: center;
+    z-index: 500;
 
     .modal-content-img {
         position: relative;
@@ -24,29 +26,19 @@
             -webkit-animation-duration: 0.4s;
             animation-name: zoom;
             animation-duration: 0.4s;
-        }
+            width: 100%;
 
-        img {
-            @media (width <= 576px) {
-                max-width: 95%;
+            @media (576px <=width <=768px) {
+                width: 90%;
             }
-            @media (576px <= width <= 768px) {
-                max-width: 90%;
-            }
-            @media (768px <= width <= 992px) {
-                max-width: 85%;
-            }
-            @media (width >= 992px) {
-                max-width: 80%;
-            }
-        }
 
-        .icon-close-light,
-        .icon-close-dark,
-        .icon-close-theme{
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
+            @media (768px <=width <=992px) {
+                width: 70%;
+            }
+
+            @media (width >=992px) {
+                width: 50%;
+            }
         }
     }
 
@@ -57,17 +49,17 @@
         background-color: var(--bg-color);
         animation-name: animate-from-top;
         animation-duration: 0.4s;
+        width: 100%;
 
-        @media (width <= 576px) {
-            width: 95%;
-        }
-        @media (576px <= width <= 768px) {
+        @media (576px <=width <=768px) {
             width: 90%;
         }
-        @media (768px <= width <= 992px) {
+
+        @media (768px <=width <=992px) {
             width: 70%;
         }
-        @media (width >= 992px) {
+
+        @media (width >=992px) {
             width: 50%;
         }
 
@@ -87,35 +79,5 @@
             background-color: var(--modal-footer-color);
             font-style: italic;
         }
-    }
-}
-
-
-@keyframes animate-from-top {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
     }
 }

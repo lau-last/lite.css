@@ -1,4 +1,4 @@
-<section>
+<section id="card-section">
     <div class="d-flex align-items-center">
         <h2>Card</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-card"></div>

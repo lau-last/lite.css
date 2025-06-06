@@ -1,4 +1,4 @@
-<section id="badge">
+<section id="badge-section">
     <h2>Badges</h2>
 
     <!--

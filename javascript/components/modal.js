@@ -44,10 +44,10 @@ export default class ModalManager {
     };
 
     disableScroll() {
-        document.body.classList.add('no-scroll');
+        document.documentElement.classList.add('no-scroll');
     };
 
     enableScroll() {
-        document.body.classList.remove('no-scroll');
+        document.documentElement.classList.remove('no-scroll');
     };
 };

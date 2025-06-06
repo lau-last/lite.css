@@ -1,4 +1,4 @@
-<section id="theme">
+<section id="theme-section">
     <div class="d-flex align-items-center">
         <h2>Theme</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-theme"></div>
@@ -12,11 +12,15 @@
             <!--Theme light-->
             <span class="fs-5" data-btn-theme="light" data-target="#switch-theme">☀️</span>
 
-            <!--Switch-->
-            <label class="switch">
-                <input id="switch-theme" name="switch-theme" type="checkbox">
-                <span class="switch-slider round"></span>
-            </label>
+            <!--Switch-size-->
+            <div class="switch-md">
+
+                <!--Switch-->
+                <label class="switch">
+                    <input id="switch-theme" name="switch-theme" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
 
             <!--Theme dark-->
             <span class="fs-5" data-btn-theme="dark" data-target="#switch-theme">🌙</span>

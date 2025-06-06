@@ -1,5 +1,6 @@
 @import url('components/root.css');
 @import url('components/reset.css');
+@import url('components/keyframes.css');
 @import url('components/base.css');
 @import url('components/utilities.css');
 @import url('components/size.css');
@@ -16,6 +17,6 @@
 @import url('components/card.css');
 @import url('components/carousel.css');
 @import url('components/highlight.css');
-@import url('components/keyframes.css');
 @import url('components/dropdown.css');
 @import url('components/color.css');
+@import url('components/clipboard.css');

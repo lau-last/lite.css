@@ -1,4 +1,4 @@
-<section id="dropdown">
+<section id="dropdown-section">
     
    <div class="d-flex align-items-center">
         <h2>Dropdown button</h2>
@@ -7,7 +7,7 @@
     </div>
 
     <div data-code-target="#code-dropdown-button">
-        <div class="relative d-flex">
+        <div class="position-relative d-flex">
 
             <!--Wrapper-->
             <div class="dropdown-button-wrapper-fit">

@@ -1,4 +1,4 @@
-<section id="navbar">
+<section id="navbar-section">
     <div class="d-flex align-items-center">
         <h2>Navbar</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-navbar"></div>
@@ -7,7 +7,7 @@
 
     <div data-code-target="#code-navbar">
         <!--Navbar-start-->
-        <nav class="navbar navbar-lg">
+        <nav class="navbar navbar-lg bg-primary border-radius text-light">
 
             <!--Navbar-header-->
             <div class="navbar-header">
@@ -24,7 +24,7 @@
             </div>
 
             <!--Navbar-content-->
-            <div class="navbar-content" id="navbar" data-expanded="false">
+            <div class="navbar-content " id="navbar" data-expanded="false">
 
                 <!--Nav-start-->
                 <ul class="nav nav-start">

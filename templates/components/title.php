@@ -1,4 +1,4 @@
-<section id="title">
+<section id="title-section">
     <div class="d-flex align-items-center">
         <h2>Title</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-title"></div>

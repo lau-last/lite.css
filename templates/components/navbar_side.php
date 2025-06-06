@@ -1,4 +1,4 @@
-<section id="navbar-side">
+<section id="navbar-side-section">
     <div class="d-flex align-items-center">
         <h2>Navbar side</h2>
         <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-navbar-side"></div>
@@ -6,7 +6,7 @@
 
     <div data-code-target="#code-navbar-side">
         <!--Navbar-start-->
-        <nav class="navbar">
+        <nav class="navbar bg-secondary border-radius">
 
             <!--Navbar-header-->
             <div class="navbar-header">
@@ -16,7 +16,7 @@
 
                 <!--Navbar-burger-->
                 <div class="navbar-burger" data-toggle="navbar-side" data-target="#navbar-side"
-                    data-animated="false">
+                    data-animated="true">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -25,7 +25,7 @@
         </nav>
 
         <!--Aside-->
-        <aside id="navbar-side" data-position="start">
+        <aside id="navbar-side" data-position="start" data-mode="push">
 
             <!--Aside-header-->
             <div class="aside-header">

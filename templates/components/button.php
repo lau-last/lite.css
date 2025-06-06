@@ -1,4 +1,4 @@
-<section id="button">
+<section id="button-section">
     <h2>Button</h2>
 
     <!--
