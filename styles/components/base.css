@@ -16,8 +16,6 @@ html {
         container-name: body;
 
 
-
-
         button, input, select, textarea {
             font-family: var(--font-family-text), sans-serif;
             font-size: var(--font-size-base);
@@ -58,12 +56,11 @@ html {
             text-decoration: none;
 
             &:focus {
-                /*background-color: var(--transparent);*/
                 box-shadow: none !important;
             }
 
-            &:hover {
-                color: var(--link-hover-color);
+            &:hover:not(.btn):not(.badge) {
+                filter: var(--link-hover-color);
             }
         }
 
@@ -86,10 +83,11 @@ html {
             -webkit-text-fill-color: var(--text-light);
         }
 
-        pre{
+        pre {
             overflow-x: auto;
             padding: 2rem;
         }
+
 
     }
 }

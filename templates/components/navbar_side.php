@@ -81,7 +81,7 @@
 
                 <!--Form-->
                 <form class="d-flex align-items-center" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="w-100 me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn-primary" type="submit">Search</button>
                 </form>
             </div>

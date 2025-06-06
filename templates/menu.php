@@ -1,5 +1,5 @@
 <!--Navbar-start-->
-<nav class="navbar bg-primary sticky">
+<nav class="navbar bg-primary-fill navbar-sticky">
 
     <!--Navbar-header-->
     <div class="navbar-header">

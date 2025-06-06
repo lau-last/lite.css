@@ -7,6 +7,7 @@
     <div data-code-target="#code-modal">
         <!--Button-->
         <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal">Open Modal</button>
+        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-bordered">Open Modal bordered</button>
 
         <!--Modal-->
         <div class="modal" id="modal">
@@ -15,13 +16,13 @@
             <div class="modal-content">
 
                 <!--Modal-header-->
-                <div class="modal-header bg-primary">
+                <div class="modal-header bg-primary-fill">
                     <h6>Modal Header</h6>
 
                     <!--Data-attribute + SVG-->
                     <span data-function="close-modal" data-target="#modal" class="cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
-                             stroke="var(--text-color)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z"/>
                             <path d="M9 9l6 6m0 -6l-6 6"/>
                         </svg>
@@ -41,8 +42,39 @@
                 </div>
 
                 <!--Modal-footer-->
+                <div class="modal-footer bg-surface-footer">
+                    <p><i>Lorem ipsum dolor sit amet</i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-bordered">
+
+            <!--Modal-content-->
+            <div class="modal-content modal-bordered border-color-success text-success">
+
+                <!--Modal-header-->
+                <div class="modal-header">
+                    <h6>Modal Header</h6>
+
+                    <!--Data-attribute + SVG-->
+                    <span data-function="close-modal" data-target="#modal-bordered" class="cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z"/>
+                            <path d="M9 9l6 6m0 -6l-6 6"/>
+                        </svg>
+                    </span>
+                </div>
+
+                <!--Modal-body-->
+                <div class="modal-body border-color-success">
+                    <p>Some text in the Modal Body</p>
+                </div>
+
+                <!--Modal-footer-->
                 <div class="modal-footer">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><i>Lorem ipsum dolor sit amet</i></p>
                 </div>
             </div>
         </div>

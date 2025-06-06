@@ -5,7 +5,26 @@
     border: 1px solid var(--border-color-light);
     border-radius: var(--border-radius);
 
+
+    &.card-bordered {
+        border: 1px solid var(--border-color-light);
+
+        .card-header {
+            border: none;
+        }
+
+        .card-body {
+            border-top: 1px solid var(--border-color-light);
+            border-bottom: 1px solid var(--border-color-light);
+        }
+
+        .card-footer {
+            border: none;
+        }
+    }
+
     .card-header {
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
         padding: 0.5rem 1rem;
     }
 
@@ -14,8 +33,8 @@
     }
 
     .card-footer {
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
         padding: 0.5rem 1rem;
-        background-color: var(--card-footer-color);
         font-style: italic;
     }
 }

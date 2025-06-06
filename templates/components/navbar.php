@@ -7,7 +7,7 @@
 
     <div data-code-target="#code-navbar">
         <!--Navbar-start-->
-        <nav class="navbar navbar-lg bg-primary border-radius text-light">
+        <nav class="navbar navbar-lg border-radius bg-primary-fill">
 
             <!--Navbar-header-->
             <div class="navbar-header">

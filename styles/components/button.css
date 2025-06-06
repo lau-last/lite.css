@@ -31,3 +31,7 @@ button,
         border-radius: 10rem;
     }
 }
+
+[data-btn-theme] {
+    cursor: pointer;
+}

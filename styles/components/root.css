@@ -34,12 +34,14 @@
 
     --red: #FF0000FF;
     --transparent: transparent;
+    --box-shadow: 0 .5rem 1rem #00000026, inset 0 -1px #ffffff26;
+
 
     --color-mix-dark: var(--gray-1000);
     --color-mix-light: var(--gray-0);
 
     --link-color: var(--text-color);
-    --link-hover-color: color-mix(in srgb, var(--text-color) 50%, var(--transparent));
+    --link-hover-color: brightness(0.8);
 
     --text-white: var(--gray-0);
     --text-black: var(--gray-1000);
@@ -51,7 +53,7 @@
     --transparent-black: rgba(0, 0, 0, 0.1);
     --transparent-theme: var(--transparent-white);
 
-    --border-color-light: var(--gray-150);
+    --border-color-light: var(--gray-200);
     --border-color-medium: var(--gray-300);
     --border-color-dark: var(--gray-500);
 
@@ -80,8 +82,8 @@
     --active-color: var(--gray-500);
     --bg-color: var(--gray-0);
     --button-color: var(--gray-100);
-    --card-footer-color: var(--gray-100);
-    --modal-footer-color: var(--gray-100);
+
+    --surface-footer-color: var(--gray-100);
 
     --carousel-dot-bg-color: var(--gray-300);
     --carousel-dot-bg-color-active: var(--gray-500);
@@ -150,11 +152,13 @@
     --dark-color: var(--gray-800);
     --light-color: var(--gray-200);
 
+    --box-shadow: 0 .5rem 1rem #00000026, inset 0 -1px #ffffff26;
+
     --color-mix-dark: var(--gray-0);
     --color-mix-light: var(--gray-1000);
 
     --link-color: var(--text-color);
-    --link-hover-color: color-mix(in srgb, var(--text-color) 50%, var(--transparent));
+    --link-hover-color: brightness(1.2);
 
     --text-white: var(--gray-0);
     --text-black: var(--gray-1000);
@@ -195,8 +199,8 @@
     --active-color: var(--gray-600);
     --bg-color: var(--gray-800);
     --button-color: var(--gray-200);
-    --card-footer-color: var(--gray-600);
-    --modal-footer-color: var(--gray-600);
+
+    --surface-footer-color: var(--gray-600);
 
     --carousel-dot-bg-color: var(--gray-400);
     --carousel-dot-bg-color-active: var(--primary-color);

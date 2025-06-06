@@ -5,22 +5,66 @@
     </div>
 
     <div data-code-target="#code-card">
-        <!--Card-->
-        <div class="card" style="width: 25rem;">
-
-            <!--Card-header-->
-            <div class="card-header bg-primary">
-                <h5>Card title</h5>
+        <div class="d-flex flex-wrap gap-2">
+            <!--Card-->
+            <div class="card" style="width: 25rem;">
+                <div class="card-header bg-primary-fill">
+                    <h5>Card 1</h5>
+                </div>
+                <div class="card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-surface-footer">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
-
-            <!--Card-body-->
-            <div class="card-body">
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!--Card-->
+            <div class="card border-primary text-primary" style="width: 25rem;">
+                <div class="card-header bg-transparent">
+                    <h5>Card 2</h5>
+                </div>
+                <div class="card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
-
-            <!--Card-footer-->
-            <div class="card-footer">
-                <p>Lorem ipsum dolor sit amet.</p>
+            <!--Card-->
+            <div class="card bg-warning-fill" style="width: 25rem;">
+                <div class="card-header">
+                    <h5>Card 3</h5>
+                </div>
+                <div class="card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <!--Card-->
+            <div class="card card-bordered border-color-danger" style="width: 25rem;">
+                <div class="card-header">
+                    <h5>Card 4</h5>
+                </div>
+                <div class="card-body border-color-danger">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <!--Card-->
+            <div class="card box-shadow" style="width: 25rem;">
+                <div class="card-header">
+                    <h5>Card 5</h5>
+                </div>
+                <div class="card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
         </div>
     </div>

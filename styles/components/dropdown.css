@@ -93,23 +93,22 @@
         animation: fadeEffect 0.3s;
         transition: 0.3s ease;
         margin-top: -0.15rem;
-        border-radius: var(--border-radius);
-        overflow: hidden;
         background-color: var(--bg-color);
         opacity: 0;
         visibility: hidden;
-        overflow: hidden;
         position: absolute;
         width: 100%;
         left: 0;
         z-index: 200;
 
         .dropdown-header {
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
             padding: 0.5rem 1rem;
         }
 
         .dropdown-body {
             border: 1px solid var(--border-color-light);
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
             color: var(--text-color);
             padding: 1rem;
         }

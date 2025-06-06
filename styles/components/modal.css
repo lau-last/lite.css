@@ -2,12 +2,11 @@
     padding: 2rem;
     display: none;
     position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: color-mix(in srgb, var(--gray-1000) 75%, var(--transparent));
+    background-color: color-mix(in srgb, var(--gray-1000) 90%, var(--transparent));
     justify-content: center;
     align-items: center;
     z-index: 500;
@@ -23,47 +22,65 @@
 
         img {
             -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.4s;
+            -webkit-animation-duration: 0.3s;
             animation-name: zoom;
-            animation-duration: 0.4s;
+            animation-duration: 0.3s;
             width: 100%;
 
-            @media (576px <=width <=768px) {
+            @media (576px <= width <= 768px) {
                 width: 90%;
             }
 
-            @media (768px <=width <=992px) {
+            @media (768px <= width <= 992px) {
                 width: 70%;
             }
 
-            @media (width >=992px) {
+            @media (width >= 992px) {
                 width: 50%;
             }
         }
     }
 
     .modal-content {
-        overflow: auto;
-        border-radius: var(--border-radius);
         position: relative;
-        background-color: var(--bg-color);
         animation-name: animate-from-top;
-        animation-duration: 0.4s;
+        animation-duration: 0.3s;
         width: 100%;
+        background-color: var(--bg-color);
+        border-radius: var(--border-radius);
 
-        @media (576px <=width <=768px) {
+        @media (576px <= width <= 768px) {
             width: 90%;
         }
 
-        @media (768px <=width <=992px) {
+        @media (768px <= width <= 992px) {
             width: 70%;
         }
 
-        @media (width >=992px) {
+        @media (width >= 992px) {
             width: 50%;
         }
 
+        &.modal-bordered {
+            border: 1px solid var(--border-color-light);
+
+            .modal-header {
+                border: none;
+            }
+
+            .modal-body {
+                border-top: 1px solid var(--border-color-light);
+                border-bottom: 1px solid var(--border-color-light);
+            }
+
+            .modal-footer {
+                border: none;
+            }
+        }
+
+
         .modal-header {
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -75,9 +92,8 @@
         }
 
         .modal-footer {
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
             padding: 0.5rem 1rem;
-            background-color: var(--modal-footer-color);
-            font-style: italic;
         }
     }
 }

@@ -164,6 +164,11 @@
                 <button class="btn-outline-neutral">Go to page 7</button>
                 <button class="btn-outline-light">Go to page 8</button>
                 <button class="btn-outline-dark">Go to page 9</button>
+
+                <a href="" class="btn btn-outline-primary">hello</a>
+                <a href="" class="btn btn-primary">hello</a>
+                <a href="" class="btn btn-outline-secondary">hello</a>
+                <a href="" class="btn btn-secondary">hello</a>
             </div>
         </div>
     </div>
