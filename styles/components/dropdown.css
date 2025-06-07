@@ -38,6 +38,7 @@
 .dropdown-button-wrapper {
     position: relative;
     display: inline-block;
+    justify-content: center;
 
 
     .dropdown-content {
@@ -59,7 +60,7 @@
 
         &[data-expanded="true"] {
             height: auto;
-            border: 1px solid var(--border-color-light);
+            border: 1px solid var(--border-color-whisper);
         }
 
         &[data-expanded="false"] {
@@ -69,6 +70,7 @@
 
         ul {
             list-style: none;
+            margin: 0;
         }
     }
 }

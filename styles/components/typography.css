@@ -42,3 +42,23 @@
 .fs-6 {
     font-size: var(--font-size-h6);
 }
+
+.fs-sm {
+    font-size: var(--font-size-sm);
+}
+
+.fs-md {
+    font-size: var(--font-size-md);
+}
+
+.fs-lg {
+    font-size: var(--font-size-lg);
+}
+
+.fs-xl {
+    font-size: var(--font-size-xl);
+}
+
+.fs-xxl {
+    font-size: var(--font-size-xxl);
+}

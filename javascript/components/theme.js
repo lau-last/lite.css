@@ -21,11 +21,6 @@ export default class ThemeManager {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 
-    setSystemTheme() {
-        const checkbox = document.getElementById('switch-theme');
-        checkbox.checked = this.getSystemTheme() === 'dark';
-    }
-
     applyTheme(theme) {
         document.documentElement.classList.remove('theme-dark', 'theme-light');
         document.documentElement.classList.add(`theme-${theme}`);

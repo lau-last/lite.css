@@ -2,7 +2,7 @@ export default class ToggleManager {
 
 
     static iconShow =
-        `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M7 8l-4 4l4 4" />
     <path d="M17 8l4 4l-4 4" />
@@ -10,7 +10,7 @@ export default class ToggleManager {
 </svg>`;
 
     static iconHide =
-        `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M7 8l-4 4l4 4" />
     <path d="M17 8l4 4l-2.5 2.5" />

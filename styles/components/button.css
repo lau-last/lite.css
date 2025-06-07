@@ -1,6 +1,6 @@
 button,
 .btn {
-    margin: .15rem;
+    /*margin: .15rem;*/
     display: inline-block;
     width: fit-content;
     border-radius: var(--border-radius);

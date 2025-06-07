@@ -72,68 +72,6 @@ table {
         }
     }
 
-    &.table-primary {
-        thead tr, tfoot tr {
-            background-color: var(--table-primary-color);
-        }
-    }
-
-    &.table-secondary {
-        thead tr, tfoot tr {
-            background-color: var(--table-secondary-color);
-        }
-    }
-
-    &.table-success {
-        thead tr, tfoot tr {
-            background-color: var(--table-success-color);
-        }
-    }
-
-    &.table-info {
-        thead tr, tfoot tr {
-            background-color: var(--table-info-color);
-        }
-    }
-
-    &.table-warning {
-        thead tr, tfoot tr {
-            background-color: var(--table-warning-color);
-        }
-    }
-
-    &.table-danger {
-        thead tr, tfoot tr {
-            background-color: var(--table-danger-color);
-        }
-    }
-
-    &.table-neutral {
-        thead tr, tfoot tr {
-            background-color: var(--table-neutral-color);
-        }
-    }
-
-    &.table-dark {
-        thead tr, tfoot tr {
-            background-color: var(--table-dark-color);
-        }
-    }
-
-    &.table-light {
-        thead tr, tfoot tr {
-            background-color: var(--table-light-color);
-        }
-    }
-
-    &.table-striped {
-        tbody {
-            tr:nth-child(even) {
-                background-color: var(--table-striped-bg-color);
-            }
-        }
-    }
-
     &.table-borderless {
         border: none !important;
 

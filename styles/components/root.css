@@ -22,8 +22,10 @@
     --gray-950: #0b0b0b;
     --gray-1000: #000000;
 
-    --primary-color: #8A4F7D;
-    --secondary-color: #88A096;
+
+    --primary-color: #6098f5;
+    --secondary-color: #10B981;
+    --tertiary-color: #8A4F7D;
     --success-color: #7BAE7F;
     --info-color: #6BAACD;
     --warning-color: #D9B74A;
@@ -53,11 +55,13 @@
     --transparent-black: rgba(0, 0, 0, 0.1);
     --transparent-theme: var(--transparent-white);
 
+    --border-color-whisper: color-mix(in srgb, var(--gray-300) 50%, var(--transparent));
     --border-color-light: var(--gray-200);
     --border-color-medium: var(--gray-300);
     --border-color-dark: var(--gray-500);
 
     --table-primary-color: color-mix(in srgb, var(--primary-color) 30%, var(--color-mix-light));
+    --table-tertiary-color: color-mix(in srgb, var(--tertiary-color) 30%, var(--color-mix-light));
     --table-secondary-color: color-mix(in srgb, var(--secondary-color) 30%, var(--color-mix-light));
     --table-success-color: color-mix(in srgb, var(--success-color) 30%, var(--color-mix-light));
     --table-info-color: color-mix(in srgb, var(--info-color) 30%, var(--color-mix-light));
@@ -93,13 +97,13 @@
     --carousel-text-number-color: var(--gray-0);
 
     --bg-color-code: var(--gray-50);
-    --highlight-tag-color: #788492;
-    --highlight-tag-name-color: #5642B8;
-    --highlight-attribute-name-color: #D23069;
-    --highlight-attribute-value-color: #52B0B2;
-    --highlight-comment-color: #B3B1B7;
-    --highlight-text-color: #788492;
-    --highlight-equal-sign-color: #788492;
+    --highlight-tag-color: #555555;
+    --highlight-tag-name-color: #EB5242;
+    --highlight-attribute-name-color: #EF8B3B;
+    --highlight-attribute-value-color: #64C955;
+    --highlight-comment-color: #999999;
+    --highlight-text-color: #555555;
+    --highlight-equal-sign-color: #555555;
 
     --border-radius: .3rem;
 
@@ -135,6 +139,11 @@
     --font-size-h6: 1.5rem;
 
     --font-size-base: 1.2rem;
+    --font-size-sm: 1rem;
+    --font-size-md: var(--font-size-base);
+    --font-size-lg: 1.4rem;
+    --font-size-xl: 1.6rem;
+    --font-size-xxl: 1.8rem;
 
     --font-family-titre: "Montserrat", sans-serif;
     --font-family-text: "Open Sans", sans-serif;
@@ -142,8 +151,9 @@
 
 .theme-dark {
     /* Colors */
-    --primary-color: color-mix(in srgb, #8A4F7D 90%, black);
-    --secondary-color: color-mix(in srgb, #88A096 90%, black);
+    --primary-color: color-mix(in srgb, #6098f5 90%, black);
+    --secondary-color: color-mix(in srgb, #10B981 90%, black);
+    --tertiary-color: color-mix(in srgb, #8A4F7D 90%, black);
     --success-color: color-mix(in srgb, #7BAE7F 90%, black);
     --info-color: color-mix(in srgb, #6BAACD 90%, black);
     --warning-color: color-mix(in srgb, #D9B74A 90%, black);
@@ -170,12 +180,14 @@
     --transparent-black: rgba(0, 0, 0, 0.1);
     --transparent-theme: var(--transparent-black);
 
-    --border-color-light: color-mix(in srgb, var(--gray-400) 25%, var(--transparent));
+    --border-color-whisper: color-mix(in srgb, var(--gray-500) 50%, var(--transparent));
+    --border-color-light: var(--gray-200);
     --border-color-medium: var(--gray-400);
     --border-color-dark: var(--gray-600);
 
     --table-primary-color: var(--primary-color);
     --table-secondary-color: var(--secondary-color);
+    --table-tertiary-color: var(--tertiary-color);
     --table-success-color: var(--success-color);
     --table-info-color: var(--info-color);
     --table-warning-color: var(--warning-color);
@@ -210,11 +222,11 @@
     --carousel-text-number-color: var(--gray-0);
 
     --bg-color-code: var(--gray-850);
-    --highlight-tag-color: #8998B1;
-    --highlight-tag-name-color: #8083F7;
-    --highlight-attribute-name-color: #EC5997;
-    --highlight-attribute-value-color: #73F6F8;
-    --highlight-text-color: #8998B1;
-    --highlight-comment-color: #5c678f;
-    --highlight-equal-sign-color: #8998B1;
+    --highlight-tag-color: #D4CED7;
+    --highlight-tag-name-color: #E53E73;
+    --highlight-attribute-name-color: #FBE77F;
+    --highlight-attribute-value-color: #A6DD7F;
+    --highlight-text-color: #D4CED7;
+    --highlight-comment-color: #86878B;
+    --highlight-equal-sign-color: #D4CED7;
 }

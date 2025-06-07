@@ -23,6 +23,7 @@ html {
         }
 
         h1, h2, h3, h4, h5, h6 {
+            margin: 1rem 0;
             font-family: var(--font-family-titre), sans-serif;
             font-weight: var(--font-weight-medium);
         }
@@ -86,6 +87,14 @@ html {
         pre {
             overflow-x: auto;
             padding: 2rem;
+        }
+
+        ul {
+            margin: 1rem 0;
+        }
+
+        p {
+            margin: 1rem 0;
         }
 
 

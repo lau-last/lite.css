@@ -14,18 +14,6 @@
     cursor: pointer;
 }
 
-.border-light {
-    border: 1px solid var(--border-color-light);
-}
-
-.border-medium {
-    border: 1px solid var(--border-color-medium);
-}
-
-.border-dark {
-    border: 1px solid var(--border-color-dark);
-}
-
 .border-radius {
     border-radius: var(--border-radius);
 }

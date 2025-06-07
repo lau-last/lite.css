@@ -1,0 +1,42 @@
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-fluid,
+.container-fluid-sm,
+.container-fluid-md,
+.container-fluid-lg {
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-sm {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.container,
+.container-md {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container-lg {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.container-fluid-sm {
+    width: 70%;
+}
+
+.container-fluid,
+.container-fluid-md {
+    width: 80%;
+}
+
+.container-fluid-lg {
+    width: 90%;
+}
