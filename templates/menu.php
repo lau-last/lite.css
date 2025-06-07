@@ -1,6 +1,6 @@
 <nav class="navbar bg-primary-fill navbar-sticky box-shadow">
     <div class="navbar-header">
-        <h5>Lite CSS</h5>
+        <a href="#" class="ms-1 fs-5">Lite CSS</a>
         <div class="navbar-burger" data-toggle="navbar-side" data-target="#menu-principal" data-animated="true">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -31,8 +31,9 @@
             </button>
             <div id="dropdown-layout" class="dropdown-content-push">
                 <ul>
-                    <li><a href="#container-section" class="nav-link">Container</a></li>
+                    <li><a href="#container-section" class="nav-link">Containers</a></li>
                     <li><a href="#flexbox-section" class="nav-link">Flexbox</a></li>
+                    <li><a href="#columns-section" class="nav-link">Columns</a></li>
             </div>
         </div>
 

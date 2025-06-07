@@ -37,17 +37,17 @@
             <li><code class="text-primary">.container-fluid-md</code>: 80% of screen width, fluid.</li>
             <li><code class="text-primary">.container-fluid-lg</code>: 90% of screen width, fluid.</li>
         </ul>
-    </div>
 
-    <div class="container-code mt-2 d-none" id="container-code-containers">
-        <button class="btn-primary position-top-right"
-                type="button"
-                data-position-tooltip="left"
-                data-action="copy"
-                data-target="#code-containers"
-                data-tooltip="Copié !">Copier
-        </button>
-        <pre><code id="code-containers" data-type="code"></code></pre>
+        <div class="container-code mt-2 d-none" id="container-code-containers">
+            <button class="btn-primary position-top-right"
+                    type="button"
+                    data-position-tooltip="left"
+                    data-action="copy"
+                    data-target="#code-containers"
+                    data-tooltip="Copié !">Copier
+            </button>
+            <pre><code id="code-containers" data-type="code"></code></pre>
+        </div>
     </div>
 
     <div data-code-target="#code-containers">

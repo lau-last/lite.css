@@ -17,6 +17,7 @@
 <?php include 'templates/components/theme.php'; ?>
 <?php include 'templates/components/container.php'; ?>
 <?php include 'templates/components/flexbox.php'; ?>
+<?php include 'templates/components/columns.php'; ?>
 <?php //include 'templates/components/navbar.php'; ?>
 <?php //include 'templates/components/navbar_side.php'; ?>
 <?php //include 'templates/components/navbar_big_dropdown.php'; ?>
