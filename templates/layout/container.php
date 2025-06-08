@@ -19,24 +19,28 @@
                  data-target="#container-code-containers"></div>
         </div>
 
-        <h3>How They Work</h3>
+        <div class="card">
+            <div class="card-body">
+                <h3>How They Work</h3>
 
-        <p>
-            Our framework provides two main container types:
-            <code class="text-primary">.container</code> and <code class="text-primary">.container-fluid</code>.
-            Both help structure and center your layout, but differ in how they handle width.
-        </p>
+                <p>
+                    Our framework provides two main container types:
+                    <code class="text-primary">.container</code> and <code class="text-primary">.container-fluid</code>.
+                    Both help structure and center your layout, but differ in how they handle width.
+                </p>
 
-        <ul class="list-style-none">
-            <li><code class="text-primary">.container</code>: 100% width, max 1200px.</li>
-            <li><code class="text-primary">.container-sm</code>: 100% width, max 1000px.</li>
-            <li><code class="text-primary">.container-md</code>: 100% width, max 1200px.</li>
-            <li><code class="text-primary">.container-lg</code>: 100% width, max 1400px.</li>
-            <li><code class="text-primary">.container-fluid</code>: 80% of screen width, fluid.</li>
-            <li><code class="text-primary">.container-fluid-sm</code>: 70% of screen width, fluid.</li>
-            <li><code class="text-primary">.container-fluid-md</code>: 80% of screen width, fluid.</li>
-            <li><code class="text-primary">.container-fluid-lg</code>: 90% of screen width, fluid.</li>
-        </ul>
+                <ul class="list-style-none">
+                    <li><code class="text-primary">.container</code>: 100% width, max 1200px.</li>
+                    <li><code class="text-primary">.container-sm</code>: 100% width, max 1000px.</li>
+                    <li><code class="text-primary">.container-md</code>: 100% width, max 1200px.</li>
+                    <li><code class="text-primary">.container-lg</code>: 100% width, max 1400px.</li>
+                    <li><code class="text-primary">.container-fluid</code>: 80% of screen width, fluid.</li>
+                    <li><code class="text-primary">.container-fluid-sm</code>: 70% of screen width, fluid.</li>
+                    <li><code class="text-primary">.container-fluid-md</code>: 80% of screen width, fluid.</li>
+                    <li><code class="text-primary">.container-fluid-lg</code>: 90% of screen width, fluid.</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="container-code mt-2 d-none" id="container-code-containers">
             <button class="btn-primary position-top-right"

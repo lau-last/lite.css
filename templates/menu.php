@@ -23,7 +23,7 @@
 
     <div class="aside-body">
 
-        <div class="dropdown-button-wrapper">
+        <div class="dropdown-button-wrapper my-half">
             <button type="button" class="dropdown-btn nav-link btn-primary" data-toggle="dropdown-button"
                     data-target="#dropdown-layout">
                 Layout
@@ -34,6 +34,23 @@
                     <li><a href="#container-section" class="nav-link">Containers</a></li>
                     <li><a href="#flexbox-section" class="nav-link">Flexbox</a></li>
                     <li><a href="#columns-section" class="nav-link">Columns</a></li>
+                    <li><a href="#grid-section" class="nav-link">Grid</a></li>
+            </div>
+        </div>
+
+        <div class="dropdown-button-wrapper my-half">
+            <button type="button" class="dropdown-btn nav-link btn-primary" data-toggle="dropdown-button"
+                    data-target="#dropdown-content">
+                Content
+                <span data-arrow="up"></span>
+            </button>
+            <div id="dropdown-content" class="dropdown-content-push">
+                <ul>
+                    <li><a href="#title-section" class="nav-link">Title</a></li>
+                    <li><a href="#display-section" class="nav-link">Display</a></li>
+                    <li><a href="#font-size-section" class="nav-link">Font size</a></li>
+                    <li><a href="#font-weight-section" class="nav-link">Font weight</a></li>
+                    <li><a href="#img-section" class="nav-link">Image</a></li>
             </div>
         </div>
 

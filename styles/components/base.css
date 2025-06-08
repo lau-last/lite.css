@@ -91,6 +91,9 @@ html {
 
         ul {
             margin: 1rem 0;
+            & ul {
+                margin: 0 0 0 2rem;
+            }
         }
 
         p {

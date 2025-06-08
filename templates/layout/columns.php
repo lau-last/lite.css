@@ -20,41 +20,54 @@
                  data-target="#container-code-columns"></div>
         </div>
 
-        <h3>How Alignment and Justification Classes Works</h3>
+        <div class="card">
+            <div class="card-body">
+                <h3>How Alignment and Justification Classes Works</h3>
 
-        <p>
-            Our framework provides utility classes to manage alignment and justification within flexbox containers.
-        </p>
+                <p>
+                    Our framework provides utility classes to manage alignment and justification within flexbox
+                    containers.
+                </p>
 
-        <ul class="list-style-none">
-            <li><code class="text-primary">.align-self-start</code>: Aligns the item to the start of the container's
-                cross axis.
-            </li>
-            <li><code class="text-primary">.align-self-center</code>: Centers the item along the container's cross axis.
-            </li>
-            <li><code class="text-primary">.align-self-end</code>: Aligns the item to the end of the container's cross
-                axis.
-            </li>
-            <li><code class="text-primary">.justify-content-start</code>: Aligns items to the start of the container's
-                main axis.
-            </li>
-            <li><code class="text-primary">.justify-content-center</code>: Centers items along the container's main
-                axis.
-            </li>
-            <li><code class="text-primary">.justify-content-end</code>: Aligns items to the end of the container's main
-                axis.
-            </li>
-            <li><code class="text-primary">.justify-content-around</code>: Distributes items with equal space around
-                them along the main axis.
-            </li>
-            <li><code class="text-primary">.justify-content-between</code>: Distributes items with equal space between
-                them along the main axis.
-            </li>
-            <li><code class="text-primary">.justify-content-evenly</code>: Distributes items with equal space evenly
-                along the main axis.
-            </li>
-        </ul>
-
+                <ul class="list-style-none">
+                    <li><code class="text-primary">.align-self-start</code>: Aligns the item to the start of the
+                        container's
+                        cross axis.
+                    </li>
+                    <li><code class="text-primary">.align-self-center</code>: Centers the item along the container's
+                        cross axis.
+                    </li>
+                    <li><code class="text-primary">.align-self-end</code>: Aligns the item to the end of the container's
+                        cross
+                        axis.
+                    </li>
+                    <li><code class="text-primary">.justify-content-start</code>: Aligns items to the start of the
+                        container's
+                        main axis.
+                    </li>
+                    <li><code class="text-primary">.justify-content-center</code>: Centers items along the container's
+                        main
+                        axis.
+                    </li>
+                    <li><code class="text-primary">.justify-content-end</code>: Aligns items to the end of the
+                        container's main
+                        axis.
+                    </li>
+                    <li><code class="text-primary">.justify-content-around</code>: Distributes items with equal space
+                        around
+                        them along the main axis.
+                    </li>
+                    <li><code class="text-primary">.justify-content-between</code>: Distributes items with equal space
+                        between
+                        them along the main axis.
+                    </li>
+                    <li><code class="text-primary">.justify-content-evenly</code>: Distributes items with equal space
+                        evenly
+                        along the main axis.
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <div class="container-code mt-2 d-none" id="container-code-columns">
             <button class="btn-primary position-top-right"

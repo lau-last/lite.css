@@ -14,10 +14,19 @@
 <body>
 
 <?php include 'templates/menu.php'; ?>
-<?php include 'templates/components/theme.php'; ?>
-<?php include 'templates/components/container.php'; ?>
-<?php include 'templates/components/flexbox.php'; ?>
-<?php include 'templates/components/columns.php'; ?>
+<!-- Layout -->
+<?php include 'templates/layout/container.php'; ?>
+<?php include 'templates/layout/flexbox.php'; ?>
+<?php include 'templates/layout/columns.php'; ?>
+<?php include 'templates/layout/grid.php'; ?>
+<!-- Content -->
+<?php include 'templates/content/title.php'; ?>
+<?php include 'templates/content/display.php'; ?>
+<?php include 'templates/content/font_size.php'; ?>
+<?php include 'templates/content/font_weight.php'; ?>
+<?php include 'templates/content/img.php'; ?>
+
+<?php //include 'templates/components/theme.php'; ?>
 <?php //include 'templates/components/navbar.php'; ?>
 <?php //include 'templates/components/navbar_side.php'; ?>
 <?php //include 'templates/components/navbar_big_dropdown.php'; ?>

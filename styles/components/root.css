@@ -96,18 +96,19 @@
     --carousel-control-color-hover: color-mix(in srgb, var(--gray-1000) 50%, var(--transparent));
     --carousel-text-number-color: var(--gray-0);
 
-    --bg-color-code: var(--gray-50);
-    --highlight-tag-color: #555555;
-    --highlight-tag-name-color: #EB5242;
-    --highlight-attribute-name-color: #EF8B3B;
-    --highlight-attribute-value-color: #64C955;
-    --highlight-comment-color: #999999;
-    --highlight-text-color: #555555;
-    --highlight-equal-sign-color: #555555;
+    --bg-color-code: color-mix(in srgb, var(--primary-color) 5%, var(--gray-0));
+    --highlight-tag-color: color-mix(in srgb, var(--primary-color) 50%, var(--gray-1000));
+    --highlight-tag-name-color: var(--primary-color);
+    --highlight-attribute-name-color: color-mix(in srgb, var(--primary-color) 50%, var(--gray-0));
+    --highlight-attribute-value-color: color-mix(in srgb, var(--primary-color) 50%, var(--gray-500));
+    --highlight-text-color: var(--text-color);
+    --highlight-comment-color: #86878B;
+    --highlight-equal-sign-color: #D4CED7;
 
     --border-radius: .3rem;
 
     --gap-base: 2.5rem;
+    --gap-grid: 1.5rem;
 
     --input-height-sm: 2.5rem;
     --input-height-md: 3rem;
@@ -144,6 +145,14 @@
     --font-size-lg: 1.4rem;
     --font-size-xl: 1.6rem;
     --font-size-xxl: 1.8rem;
+
+    --display-font-sizes-1: 5rem;
+    --display-font-sizes-2: 4.5rem;
+    --display-font-sizes-3: 4rem;
+    --display-font-sizes-4: 3.5rem;
+    --display-font-sizes-5: 3rem;
+    --display-font-sizes-6: 2.5rem;
+    --display-font-weight: var(--font-weight-light);
 
     --font-family-titre: "Montserrat", sans-serif;
     --font-family-text: "Open Sans", sans-serif;
@@ -221,12 +230,12 @@
     --carousel-control-color-hover: color-mix(in srgb, var(--gray-1000) 50%, var(--transparent));
     --carousel-text-number-color: var(--gray-0);
 
-    --bg-color-code: var(--gray-850);
+    --bg-color-code: color-mix(in srgb, var(--primary-color) 5%, var(--gray-850));
     --highlight-tag-color: #D4CED7;
-    --highlight-tag-name-color: #E53E73;
-    --highlight-attribute-name-color: #FBE77F;
-    --highlight-attribute-value-color: #A6DD7F;
-    --highlight-text-color: #D4CED7;
+    --highlight-tag-name-color: var(--primary-color);
+    --highlight-attribute-name-color: color-mix(in srgb, var(--primary-color) 50%, var(--gray-500));
+    --highlight-attribute-value-color: color-mix(in srgb, var(--primary-color) 50%, var(--gray-0));
+    --highlight-text-color: var(--text-color);
     --highlight-comment-color: #86878B;
     --highlight-equal-sign-color: #D4CED7;
 }
