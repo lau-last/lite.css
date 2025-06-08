@@ -23,11 +23,11 @@
                 </p>
 
                 <ul class="list-unstyled">
-                    <li><code class="text-primary">.fw-light</code>: Uses <code>var(--font-weight-light)</code></li>
-                    <li><code class="text-primary">.fw-regular</code>: Uses <code>var(--font-weight-regular)</code></li>
-                    <li><code class="text-primary">.fw-medium</code>: Uses <code>var(--font-weight-medium)</code></li>
-                    <li><code class="text-primary">.fw-bold</code>: Uses <code>var(--font-weight-bold)</code></li>
-                    <li><code class="text-primary">.fw-black</code>: Uses <code>var(--font-weight-black)</code></li>
+                    <li><code class="text-primary">.fw-light</code>: Uses <code class="text-primary">var(--font-weight-light)</code></li>
+                    <li><code class="text-primary">.fw-regular</code>: Uses <code class="text-primary">var(--font-weight-regular)</code></li>
+                    <li><code class="text-primary">.fw-medium</code>: Uses <code class="text-primary">var(--font-weight-medium)</code></li>
+                    <li><code class="text-primary">.fw-bold</code>: Uses <code class="text-primary">var(--font-weight-bold)</code></li>
+                    <li><code class="text-primary">.fw-black</code>: Uses <code class="text-primary">var(--font-weight-black)</code></li>
                 </ul>
             </div>
         </div>

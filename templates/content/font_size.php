@@ -19,18 +19,20 @@
                 </p>
                 <ul class="list-unstyled">
                     <li><strong>Standard size classes:</strong> Ideal for UI elements, paragraphs, and labels.</li>
-                    <li><code class="text-primary">.fs-sm</code>: Uses <code>var(--font-size-sm)</code></li>
-                    <li><code class="text-primary">.fs-md</code>: Uses <code>var(--font-size-md)</code></li>
-                    <li><code class="text-primary">.fs-lg</code>: Uses <code>var(--font-size-lg)</code></li>
-                    <li><code class="text-primary">.fs-xl</code>: Uses <code>var(--font-size-xl)</code></li>
-                    <li><code class="text-primary">.fs-xxl</code>: Uses <code>var(--font-size-xxl)</code></li>
+                    <li><code class="text-primary">.fs-sm</code>: Uses <code class="text-primary">var(--font-size-sm)</code></li>
+                    <li><code class="text-primary">.fs-md</code>: Uses <code class="text-primary">var(--font-size-md)</code></li>
+                    <li><code class="text-primary">.fs-lg</code>: Uses <code class="text-primary">var(--font-size-lg)</code></li>
+                    <li><code class="text-primary">.fs-xl</code>: Uses <code class="text-primary">var(--font-size-xl)</code></li>
+                    <li><code class="text-primary">.fs-xxl</code>: Uses <code class="text-primary">var(--font-size-xxl)</code></li>
+                </ul>
+                <ul class="list-style-none">
                     <li><strong>Heading-based classes:</strong> These match the size of HTML headings.</li>
-                    <li><code class="text-primary">.fs-1</code>: Uses <code>var(--font-size-h1)</code></li>
-                    <li><code class="text-primary">.fs-2</code>: Uses <code>var(--font-size-h2)</code></li>
-                    <li><code class="text-primary">.fs-3</code>: Uses <code>var(--font-size-h3)</code></li>
-                    <li><code class="text-primary">.fs-4</code>: Uses <code>var(--font-size-h4)</code></li>
-                    <li><code class="text-primary">.fs-5</code>: Uses <code>var(--font-size-h5)</code></li>
-                    <li><code class="text-primary">.fs-6</code>: Uses <code>var(--font-size-h6)</code></li>
+                    <li><code class="text-primary">.fs-1</code>: Uses <code class="text-primary">var(--font-size-h1)</code></li>
+                    <li><code class="text-primary">.fs-2</code>: Uses <code class="text-primary">var(--font-size-h2)</code></li>
+                    <li><code class="text-primary">.fs-3</code>: Uses <code class="text-primary">var(--font-size-h3)</code></li>
+                    <li><code class="text-primary">.fs-4</code>: Uses <code class="text-primary">var(--font-size-h4)</code></li>
+                    <li><code class="text-primary">.fs-5</code>: Uses <code class="text-primary">var(--font-size-h5)</code></li>
+                    <li><code class="text-primary">.fs-6</code>: Uses <code class="text-primary">var(--font-size-h6)</code></li>
                 </ul>
             </div>
         </div>

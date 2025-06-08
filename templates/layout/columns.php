@@ -41,6 +41,8 @@
                         cross
                         axis.
                     </li>
+                </ul>
+                <ul class="list-style-none">
                     <li><code class="text-primary">.justify-content-start</code>: Aligns items to the start of the
                         container's
                         main axis.

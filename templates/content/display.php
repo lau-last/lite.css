@@ -17,13 +17,13 @@
                     bigger font sizes and may have custom spacing or weight for emphasis.
                 </p>
                 <ul class="list-style-none">
-                    <li><code class="text-primary">.display-*</code>: Uses <code>var(--display-font-weight)</code></li>
-                    <li><code class="text-primary">.display-1</code>: Uses <code>var(--display-font-sizes-1)</code></li>
-                    <li><code class="text-primary">.display-2</code>: Uses <code>var(--display-font-sizes-1)</code></li>
-                    <li><code class="text-primary">.display-3</code>: Uses <code>var(--display-font-sizes-1)</code></li>
-                    <li><code class="text-primary">.display-4</code>: Uses <code>var(--display-font-sizes-1)</code></li>
-                    <li><code class="text-primary">.display-5</code>: Uses <code>var(--display-font-sizes-1)</code></li>
-                    <li><code class="text-primary">.display-6</code>: Uses <code>var(--display-font-sizes-1)</code></li>
+                    <li><code class="text-primary">.display-*</code>: Uses <code class="text-primary">var(--display-font-weight)</code></li>
+                    <li><code class="text-primary">.display-1</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>
+                    <li><code class="text-primary">.display-2</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>
+                    <li><code class="text-primary">.display-3</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>
+                    <li><code class="text-primary">.display-4</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>
+                    <li><code class="text-primary">.display-5</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>
+                    <li><code class="text-primary">.display-6</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>
                 </ul>
             </div>
         </div>

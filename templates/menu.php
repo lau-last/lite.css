@@ -51,6 +51,7 @@
                     <li><a href="#font-size-section" class="nav-link">Font size</a></li>
                     <li><a href="#font-weight-section" class="nav-link">Font weight</a></li>
                     <li><a href="#img-section" class="nav-link">Image</a></li>
+                    <li><a href="#table-section" class="nav-link">Table</a></li>
             </div>
         </div>
 
@@ -69,7 +70,6 @@
         <!--            <li><a href="#card-section" class="nav-link">Card</a></li>-->
         <!--            <li><a href="#modal-section" class="nav-link">Modal</a></li>-->
         <!--            <li><a href="#tab-section" class="nav-link">Tabs</a></li>-->
-        <!--            <li><a href="#table-section" class="nav-link">Table</a></li>-->
         <!--            <li><a href="#badge-section" class="nav-link">Badges</a></li>-->
         <!--            <li><a href="#badge-linked-section" class="nav-link">Badges linked</a></li>-->
         <!--            <li><a href="#button-section" class="nav-link">Badges</a></li>-->

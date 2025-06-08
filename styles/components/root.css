@@ -72,7 +72,8 @@
     --table-light-color: color-mix(in srgb, var(--light-color) 30%, var(--color-mix-light));
     --table-striped-bg-color: var(--gray-100);
     --table-border-color: var(--gray-100);
-    --table-bg-hover-color: color-mix(in srgb, var(--gray-300) 25%, var(--transparent));
+    --table-border-divider-color: var(--gray-1000);
+    --table-bg-hover-color: rgba(0, 0, 0, 0.2);
 
     --input-border-color: var(--gray-300);
     --input-bg-color: var(--gray-0);
@@ -171,10 +172,10 @@
     --dark-color: var(--gray-800);
     --light-color: var(--gray-200);
 
-    --box-shadow: 0 .5rem 1rem #00000026, inset 0 -1px #ffffff26;
+    /*--box-shadow: 0 .5rem 1rem #00000026, inset 0 -1px #ffffff26;*/
 
-    --color-mix-dark: var(--gray-0);
-    --color-mix-light: var(--gray-1000);
+    /*--color-mix-dark: var(--gray-0);*/
+    /*--color-mix-light: var(--gray-1000);*/
 
     --link-color: var(--text-color);
     --link-hover-color: brightness(1.2);
@@ -204,9 +205,10 @@
     --table-neutral-color: var(--neutral-color);
     --table-dark-color: var(--dark-color);
     --table-light-color: var(--light-color);
-    --table-striped-bg-color: var(--gray-700);
+    --table-striped-bg-color: rgba(0, 0, 0, 0.2);
     --table-border-color: var(--gray-600);
-    --table-bg-hover-color: color-mix(in srgb, var(--gray-300) 25%, var(--transparent));
+    --table-border-divider-color: var(--gray-0);
+    --table-bg-hover-color: rgba(0, 0, 0, 0.4);
 
     --input-border-color: var(--gray-600);
     --input-bg-color: var(--gray-600);

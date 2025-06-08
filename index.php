@@ -25,6 +25,7 @@
 <?php include 'templates/content/font_size.php'; ?>
 <?php include 'templates/content/font_weight.php'; ?>
 <?php include 'templates/content/img.php'; ?>
+<?php include 'templates/content/table.php'; ?>
 
 <?php //include 'templates/components/theme.php'; ?>
 <?php //include 'templates/components/navbar.php'; ?>

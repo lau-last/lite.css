@@ -224,6 +224,47 @@
     color: var(--text-black) !important;
 }
 
+.primary-fill {
+    color: var(--text-dark);
+}
+
+.secondary-fill {
+    color: var(--text-dark);
+}
+
+.tertiary-fill {
+    color: var(--text-dark);
+}
+
+.success-fill {
+    color: var(--text-dark);
+}
+
+.info-fill {
+    color: var(--text-dark);
+}
+
+.warning-fill {
+    color: var(--text-dark);
+}
+
+.danger-fill {
+    color: var(--text-dark);
+}
+
+.neutral-fill {
+    color: var(--text-dark);
+}
+
+.light-fill {
+    color: var(--text-dark);
+}
+
+.dark-fill {
+    color: var(--text-light);
+}
+
+
 .bg-primary-fill {
     background-color: var(--primary-color);
     color: var(--text-dark);
@@ -728,74 +769,75 @@ button,
     }
 }
 
-table {
-
-    &.table-primary {
-        thead tr, tfoot tr {
-            background-color: var(--table-primary-color);
-        }
-    }
-
-    &.table-secondary {
-        thead tr, tfoot tr {
-            background-color: var(--table-secondary-color);
-        }
-    }
-
-    &.table-tertiary {
-        thead tr, tfoot tr {
-            background-color: var(--table-tertiary-color);
-        }
-    }
-
-    &.table-success {
-        thead tr, tfoot tr {
-            background-color: var(--table-success-color);
-        }
-    }
-
-    &.table-info {
-        thead tr, tfoot tr {
-            background-color: var(--table-info-color);
-        }
-    }
-
-    &.table-warning {
-        thead tr, tfoot tr {
-            background-color: var(--table-warning-color);
-        }
-    }
-
-    &.table-danger {
-        thead tr, tfoot tr {
-            background-color: var(--table-danger-color);
-        }
-    }
-
-    &.table-neutral {
-        thead tr, tfoot tr {
-            background-color: var(--table-neutral-color);
-        }
-    }
-
-    &.table-dark {
-        thead tr, tfoot tr {
-            background-color: var(--table-dark-color);
-        }
-    }
-
-    &.table-light {
-        thead tr, tfoot tr {
-            background-color: var(--table-light-color);
-        }
-    }
-
-    &.table-striped {
-        tbody {
-            tr:nth-child(even) {
-                background-color: var(--table-striped-bg-color);
-            }
-        }
-    }
+table.table-primary,
+thead.table-primary,
+tbody.table-primary,
+tfoot.table-primary {
+    background-color: var(--table-primary-color);
 }
 
+table.table-secondary,
+thead.table-secondary,
+tbody.table-secondary,
+tfoot.table-secondary {
+    background-color: var(--table-secondary-color);
+}
+
+table.table-tertiary,
+thead.table-tertiary,
+tbody.table-tertiary,
+tfoot.table-tertiary {
+    background-color: var(--table-tertiary-color);
+}
+
+table.table-success,
+thead.table-success,
+tbody.table-success,
+tfoot.table-success {
+    background-color: var(--table-success-color);
+}
+
+table.table-info,
+thead.table-info,
+tbody.table-info,
+tfoot.table-info {
+    background-color: var(--table-info-color);
+}
+
+table.table-warning,
+thead.table-warning,
+tbody.table-warning,
+tfoot.table-warning {
+    background-color: var(--table-warning-color);
+}
+
+table.table-danger,
+thead.table-danger,
+tbody.table-danger,
+tfoot.table-danger {
+    background-color: var(--table-danger-color);
+}
+
+table.table-neutral,
+thead.table-neutral,
+tbody.table-neutral,
+tfoot.table-neutral {
+    background-color: var(--table-neutral-color);
+}
+
+table.table-dark,
+thead.table-dark,
+tbody.table-dark,
+tfoot.table-dark {
+    background-color: var(--table-dark-color);
+}
+
+table.table-light,
+thead.table-light,
+tbody.table-light,
+tfoot.table-light {
+    & * {
+        color: var(--text-dark);
+    }
+    background-color: var(--table-light-color);
+}

@@ -143,7 +143,47 @@ table {
             }
         }
     }
+
+    &.table-striped {
+        tbody {
+            tr:nth-child(odd) {
+                background-color: var(--table-striped-bg-color);
+            }
+        }
+    }
+
+    &.table-striped-even {
+        tbody {
+            tr:nth-child(even) {
+                background-color: var(--table-striped-bg-color);
+            }
+        }
+    }
+
+    &.table-striped-columns thead tr th:nth-child(odd),
+    &.table-striped-columns thead tr td:nth-child(odd),
+    &.table-striped-columns tbody tr th:nth-child(odd),
+    &.table-striped-columns tbody tr td:nth-child(odd),
+    &.table-striped-columns tfoot tr th:nth-child(odd),
+    &.table-striped-columns tfoot tr td:nth-child(odd) {
+        background-color: var(--table-striped-bg-color);
+    }
+
+    &.table-striped-columns-even thead tr th:nth-child(even),
+    &.table-striped-columns-even thead tr td:nth-child(even),
+    &.table-striped-columns-even tbody tr th:nth-child(even),
+    &.table-striped-columns-even tbody tr td:nth-child(even),
+    &.table-striped-columns-even tfoot tr th:nth-child(even),
+    &.table-striped-columns-even tfoot tr td:nth-child(even) {
+        background-color: var(--table-striped-bg-color);
+    }
 }
+
+
+.table-group-divider > tr:first-child {
+    border-top: 2px solid var(--table-border-divider-color);
+}
+
 
 .table-responsive {
     overflow-x: auto;

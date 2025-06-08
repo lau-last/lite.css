@@ -34,6 +34,8 @@
                     <li><code class="text-primary">.container-sm</code>: 100% width, max 1000px.</li>
                     <li><code class="text-primary">.container-md</code>: 100% width, max 1200px.</li>
                     <li><code class="text-primary">.container-lg</code>: 100% width, max 1400px.</li>
+                </ul>
+                <ul class="list-style-none">
                     <li><code class="text-primary">.container-fluid</code>: 80% of screen width, fluid.</li>
                     <li><code class="text-primary">.container-fluid-sm</code>: 70% of screen width, fluid.</li>
                     <li><code class="text-primary">.container-fluid-md</code>: 80% of screen width, fluid.</li>

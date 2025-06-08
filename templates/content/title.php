@@ -16,17 +16,17 @@
                     and weight,
                     with consistent vertical spacing for clarity and hierarchy.
                     Default style: <br>
-                    <code>margin: 1rem 0;</code>,<br>
-                    <code>font-family: var(--font-family-titre), sans-serif;</code>,<br>
-                    <code>font-weight: var(--font-weight-medium);</code>
+                    <code class="text-primary">margin: 1rem 0;</code>,<br>
+                    <code class="text-primary">font-family: var(--font-family-titre), sans-serif;</code>,<br>
+                    <code class="text-primary">font-weight: var(--font-weight-medium);</code>
                 </p>
                 <ul class="list-unstyled">
-                    <li><code class="text-primary">h1</code>: Uses <code>var(--font-size-h1)</code></li>
-                    <li><code class="text-primary">h2</code>: Uses <code>var(--font-size-h2)</code></li>
-                    <li><code class="text-primary">h3</code>: Uses <code>var(--font-size-h3)</code></li>
-                    <li><code class="text-primary">h4</code>: Uses <code>var(--font-size-h4)</code></li>
-                    <li><code class="text-primary">h5</code>: Uses <code>var(--font-size-h5)</code></li>
-                    <li><code class="text-primary">h6</code>: Uses <code>var(--font-size-h6)</code></li>
+                    <li><code class="text-primary">h1</code>: Uses <code class="text-primary">var(--font-size-h1)</code></li>
+                    <li><code class="text-primary">h2</code>: Uses <code class="text-primary">var(--font-size-h2)</code></li>
+                    <li><code class="text-primary">h3</code>: Uses <code class="text-primary">var(--font-size-h3)</code></li>
+                    <li><code class="text-primary">h4</code>: Uses <code class="text-primary">var(--font-size-h4)</code></li>
+                    <li><code class="text-primary">h5</code>: Uses <code class="text-primary">var(--font-size-h5)</code></li>
+                    <li><code class="text-primary">h6</code>: Uses <code class="text-primary">var(--font-size-h6)</code></li>
                 </ul>
             </div>
         </div>
