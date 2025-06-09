@@ -38,6 +38,16 @@
         </div>
 
 
+
+        <div class="container-code mt-2 d-none" id="container-code-dropdown-button">
+            <button class="btn-primary position-top-right" type="button" data-position-tooltip="left" data-action="copy"
+                    data-target="#code-dropdown-button" data-tooltip="Copié !">Copier
+            </button>
+            <pre class="p-2"><code id="code-dropdown-button" data-type="code">
+        </code></pre>
+        </div>
+
+
         <div data-code-target="#code-dropdown-button">
             <div class="dropdown-button-wrapper">
 
@@ -139,15 +149,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-
-
-        <div class="container-code mt-2 d-none" id="container-code-dropdown-button">
-            <button class="btn-primary position-top-right" type="button" data-position-tooltip="left" data-action="copy"
-                    data-target="#code-dropdown-button" data-tooltip="Copié !">Copier
-            </button>
-            <pre class="p-2"><code id="code-dropdown-button" data-type="code">
-        </code></pre>
         </div>
 
     </div>
