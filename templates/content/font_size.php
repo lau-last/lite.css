@@ -7,17 +7,17 @@
             <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-font-size"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How To Use Font Size</h3>
-                <p>
+                <h3 class="p-1">How To Use Font Size</h3>
+                <p class="p-1">
                     Our framework provides utility classes to control text size with precision and consistency. These
                     classes
                     are split into two groups: heading-based sizes and standard font sizes. Each class maps directly to
                     a CSS
                     variable, making the system easy to customize globally.
                 </p>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled p-1 ms-2">
                     <li><strong>Standard size classes:</strong> Ideal for UI elements, paragraphs, and labels.</li>
                     <li><code class="text-primary">.fs-sm</code>: Uses <code class="text-primary">var(--font-size-sm)</code></li>
                     <li><code class="text-primary">.fs-md</code>: Uses <code class="text-primary">var(--font-size-md)</code></li>
@@ -25,7 +25,7 @@
                     <li><code class="text-primary">.fs-xl</code>: Uses <code class="text-primary">var(--font-size-xl)</code></li>
                     <li><code class="text-primary">.fs-xxl</code>: Uses <code class="text-primary">var(--font-size-xxl)</code></li>
                 </ul>
-                <ul class="list-style-none">
+                <ul class="list-style-none p-1 ms-2">
                     <li><strong>Heading-based classes:</strong> These match the size of HTML headings.</li>
                     <li><code class="text-primary">.fs-1</code>: Uses <code class="text-primary">var(--font-size-h1)</code></li>
                     <li><code class="text-primary">.fs-2</code>: Uses <code class="text-primary">var(--font-size-h2)</code></li>

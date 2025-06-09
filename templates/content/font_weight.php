@@ -13,16 +13,16 @@
                  data-target="#container-code-font-weight"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How To Use Font Weight</h3>
-                <p>
+                <h3 class="p-1">How To Use Font Weight</h3>
+                <p class="p-1">
                     Our font weight utilities provide a convenient way to apply consistent typographic emphasis across
                     your interface. Each utility class maps directly to a customizable CSS variable, allowing easy
                     global adjustments to font thickness.
                 </p>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">.fw-light</code>: Uses <code class="text-primary">var(--font-weight-light)</code></li>
                     <li><code class="text-primary">.fw-regular</code>: Uses <code class="text-primary">var(--font-weight-regular)</code></li>
                     <li><code class="text-primary">.fw-medium</code>: Uses <code class="text-primary">var(--font-weight-medium)</code></li>

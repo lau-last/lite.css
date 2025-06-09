@@ -7,6 +7,37 @@
             </div>
         </div>
 
+
+        <div class="card p-2 my-1">
+            <div class="card-body">
+                <h3 class="p-1">How To Use Dropdown Buttons</h3>
+                <p class="p-1">
+                    Our framework includes a flexible dropdown button component designed for toggling expandable content.
+                    It combines button styling with interaction logic using utility attributes. This component is ideal for
+                    menus, collapsible content blocks, and other toggleable elements.
+                </p>
+
+                <ul class="list-unstyled p-1 ms-2">
+                    <li><strong>Key structural classes:</strong> These provide layout and styling.</li>
+                    <li><code class="text-primary">.dropdown-btn</code>: Styles the toggle button and sets up interaction logic.</li>
+                    <li><code class="text-primary">.dropdown-content-push</code>: Wraps the hidden content to be toggled.</li>
+                    <li><code class="text-primary">.dropdown-button-wrapper</code>: Container that wraps each button-content pair.</li>
+                </ul>
+
+                <ul class="list-unstyled p-1 ms-2">
+                    <li><strong>Interactive attributes:</strong> Used to link the button to the dropdown content.</li>
+                    <li><code class="text-primary">data-toggle="dropdown-button"</code>: Required on the button to enable toggling.</li>
+                    <li><code class="text-primary">data-target="#dropdownX"</code>: Specifies the <code>id</code> of the dropdown content to show/hide.</li>
+                    <li><code class="text-primary">data-arrow="up"</code>: Optional, used for displaying an arrow icon that can toggle direction.</li>
+                </ul>
+
+                <p class="p-1">
+                    You can use multiple dropdowns in the same page, each uniquely identified by its <code>id</code>.
+                </p>
+            </div>
+        </div>
+
+
         <div data-code-target="#code-dropdown-button">
             <div class="dropdown-button-wrapper">
 

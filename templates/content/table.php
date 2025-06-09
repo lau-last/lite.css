@@ -5,17 +5,17 @@
 
         <h2>Table</h2>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How to Use Tables</h3>
-                <p>
+                <h3 class="p-1">How to Use Tables</h3>
+                <p class="p-1">
                     Our table system offers several classes to customize appearance, size, and behavior:
                     colors, border styles, spacing, hover effects, and more.
                     Each class corresponds to a specific style, easy to combine to achieve the desired look.
                 </p>
 
-                <h4>Colors</h4>
-                <ul class="list-unstyled">
+                <h4 class="p-1">Colors</h4>
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">.table-primary</code>: Uses the variable <code class="text-primary">var(--table-primary-color)</code>
                     </li>
                     <li><code class="text-secondary">.table-secondary</code>: Uses the variable <code
@@ -38,15 +38,15 @@
                     </li>
                 </ul>
 
-                <h4>Sizes</h4>
-                <ul class="list-unstyled">
+                <h4 class="p-1">Sizes</h4>
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">.table-small</code>: Compact table with reduced padding</li>
                     <li><code class="text-primary">.table-md</code>: Medium-sized table with standard padding</li>
                     <li><code class="text-primary">.table-lg</code>: Large table with increased spacing</li>
                 </ul>
 
-                <h4>Styles</h4>
-                <ul class="list-unstyled">
+                <h4 class="p-1">Styles</h4>
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">.table-bordered</code>: Adds borders around each cell</li>
                     <li><code class="text-primary">.table-borderless</code>: Table without borders</li>
                     <li><code class="text-primary">.table-striped</code>: Alternating row backgrounds</li>
@@ -99,7 +99,7 @@
 
 
         <div class="d-flex align-items-center">
-            <h3>Table small, striped, hover</h3>
+            <h3 class="py-1">Table small, striped, hover</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display"
                  data-target="#container-code-table-small"></div>
         </div>
@@ -179,7 +179,7 @@
         -->
 
         <div class="d-flex align-items-center mt-2">
-            <h3>Table medium, bordered, hover</h3>
+            <h3 class="py-1">Table medium, bordered, hover</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display"
                  data-target="#container-code-table-medium"></div>
         </div>
@@ -259,7 +259,7 @@
         -->
 
         <div class="d-flex align-items-center mt-2">
-            <h3>Table large, borderless, hover</h3>
+            <h3 class="py-1">Table large, borderless, hover</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display"
                  data-target="#container-code-table-large"></div>
         </div>
@@ -340,7 +340,7 @@
         -->
 
         <div class="d-flex align-items-center mt-2">
-            <h3>Table medium, divider, borderless</h3>
+            <h3 class="py-1">Table medium, divider, borderless</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display"
                  data-target="#container-code-table-divider"></div>
         </div>
@@ -421,7 +421,7 @@
         -->
 
         <div class="d-flex align-items-center mt-2">
-            <h3>Table medium, striped columns</h3>
+            <h3 class="py-1">Table medium, striped columns</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display"
                  data-target="#container-code-table-striped-columns"></div>
         </div>

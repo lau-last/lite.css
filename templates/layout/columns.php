@@ -20,16 +20,16 @@
                  data-target="#container-code-columns"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How Alignment and Justification Classes Works</h3>
+                <h3 class="p-1">How Alignment and Justification Classes Works</h3>
 
-                <p>
+                <p class="p-1">
                     Our framework provides utility classes to manage alignment and justification within flexbox
                     containers.
                 </p>
 
-                <ul class="list-style-none">
+                <ul class="list-style-none p-1 ms-2">
                     <li><code class="text-primary">.align-self-start</code>: Aligns the item to the start of the
                         container's
                         cross axis.
@@ -42,7 +42,7 @@
                         axis.
                     </li>
                 </ul>
-                <ul class="list-style-none">
+                <ul class="list-style-none p-1 ms-2">
                     <li><code class="text-primary">.justify-content-start</code>: Aligns items to the start of the
                         container's
                         main axis.

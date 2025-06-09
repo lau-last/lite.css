@@ -6,17 +6,17 @@
             <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-headings"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>Display Headings</h3>
-                <p>
+                <h3 class="p-1">Display Headings</h3>
+                <p class="p-1">
                     Display headings are larger, bolder title styles intended to grab attention. They're ideal for hero
                     sections,
                     page headers, or any place where a strong visual impact is needed. Unlike regular headings, display
                     headings use
                     bigger font sizes and may have custom spacing or weight for emphasis.
                 </p>
-                <ul class="list-style-none">
+                <ul class="list-style-none p-1 ms-2">
                     <li><code class="text-primary">.display-*</code>: Uses <code class="text-primary">var(--display-font-weight)</code></li>
                     <li><code class="text-primary">.display-1</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>
                     <li><code class="text-primary">.display-2</code>: Uses <code class="text-primary">var(--display-font-sizes-1)</code></li>

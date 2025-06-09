@@ -7,10 +7,10 @@
             <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-title"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How the Title Works</h3>
-                <p>
+                <h3 class="p-1">How the Title Works</h3>
+                <p class="p-1">
                     Our framework provides a consistent and customizable heading system. All titles use a special font
                     family
                     and weight,
@@ -20,7 +20,7 @@
                     <code class="text-primary">font-family: var(--font-family-titre), sans-serif;</code>,<br>
                     <code class="text-primary">font-weight: var(--font-weight-medium);</code>
                 </p>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">h1</code>: Uses <code class="text-primary">var(--font-size-h1)</code></li>
                     <li><code class="text-primary">h2</code>: Uses <code class="text-primary">var(--font-size-h2)</code></li>
                     <li><code class="text-primary">h3</code>: Uses <code class="text-primary">var(--font-size-h3)</code></li>

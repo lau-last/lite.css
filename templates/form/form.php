@@ -4,18 +4,18 @@
 
         <h2>Form Inputs</h2>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How to Use Form Inputs</h3>
-                <p>
+                <h3 class="p-1">How to Use Form Inputs</h3>
+                <p class="p-1">
                     Our input system provides multiple types of form controls: text fields, password, select, radio
                     buttons,
                     checkboxes, switches, and more. You can customize their appearance, size, and layout using utility
                     classes.
                 </p>
 
-                <h4>Input Types</h4>
-                <ul class="list-unstyled">
+                <h4 class="p-1">Input Types</h4>
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">type="text"</code>: Single-line text input</li>
                     <li><code class="text-primary">type="password"</code>: Obscured input for passwords</li>
                     <li><code class="text-primary">type="email"</code>: Email input with validation</li>
@@ -37,8 +37,8 @@
                     </li>
                 </ul>
 
-                <h4>Sizes</h4>
-                <ul class="list-unstyled">
+                <h4 class="p-1">Sizes</h4>
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">.input-sm</code>: Small input size</li>
                     <li><code class="text-primary">.input-md</code>: Default / medium size</li>
                     <li><code class="text-primary">.input-lg</code>: Large input size</li>
@@ -47,8 +47,8 @@
                     <li><code class="text-primary">.switch-lg</code>: Large toggle switch</li>
                 </ul>
 
-                <h4>Layout</h4>
-                <ul class="list-unstyled">
+                <h4 class="p-1">Layout</h4>
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">.form-inline</code>: Aligns label and input side by side</li>
                     <li><code class="text-primary">.form-column</code>: Stacks label and input vertically</li>
                     <li><code class="text-primary">.vertical-center</code>: Vertically centers elements within a row
@@ -59,7 +59,7 @@
 
 
         <div class="d-flex align-items-center">
-            <h3>Input types</h3>
+            <h3 class="py-1">Input types</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-form-input">
             </div>
         </div>
@@ -203,7 +203,7 @@
 
 
         <div class="d-flex align-items-center mt-2">
-            <h3>Input size</h3>
+            <h3 class="py-1">Input size</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-form-input-size">
             </div>
         </div>
@@ -344,7 +344,7 @@
 
 
         <div class="d-flex align-items-center mt-2">
-            <h3>Input display</h3>
+            <h3 class="py-1">Input display</h3>
             <div class="ms-2 cursor-pointer" data-action="toggle-display"
                  data-target="#container-code-form-input-display">
             </div>

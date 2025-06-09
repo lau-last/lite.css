@@ -3,7 +3,7 @@
         [class^="container"] {
             padding: .5rem;
             margin-block: .5rem;
-            /*background-color: var(--primary-color);*/
+            background-color: var(--primary-color);
             color: var(--text-dark);
             text-align: center;
         }
@@ -19,23 +19,23 @@
                  data-target="#container-code-containers"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How They Work</h3>
+                <h3 class="p-1">How They Work</h3>
 
-                <p>
+                <p class="p-1">
                     Our framework provides two main container types:
                     <code class="text-primary">.container</code> and <code class="text-primary">.container-fluid</code>.
                     Both help structure and center your layout, but differ in how they handle width.
                 </p>
 
-                <ul class="list-style-none">
+                <ul class="list-style-none p-1 ms-2">
                     <li><code class="text-primary">.container</code>: 100% width, max 1200px.</li>
                     <li><code class="text-primary">.container-sm</code>: 100% width, max 1000px.</li>
                     <li><code class="text-primary">.container-md</code>: 100% width, max 1200px.</li>
                     <li><code class="text-primary">.container-lg</code>: 100% width, max 1400px.</li>
                 </ul>
-                <ul class="list-style-none">
+                <ul class="list-style-none p-1 ms-2">
                     <li><code class="text-primary">.container-fluid</code>: 80% of screen width, fluid.</li>
                     <li><code class="text-primary">.container-fluid-sm</code>: 70% of screen width, fluid.</li>
                     <li><code class="text-primary">.container-fluid-md</code>: 80% of screen width, fluid.</li>
@@ -59,42 +59,42 @@
     <div data-code-target="#code-containers">
 
         <!--Container default-->
-        <div class="container bg-primary-fill">
+        <div class="container">
             <p>Container</p>
         </div>
 
         <!--Container sm-->
-        <div class="container-sm bg-primary-fill">
+        <div class="container-sm">
             <p>Container sm</p>
         </div>
 
         <!--Container md-->
-        <div class="container-md bg-primary-fill">
+        <div class="container-md">
             <p>Container md</p>
         </div>
 
         <!--Container lg-->
-        <div class="container-lg bg-primary-fill">
+        <div class="container-lg">
             <p>Container lg</p>
         </div>
 
         <!--Container fluid default-->
-        <div class="container-fluid bg-primary-fill">
+        <div class="container-fluid">
             <p>Container fluid</p>
         </div>
 
         <!--Container fluid sm-->
-        <div class="container-fluid-sm bg-primary-fill">
+        <div class="container-fluid-sm">
             <p>Container fluid sm</p>
         </div>
 
         <!--Container fluid md-->
-        <div class="container-fluid-md bg-primary-fill">
+        <div class="container-fluid-md">
             <p>Container fluid md</p>
         </div>
 
         <!--Container fluid lg-->
-        <div class="container-fluid-lg bg-primary-fill">
+        <div class="container-fluid-lg">
             <p>Container fluid lg</p>
         </div>
     </div>

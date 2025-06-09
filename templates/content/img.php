@@ -14,14 +14,14 @@
             <div class="ms-2 cursor-pointer" data-action="toggle-display" data-target="#container-code-img"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How To Use Image</h3>
-                <p>
+                <h3 class="p-1">How To Use Image</h3>
+                <p class="p-1">
                     Our framework provides utility classes to handle images responsively, apply styling such as thumbnails.
                 </p>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled p-1 ms-2">
                     <li><code class="text-primary">.img-fluid</code>: Makes the image responsive using max-width: 100%.</li>
                     <li><code class="text-primary">.img-thumbnail</code>: Adds a border, padding, similar to a thumbnail preview.</li>
                 </ul>

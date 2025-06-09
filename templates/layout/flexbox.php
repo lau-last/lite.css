@@ -21,17 +21,17 @@
                  data-target="#container-code-flexbox"></div>
         </div>
 
-        <div class="card">
+        <div class="card p-2 my-1">
             <div class="card-body">
-                <h3>How The flexbox Works</h3>
+                <h3 class="p-1">How The flexbox Works</h3>
 
-                <p>
+                <p class="p-1">
                     Our framework uses a flexible grid system with rows and columns. Columns automatically share
                     available space
                     unless you specify sizes.
                 </p>
 
-                <ul class="list-style-none">
+                <ul class="list-style-none p-1 ms-2">
                     <li><code class="text-primary">.row</code>: Defines a flex container for columns.</li>
                     <li><code class="text-primary">.col</code>: A flexible column that shares equal width with siblings.
                     </li>
