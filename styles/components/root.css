@@ -22,7 +22,6 @@
     --gray-950: #0b0b0b;
     --gray-1000: #000000;
 
-
     --primary-color: #6098f5;
     --secondary-color: #10B981;
     --tertiary-color: #8A4F7D;
@@ -31,13 +30,12 @@
     --warning-color: #D9B74A;
     --danger-color: #C96A6A;
     --neutral-color: #BBBBBB;
-    --dark-color: var(--gray-800);
-    --light-color: var(--gray-200);
+    --dark-color: #262626;
+    --light-color: #DDDDDD;
 
     --red: #FF0000FF;
     --transparent: transparent;
     --box-shadow: 0 .5rem 1rem #00000026, inset 0 -1px #ffffff26;
-
 
     --color-mix-dark: var(--gray-1000);
     --color-mix-light: var(--gray-0);
@@ -70,7 +68,7 @@
     --table-neutral-color: color-mix(in srgb, var(--neutral-color) 30%, var(--color-mix-light));
     --table-dark-color: color-mix(in srgb, var(--dark-color) 30%, var(--color-mix-light));
     --table-light-color: color-mix(in srgb, var(--light-color) 30%, var(--color-mix-light));
-    --table-striped-bg-color: var(--gray-100);
+    --table-striped-bg-color: rgba(128, 128, 128, 0.2);
     --table-border-color: var(--gray-100);
     --table-border-divider-color: var(--gray-1000);
     --table-bg-hover-color: rgba(0, 0, 0, 0.2);
@@ -161,17 +159,16 @@
 
 .theme-dark {
     /* Colors */
-    --primary-color: color-mix(in srgb, #6098f5 90%, black);
-    --secondary-color: color-mix(in srgb, #10B981 90%, black);
-    --tertiary-color: color-mix(in srgb, #8A4F7D 90%, black);
-    --success-color: color-mix(in srgb, #7BAE7F 90%, black);
-    --info-color: color-mix(in srgb, #6BAACD 90%, black);
-    --warning-color: color-mix(in srgb, #D9B74A 90%, black);
-    --danger-color: color-mix(in srgb, #C96A6A 90%, black);
-    --neutral-color: color-mix(in srgb, #BBBBBB 90%, black);
-    --dark-color: var(--gray-800);
-    --light-color: var(--gray-200);
-
+    --primary-color: #6287D6;
+    --secondary-color: #4CA478;
+    --tertiary-color: #744A6D;
+    --success-color: #789B75;
+    --info-color: #6D98B5;
+    --warning-color: #BEA653;
+    --danger-color: #AA6362;
+    --neutral-color: #A8A8A8;
+    --dark-color: #262626;
+    --light-color: #DDDDDD;
     /*--box-shadow: 0 .5rem 1rem #00000026, inset 0 -1px #ffffff26;*/
 
     /*--color-mix-dark: var(--gray-0);*/
@@ -241,3 +238,4 @@
     --highlight-comment-color: #86878B;
     --highlight-equal-sign-color: #D4CED7;
 }
+

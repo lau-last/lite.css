@@ -30,7 +30,7 @@
 }
 
 .highlight-equal-sign {
-    color: var(--highlight-equal-symbol-color);
+    color: var(--highlight-equal-sign-color);
 }
 
 .highlight-text {

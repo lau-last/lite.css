@@ -836,8 +836,9 @@ table.table-light,
 thead.table-light,
 tbody.table-light,
 tfoot.table-light {
+    background-color: var(--table-light-color);
+
     & * {
         color: var(--text-dark);
     }
-    background-color: var(--table-light-color);
 }

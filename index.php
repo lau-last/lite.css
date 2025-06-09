@@ -15,6 +15,7 @@
 
 <?php include 'templates/menu.php'; ?>
 <!-- Layout -->
+<?php include 'templates/components/theme.php'; ?>
 <?php include 'templates/layout/container.php'; ?>
 <?php include 'templates/layout/flexbox.php'; ?>
 <?php include 'templates/layout/columns.php'; ?>
@@ -26,8 +27,10 @@
 <?php include 'templates/content/font_weight.php'; ?>
 <?php include 'templates/content/img.php'; ?>
 <?php include 'templates/content/table.php'; ?>
+<!-- Form -->
+<?php include 'templates/form/form.php'; ?>
 
-<?php //include 'templates/components/theme.php'; ?>
+
 <?php //include 'templates/components/navbar.php'; ?>
 <?php //include 'templates/components/navbar_side.php'; ?>
 <?php //include 'templates/components/navbar_big_dropdown.php'; ?>

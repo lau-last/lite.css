@@ -3,7 +3,7 @@
         [class^="container"] {
             padding: .5rem;
             margin-block: .5rem;
-            background-color: var(--primary-color);
+            /*background-color: var(--primary-color);*/
             color: var(--text-dark);
             text-align: center;
         }
@@ -59,42 +59,42 @@
     <div data-code-target="#code-containers">
 
         <!--Container default-->
-        <div class="container">
+        <div class="container bg-primary-fill">
             <p>Container</p>
         </div>
 
         <!--Container sm-->
-        <div class="container-sm">
+        <div class="container-sm bg-primary-fill">
             <p>Container sm</p>
         </div>
 
         <!--Container md-->
-        <div class="container-md">
+        <div class="container-md bg-primary-fill">
             <p>Container md</p>
         </div>
 
         <!--Container lg-->
-        <div class="container-lg">
+        <div class="container-lg bg-primary-fill">
             <p>Container lg</p>
         </div>
 
         <!--Container fluid default-->
-        <div class="container-fluid">
+        <div class="container-fluid bg-primary-fill">
             <p>Container fluid</p>
         </div>
 
         <!--Container fluid sm-->
-        <div class="container-fluid-sm">
+        <div class="container-fluid-sm bg-primary-fill">
             <p>Container fluid sm</p>
         </div>
 
         <!--Container fluid md-->
-        <div class="container-fluid-md">
+        <div class="container-fluid-md bg-primary-fill">
             <p>Container fluid md</p>
         </div>
 
         <!--Container fluid lg-->
-        <div class="container-fluid-lg">
+        <div class="container-fluid-lg bg-primary-fill">
             <p>Container fluid lg</p>
         </div>
     </div>

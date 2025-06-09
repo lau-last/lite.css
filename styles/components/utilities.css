@@ -242,6 +242,7 @@
 }
 
 .img-thumbnail {
+    border: 1px solid var(--border-color-whisper);
     max-width: 100%;
     height: auto;
     background-color: var(--gray-0);

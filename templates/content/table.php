@@ -5,54 +5,57 @@
 
         <h2>Table</h2>
 
+        <div class="card">
+            <div class="card-body">
+                <h3>How to Use Tables</h3>
+                <p>
+                    Our table system offers several classes to customize appearance, size, and behavior:
+                    colors, border styles, spacing, hover effects, and more.
+                    Each class corresponds to a specific style, easy to combine to achieve the desired look.
+                </p>
 
-        <div class="card-body">
-            <h3>How to Use Tables</h3>
-            <p>
-                Our table system offers several classes to customize appearance, size, and behavior:
-                colors, border styles, spacing, hover effects, and more.
-                Each class corresponds to a specific style, easy to combine to achieve the desired look.
-            </p>
+                <h4>Colors</h4>
+                <ul class="list-unstyled">
+                    <li><code class="text-primary">.table-primary</code>: Uses the variable <code class="text-primary">var(--table-primary-color)</code>
+                    </li>
+                    <li><code class="text-secondary">.table-secondary</code>: Uses the variable <code
+                                class="text-primary">var(--table-secondary-color)</code>
+                    </li>
+                    <li><code class="text-success">.table-success</code>: Uses the variable <code class="text-primary">var(--table-success-color)</code>
+                    </li>
+                    <li><code class="text-warning">.table-warning</code>: Uses the variable <code class="text-primary">var(--table-warning-color)</code>
+                    </li>
+                    <li><code class="text-danger">.table-danger</code>: Uses the variable <code class="text-primary">var(--table-danger-color)</code>
+                    </li>
+                    <li><code class="text-info">.table-info</code>: Uses the variable <code class="text-primary">var(--table-info-color)</code>
+                    </li>
+                    <li><code class="text-neutral">.table-neutral</code>: Uses the variable <code class="text-primary">var(--table-neutral-color)</code>
+                    </li>
+                    <li><code class="border-radius bg-light text-dark">.table-dark</code>: Uses the variable <code
+                                class="text-primary">var(--table-dark-color)</code></li>
+                    <li><code class="border-radius bg-dark text-light">.table-light</code>: Uses the variable <code
+                                class="text-primary">var(--table-light-color)</code>
+                    </li>
+                </ul>
 
-            <h4>Colors</h4>
-            <ul class="list-unstyled">
-                <li><code class="text-primary">.table-primary</code>: Uses the variable <code class="text-primary">var(--table-primary-color)</code>
-                </li>
-                <li><code class="text-secondary">.table-secondary</code>: Uses the variable <code class="text-primary">var(--table-secondary-color)</code>
-                </li>
-                <li><code class="text-success">.table-success</code>: Uses the variable <code class="text-primary">var(--table-success-color)</code>
-                </li>
-                <li><code class="text-warning">.table-warning</code>: Uses the variable <code class="text-primary">var(--table-warning-color)</code>
-                </li>
-                <li><code class="text-danger">.table-danger</code>: Uses the variable <code class="text-primary">var(--table-danger-color)</code>
-                </li>
-                <li><code class="text-info">.table-info</code>: Uses the variable <code class="text-primary">var(--table-info-color)</code>
-                </li>
-                <li><code class="text-neutral">.table-neutral</code>: Uses the variable <code class="text-primary">var(--table-neutral-color)</code>
-                </li>
-                <li><code class="border-radius bg-light text-dark">.table-dark</code>: Uses the variable <code
-                            class="text-primary">var(--table-dark-color)</code></li>
-                <li><code class="text-light">.table-light</code>: Uses the variable <code class="text-primary">var(--table-light-color)</code>
-                </li>
-                <!-- Add others like .table-info, .table-neutral, .table-dark, .table-light -->
-            </ul>
+                <h4>Sizes</h4>
+                <ul class="list-unstyled">
+                    <li><code class="text-primary">.table-small</code>: Compact table with reduced padding</li>
+                    <li><code class="text-primary">.table-md</code>: Medium-sized table with standard padding</li>
+                    <li><code class="text-primary">.table-lg</code>: Large table with increased spacing</li>
+                </ul>
 
-            <h4>Sizes</h4>
-            <ul class="list-unstyled">
-                <li><code class="text-primary">.table-small</code>: Compact table with reduced padding</li>
-                <li><code class="text-primary">.table-md</code>: Medium-sized table with standard padding</li>
-                <li><code class="text-primary">.table-lg</code>: Large table with increased spacing</li>
-            </ul>
-
-            <h4>Styles</h4>
-            <ul class="list-unstyled">
-                <li><code class="text-primary">.table-bordered</code>: Adds borders around each cell</li>
-                <li><code class="text-primary">.table-borderless</code>: Table without borders</li>
-                <li><code class="text-primary">.table-striped</code>: Alternating row backgrounds</li>
-                <li><code class="text-primary">.table-striped-columns</code>: Alternating column backgrounds</li>
-                <li><code class="text-primary">.table-hover</code>: Hover effect on rows</li>
-                <li><code class="text-primary">.table-group-divider</code>: Adds a divider line between row groups</li>
-            </ul>
+                <h4>Styles</h4>
+                <ul class="list-unstyled">
+                    <li><code class="text-primary">.table-bordered</code>: Adds borders around each cell</li>
+                    <li><code class="text-primary">.table-borderless</code>: Table without borders</li>
+                    <li><code class="text-primary">.table-striped</code>: Alternating row backgrounds</li>
+                    <li><code class="text-primary">.table-striped-columns</code>: Alternating column backgrounds</li>
+                    <li><code class="text-primary">.table-hover</code>: Hover effect on rows</li>
+                    <li><code class="text-primary">.table-group-divider</code>: Adds a divider line between row groups
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!--
@@ -330,183 +333,183 @@
             <pre><code id="code-table-large" data-type="code">
         </code></pre>
         </div>
-    </div>
 
 
-    <!--
-    table-divider
-    -->
+        <!--
+        table-divider
+        -->
 
-    <div class="d-flex align-items-center mt-2">
-        <h3>Table divider, borderless, hover</h3>
-        <div class="ms-2 cursor-pointer" data-action="toggle-display"
-             data-target="#container-code-table-divider"></div>
-    </div>
-
-    <div data-code-target="#code-table-divider">
-        <div class="table-responsive">
-
-            <!-- Table default medium -->
-            <table class="table-hover table-borderless">
-
-                <!-- Table-thead -->
-                <thead>
-                <tr>
-                    <th>Person</th>
-                    <th>Most interest in</th>
-                    <th>Age</th>
-                </tr>
-                </thead>
-
-                <!-- Table-body -->
-                <tbody class="table-group-divider">
-                <tr>
-                    <th>Chris</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
-                    <td>22</td>
-                </tr>
-                <tr>
-                    <th>Dennis</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <th>Sarah</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
-                    <td>29</td>
-                </tr>
-                <tr>
-                    <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
-                    <td>36</td>
-                </tr>
-                <tr>
-                    <th>Karen</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
-                    <td>36</td>
-                </tr>
-                </tbody>
-
-                <!-- Table-footer -->
-                <tfoot>
-                <tr>
-                    <th>Average age</th>
-                    <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
-                    </td>
-                    <td>36</td>
-                </tr>
-                </tfoot>
-            </table>
+        <div class="d-flex align-items-center mt-2">
+            <h3>Table medium, divider, borderless</h3>
+            <div class="ms-2 cursor-pointer" data-action="toggle-display"
+                 data-target="#container-code-table-divider"></div>
         </div>
-    </div>
 
-    <div class="container-code mt-2 d-none" id="container-code-table-divider">
-        <button class="btn-primary position-top-right" type="button" data-position-tooltip="left" data-action="copy"
-                data-target="#code-table-divider" data-tooltip="Copié !">Copier
-        </button>
-        <pre><code id="code-table-divider" data-type="code">
-        </code></pre>
-    </div>
+        <div data-code-target="#code-table-divider">
+            <div class="table-responsive">
 
+                <!-- Table default medium -->
+                <table class="table-borderless">
 
-    <!--
-    table-striped-columns
-    -->
+                    <!-- Table-thead -->
+                    <thead>
+                    <tr>
+                        <th>Person</th>
+                        <th>Most interest in</th>
+                        <th>Age</th>
+                    </tr>
+                    </thead>
 
-    <div class="d-flex align-items-center mt-2">
-        <h3>Table striped columns</h3>
-        <div class="ms-2 cursor-pointer" data-action="toggle-display"
-             data-target="#container-code-table-striped-columns"></div>
-    </div>
+                    <!-- Table-body -->
+                    <tbody class="table-group-divider">
+                    <tr>
+                        <th>Chris</th>
+                        <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
+                        </td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <th>Dennis</th>
+                        <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
+                        </td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <th>Sarah</th>
+                        <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
+                        </td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <th>Karen</th>
+                        <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
+                        </td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <th>Karen</th>
+                        <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
+                        </td>
+                        <td>36</td>
+                    </tr>
+                    </tbody>
 
-    <div data-code-target="#code-table-striped-columns">
-        <div class="table-responsive">
-
-            <!-- Table striped -->
-            <table class="table-warning table-striped-columns table-hover">
-
-                <!--Table-thead-->
-                <thead>
-                <tr>
-                    <th>Karen</th>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>36</td>
-                </tr>
-                </thead>
-
-                <!--Table-body-->
-                <tbody>
-                <tr>
-                    <th>Chris</th>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>22</td>
-                </tr>
-                <tr>
-                    <th>Dennis</th>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <th>Sarah</th>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>29</td>
-                </tr>
-                <tr>
-                    <th>Karen</th>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>36</td>
-                </tr>
-                <tr>
-                    <th>Karen</th>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>36</td>
-                </tr>
-                </tbody>
-
-                <!--Table-footer-->
-                <tfoot>
-                <tr>
-                    <th>Karen</th>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>Lorem</td>
-                    <td>36</td>
-                </tr>
-                </tfoot>
-            </table>
+                    <!-- Table-footer -->
+                    <tfoot>
+                    <tr>
+                        <th>Average age</th>
+                        <td>Lorem ipsum dolor sit Lorem ipsum dolor sit. orem ipsum dolor sit Lorem ipsum dolor sit.
+                        </td>
+                        <td>36</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
-    </div>
 
-    <div class="container-code mt-2 d-none" id="container-code-table-striped-columns">
-        <button class="btn-primary position-top-right" type="button" data-position-tooltip="left" data-action="copy"
-                data-target="#code-table-striped-columns" data-tooltip="Copié !">Copier
-        </button>
-        <pre><code id="code-table-striped-columns" data-type="code">
+        <div class="container-code mt-2 d-none" id="container-code-table-divider">
+            <button class="btn-primary position-top-right" type="button" data-position-tooltip="left" data-action="copy"
+                    data-target="#code-table-divider" data-tooltip="Copié !">Copier
+            </button>
+            <pre><code id="code-table-divider" data-type="code">
         </code></pre>
+        </div>
+
+
+        <!--
+        table-striped-columns
+        -->
+
+        <div class="d-flex align-items-center mt-2">
+            <h3>Table medium, striped columns</h3>
+            <div class="ms-2 cursor-pointer" data-action="toggle-display"
+                 data-target="#container-code-table-striped-columns"></div>
+        </div>
+
+        <div data-code-target="#code-table-striped-columns">
+            <div class="table-responsive">
+
+                <!-- Table striped -->
+                <table class="table-warning table-striped-columns">
+
+                    <!--Table-thead-->
+                    <thead>
+                    <tr>
+                        <th>Karen</th>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>36</td>
+                    </tr>
+                    </thead>
+
+                    <!--Table-body-->
+                    <tbody>
+                    <tr>
+                        <th>Chris</th>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <th>Dennis</th>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <th>Sarah</th>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <th>Karen</th>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <th>Karen</th>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>36</td>
+                    </tr>
+                    </tbody>
+
+                    <!--Table-footer-->
+                    <tfoot>
+                    <tr>
+                        <th>Karen</th>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>36</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-code mt-2 d-none" id="container-code-table-striped-columns">
+            <button class="btn-primary position-top-right" type="button" data-position-tooltip="left" data-action="copy"
+                    data-target="#code-table-striped-columns" data-tooltip="Copié !">Copier
+            </button>
+            <pre><code id="code-table-striped-columns" data-type="code">
+        </code></pre>
+        </div>
     </div>
 
 
