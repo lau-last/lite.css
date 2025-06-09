@@ -15,7 +15,7 @@
 
 <?php include 'templates/menu.php'; ?>
 <!-- Layout -->
-<?php include 'templates/components/theme.php'; ?>
+<?php include 'templates/theme.php'; ?>
 <?php include 'templates/layout/container.php'; ?>
 <?php include 'templates/layout/flexbox.php'; ?>
 <?php include 'templates/layout/columns.php'; ?>
@@ -29,13 +29,14 @@
 <?php include 'templates/content/table.php'; ?>
 <!-- Form -->
 <?php include 'templates/form/form.php'; ?>
+<!-- Components -->
+<?php include 'templates/components/button_dropdown.php'; ?>
 
 
 <?php //include 'templates/components/navbar.php'; ?>
 <?php //include 'templates/components/navbar_side.php'; ?>
 <?php //include 'templates/components/navbar_big_dropdown.php'; ?>
 <?php //include 'templates/components/carousel.php'; ?>
-<?php //include 'templates/components/button_dropdown.php'; ?>
 <?php //include 'templates/components/title.php'; ?>
 <?php //include 'templates/components/link.php'; ?>
 <?php //include 'templates/components/list.php'; ?>

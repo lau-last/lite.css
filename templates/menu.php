@@ -67,6 +67,18 @@
             </div>
         </div>
 
+        <div class="dropdown-button-wrapper my-half">
+            <button type="button" class="dropdown-btn nav-link btn-primary" data-toggle="dropdown-button"
+                    data-target="#dropdown-component">
+                Component
+                <span data-arrow="up"></span>
+            </button>
+            <div id="dropdown-component" class="dropdown-content-push">
+                <ul>
+                    <li><a href="#dropdown-section" class="nav-link">Dropdown</a></li>
+            </div>
+        </div>
+
         <!--        <ul class="list-group-item">-->
         <!--            <li><a href="#theme-section" class="nav-link">Theme</a></li>-->
         <!--            <li><a href="#navbar-section" class="nav-link">Navbar</a></li>-->

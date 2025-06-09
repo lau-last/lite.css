@@ -51,7 +51,8 @@
 
     --transparent-white: rgba(255, 255, 255, 0.1);
     --transparent-black: rgba(0, 0, 0, 0.1);
-    --transparent-theme: var(--transparent-white);
+    --transparent-theme: var(--transparent-black);
+    /*--transparent-theme-reverse: var(--transparent-black);*/
 
     --border-color-whisper: color-mix(in srgb, var(--gray-300) 50%, var(--transparent));
     --border-color-light: var(--gray-200);
@@ -185,7 +186,8 @@
 
     --transparent-white: rgba(255, 255, 255, 0.1);
     --transparent-black: rgba(0, 0, 0, 0.1);
-    --transparent-theme: var(--transparent-black);
+    --transparent-theme: var(--transparent-white);
+    /*--transparent-theme-reverse: var(--transparent-white);*/
 
     --border-color-whisper: color-mix(in srgb, var(--gray-500) 50%, var(--transparent));
     --border-color-light: var(--gray-200);

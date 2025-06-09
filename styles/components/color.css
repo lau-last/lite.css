@@ -59,6 +59,10 @@
     background-color: var(--transparent-theme) !important;
 }
 
+/*.bg-transparent-theme-reverse {*/
+/*    background-color: var(--transparent-theme-reverse) !important;*/
+/*}*/
+
 .bg-transparent-white {
     background-color: var(--transparent-white) !important;
 }
