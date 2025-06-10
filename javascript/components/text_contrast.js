@@ -22,10 +22,10 @@ export default class TextContrastManager {
 
     getClassSelectors(key) {
         return [
-            `.bg-${key}-fill`,
+            `.bg-${key}`,
             `.btn-${key}`,
             `.badge-${key}`,
-            `.table-${key}`
+            `.table-${key}`,
         ];
     }
 
@@ -53,9 +53,9 @@ export default class TextContrastManager {
 
         elements.forEach(element => {
             element.style.color = textColor;
-            element.querySelectorAll('*').forEach(child => {
-                child.style.color = textColor;
-            });
+            // element.querySelectorAll('*').forEach(child => {
+            //     child.style.color = textColor;
+            // });
         });
     }
 

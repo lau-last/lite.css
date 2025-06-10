@@ -7,16 +7,12 @@
 
     <div data-code-target="#code-navbar-big-dropdown">
         <!--Navbar-->
-        <nav class="navbar navbar-lg  bg-warning border-radius">
+        <nav class="navbar navbar-lg bg-warning-fill border-radius">
 
             <!--Navbar-header-->
             <div class="navbar-header">
-
-                <!--Navbar-brand-->
                 <div>Lorem.</div>
-
-                <!--Navbar-burger-->
-                <div class="navbar-burger" data-toggle="navbar" data-target="#navbar-big-dropdown" data-animated="true">
+                <div class="navbar-burger" data-action="toggle-navbar" data-target="#navbar-big-dropdown" data-animated="true">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -25,20 +21,16 @@
 
             <!--Navbar-content-->
             <div class="navbar-content" id="navbar-big-dropdown" data-expanded="false">
-
-                <!--Nav-->
                 <div class="nav">
 
                     <!--Dropdown-wrapper-->
-                    <div class="dropdown-menu-wrapper">
-
-                        <!--Dropdown-button-->
-                        <button class="dropdown-btn btn-primary" type="button">
+                    <div class="wrapper-mega-dropdown">
+                        <button class="btn-dropdown btn-primary" type="button">
                             Dropdown<span data-arrow="up"></span>
                         </button>
 
                         <!--Dropdown-content-->
-                        <div class="dropdown-content">
+                        <div class="dropdown">
 
                             <!--Dropdown-header-->
                             <div class="dropdown-header bg-primary">
@@ -50,7 +42,7 @@
                                 <div class="d-flex flex-wrap gap-5">
                                     <div class="d-flex flex-column" style="width: 100px;">
                                         <h6 class="mb-2">Category 0</h6>
-                                        <ul class="list-group-item">
+                                        <ul class="list-group-item text-theme">
                                             <li><a class="nav-link" href="#">Link 1</a></li>
                                             <li><a class="nav-link" href="#">Link 2</a></li>
                                             <li><a class="nav-link" href="#">Link 3</a></li>

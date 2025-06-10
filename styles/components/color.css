@@ -59,6 +59,8 @@
     background-color: var(--transparent-theme) !important;
 }
 
+
+
 /*.bg-transparent-theme-reverse {*/
 /*    background-color: var(--transparent-theme-reverse) !important;*/
 /*}*/
@@ -228,6 +230,10 @@
     color: var(--text-black) !important;
 }
 
+.text-theme {
+    color: var(--text-color) !important;
+}
+
 .primary-fill {
     color: var(--text-dark);
 }
@@ -273,7 +279,7 @@
     background-color: var(--primary-color);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -282,7 +288,7 @@
     background-color: var(--secondary-color);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -291,7 +297,7 @@
     background-color: var(--tertiary-color);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -300,7 +306,7 @@
     background-color: var(--success-color);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -309,7 +315,7 @@
     background-color: var(--info-color);
     color: var(--text-dark);
 
-    & * {
+    & > * {
         color: var(--text-dark);
     }
 }
@@ -318,7 +324,7 @@
     background-color: var(--warning-color);
     color: var(--text-dark);
 
-    & * {
+    & > * {
         color: var(--text-dark);
     }
 }
@@ -327,7 +333,7 @@
     background-color: var(--danger-color);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -336,7 +342,7 @@
     background-color: var(--neutral-color);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -345,7 +351,7 @@
     background-color: var(--light-color);
     color: var(--text-dark);
 
-    * {
+    & > * {
         color: var(--text-dark);
     }
 }
@@ -354,7 +360,7 @@
     background-color: var(--dark-color);
     color: var(--text-light);
 
-    & * {
+      & > * {
         color: var(--text-light);
     }
 }
@@ -363,7 +369,7 @@
     background-color: var(--gray-0);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -372,7 +378,7 @@
     background-color: var(--gray-1000);
     color: var(--text-light);
 
-    & * {
+      & > * {
         color: var(--text-light);
     }
 }
@@ -381,7 +387,7 @@
     background-color: var(--surface-footer-color);
     color: var(--text-dark);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }
@@ -842,7 +848,7 @@ tbody.table-light,
 tfoot.table-light {
     background-color: var(--table-light-color);
 
-    & * {
+      & > * {
         color: var(--text-dark);
     }
 }

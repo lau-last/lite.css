@@ -1,4 +1,5 @@
-.dropdown-btn {
+.btn-dropdown {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -26,34 +27,32 @@
 }
 
 
-.dropdown-button-wrapper-fit {
+.wrapper-dropdown-fit {
     width: min-content;
 }
 
-.dropdown-button-wrapper {
+.wrapper-dropdown {
     width: 100%;
+
+    & > * {
+        width: 100%;
+    }
 }
 
-.dropdown-button-wrapper-fit,
-.dropdown-button-wrapper {
+.wrapper-dropdown-fit,
+.wrapper-dropdown {
     position: relative;
-    display: inline-block;
-    justify-content: center;
 
 
-    .dropdown-content {
+    .dropdown {
         position: absolute;
-        background-color: var(--bg-color);
     }
 
-    .dropdown-content,
-    .dropdown-content-push {
-        width: 100%;
+    .dropdown,
+    .dropdown-push {
+        background-color: var(--bg-color);
         border-radius: var(--border-radius);
         overflow: hidden;
-        text-align: left;
-        top: auto;
-        left: 0;
         z-index: 100;
         height: 0;
 
@@ -67,35 +66,25 @@
             height: 0;
             border: none;
         }
-
-        ul {
-            list-style: none;
-            margin: 0;
-        }
     }
 }
 
-.dropdown-menu-wrapper {
+.wrapper-mega-dropdown {
     width: fit-content;
     float: left;
     overflow: hidden;
 
 
-    &:hover .dropdown-content {
+    &:hover .dropdown {
         opacity: 1;
         visibility: visible;
     }
 
-    &:hover [data-arrow] {
-        transform: rotate(-180deg);
-    }
-
-    .dropdown-content {
+    .dropdown {
+        background-color: var(--bg-color);
         -webkit-animation: fadeEffect 0.3s;
         animation: fadeEffect 0.3s;
         transition: 0.3s ease;
-        margin-top: -0.15rem;
-        background-color: var(--bg-color);
         opacity: 0;
         visibility: hidden;
         position: absolute;
@@ -109,10 +98,14 @@
         }
 
         .dropdown-body {
-            border: 1px solid var(--border-color-light);
+            border: 1px solid var(--border-color-whisper);
             border-radius: 0 0 var(--border-radius) var(--border-radius);
-            color: var(--text-color);
             padding: 1rem;
+            color: var(--text-color);
         }
+    }
+
+    &:hover [data-arrow] {
+        transform: rotate(-180deg);
     }
 }

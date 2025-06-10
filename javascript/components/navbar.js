@@ -5,7 +5,7 @@ export default class NavbarManager {
 
 
     initToggleNavbar() {
-        const buttons = document.querySelectorAll('[data-toggle="navbar"]');
+        const buttons = document.querySelectorAll('[data-action="toggle-navbar"]');
         buttons.forEach(button => {
             button.addEventListener('click', () => {
                 const targetSelector = button.getAttribute('data-target');

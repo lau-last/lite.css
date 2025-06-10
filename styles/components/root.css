@@ -40,14 +40,14 @@
     --color-mix-dark: var(--gray-1000);
     --color-mix-light: var(--gray-0);
 
-    --link-color: var(--text-color);
-    --link-hover-color: brightness(0.8);
-
     --text-white: var(--gray-0);
     --text-black: var(--gray-1000);
     --text-light: var(--light-color);
     --text-dark: var(--dark-color);
     --text-color: var(--text-dark);
+
+    --link-color: var(--text-color);
+    --link-hover-color: brightness(0.8);
 
     --transparent-white: rgba(255, 255, 255, 0.1);
     --transparent-black: rgba(0, 0, 0, 0.1);
@@ -175,14 +175,14 @@
     /*--color-mix-dark: var(--gray-0);*/
     /*--color-mix-light: var(--gray-1000);*/
 
-    --link-color: var(--text-color);
-    --link-hover-color: brightness(1.2);
-
     --text-white: var(--gray-0);
     --text-black: var(--gray-1000);
     --text-light: var(--light-color);
     --text-dark: var(--dark-color);
     --text-color: var(--text-light);
+
+    --link-color: var(--text-color);
+    --link-hover-color: brightness(1.2);
 
     --transparent-white: rgba(255, 255, 255, 0.1);
     --transparent-black: rgba(0, 0, 0, 0.1);
@@ -240,4 +240,3 @@
     --highlight-comment-color: #86878B;
     --highlight-equal-sign-color: #D4CED7;
 }
-

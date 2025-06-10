@@ -256,27 +256,18 @@ input[type="range"] {
     cursor: default;
 }
 
-.form-column {
-    display: flex;
-    flex-direction: column;
-
-    label:not(.switch) {
-        width: fit-content;
-    }
-}
-
 .form-inline {
     display: flex;
     align-items: center;
     max-width: 100%;
     gap: var(--gap-base);
 
-    label:not(.switch) {
+    label {
         text-wrap: nowrap;
     }
 
-    input:not([type="color"]):not([type="radio"]):not([type="checkbox"]) {
+    /* input:not([type="color"]):not([type="radio"]):not([type="checkbox"]) {
         flex: 1 1 auto;
         min-width: 0;
-    }
+    } */
 }

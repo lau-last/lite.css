@@ -13,7 +13,7 @@ export default class BurgerManager {
     };
 
     initAnimateBurgerNavbar() {
-        document.querySelectorAll('[data-toggle="navbar"]').forEach(button => {
+        document.querySelectorAll('[data-action="toggle-navbar"]').forEach(button => {
             button.addEventListener('click', () => {
                 this.toggleBurger(button);
             });
@@ -21,7 +21,7 @@ export default class BurgerManager {
     };
 
     initAnimateBurgerNavbarSide() {
-        document.querySelectorAll('[data-toggle="navbar-side"]').forEach(button => {
+        document.querySelectorAll('[data-action="toggle-sidebar"]').forEach(button => {
             button.addEventListener('click', () => {
                 this.toggleBurger(button);
             });
@@ -29,7 +29,7 @@ export default class BurgerManager {
             const targetSelector = button.getAttribute('data-target');
 
             document.querySelectorAll(`[data-target="${targetSelector}"]`).forEach(otherButton => {
-                const isCloseFunction = otherButton.getAttribute('data-function') === 'close-navbar-side';
+                const isCloseFunction = otherButton.getAttribute('data-action') === 'close-sidebar';
                 if (isCloseFunction) {
                     otherButton.addEventListener('click', () => {
                         this.toggleBurger(button);

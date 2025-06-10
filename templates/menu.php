@@ -1,7 +1,7 @@
 <nav class="navbar bg-primary-fill navbar-sticky box-shadow">
     <div class="navbar-header">
         <a href="#" class="ms-1 fs-5">Lite CSS</a>
-        <div class="navbar-burger" data-toggle="navbar-side" data-target="#menu-principal" data-animated="true">
+        <div class="navbar-burger" data-action="toggle-sidebar" data-target="#menu-principal" data-animated="true">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -11,7 +11,7 @@
 
 <aside id="menu-principal" data-position="start" data-mode="push">
     <div class="aside-header">
-        <span data-function="close-navbar-side" data-target="#menu-principal" class="cursor-pointer">
+        <span data-action="close-sidebar" data-target="#menu-principal" class="cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
             <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z"></path>
@@ -23,13 +23,13 @@
 
     <div class="aside-body">
 
-        <div class="dropdown-button-wrapper my-half">
-            <button type="button" class="dropdown-btn nav-link btn-primary" data-toggle="dropdown-button"
+        <div class="wrapper-dropdown my-half">
+            <button type="button" class="btn-dropdown btn-primary" data-action="toggle-dropdown"
                     data-target="#dropdown-layout">
                 Layout
                 <span data-arrow="up"></span>
             </button>
-            <div id="dropdown-layout" class="dropdown-content-push">
+            <div id="dropdown-layout" class="dropdown-push">
                 <ul>
                     <li><a href="#container-section" class="nav-link">Containers</a></li>
                     <li><a href="#flexbox-section" class="nav-link">Flexbox</a></li>
@@ -38,13 +38,13 @@
             </div>
         </div>
 
-        <div class="dropdown-button-wrapper my-half">
-            <button type="button" class="dropdown-btn nav-link btn-primary" data-toggle="dropdown-button"
+        <div class="wrapper-dropdown my-half">
+            <button type="button" class="btn-dropdown btn-primary" data-action="toggle-dropdown"
                     data-target="#dropdown-content">
                 Content
                 <span data-arrow="up"></span>
             </button>
-            <div id="dropdown-content" class="dropdown-content-push">
+            <div id="dropdown-content" class="dropdown-push">
                 <ul>
                     <li><a href="#title-section" class="nav-link">Title</a></li>
                     <li><a href="#display-section" class="nav-link">Display</a></li>
@@ -55,25 +55,25 @@
             </div>
         </div>
 
-        <div class="dropdown-button-wrapper my-half">
-            <button type="button" class="dropdown-btn nav-link btn-primary" data-toggle="dropdown-button"
+        <div class="wrapper-dropdown my-half">
+            <button type="button" class="btn-dropdown btn-primary" data-action="toggle-dropdown"
                     data-target="#dropdown-form">
                 Form
                 <span data-arrow="up"></span>
             </button>
-            <div id="dropdown-form" class="dropdown-content-push">
+            <div id="dropdown-form" class="dropdown-push">
                 <ul>
                     <li><a href="#form-section" class="nav-link">Form input</a></li>
             </div>
         </div>
 
-        <div class="dropdown-button-wrapper my-half">
-            <button type="button" class="dropdown-btn nav-link btn-primary" data-toggle="dropdown-button"
+        <div class="wrapper-dropdown my-half">
+            <button type="button" class="btn-dropdown btn-primary" data-action="toggle-dropdown"
                     data-target="#dropdown-component">
                 Component
                 <span data-arrow="up"></span>
             </button>
-            <div id="dropdown-component" class="dropdown-content-push">
+            <div id="dropdown-component" class="dropdown-push">
                 <ul>
                     <li><a href="#dropdown-section" class="nav-link">Dropdown</a></li>
             </div>

@@ -15,7 +15,7 @@
                 <div>Lorem.</div>
 
                 <!--Navbar-burger-->
-                <div class="navbar-burger" data-toggle="navbar-side" data-target="#navbar-side"
+                <div class="navbar-burger" data-action="toggle-sidebar" data-target="#navbar-side"
                     data-animated="true">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -31,7 +31,7 @@
             <div class="aside-header">
 
                 <!--Data-attribute-->
-                <span data-function="close-navbar-side" data-target="#navbar-side" class="cursor-pointer">
+                <span data-action="close-sidebar" data-target="#navbar-side" class="cursor-pointer">
 
                     <!--SVG-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
@@ -54,17 +54,17 @@
                 </ul>
 
                 <!--Dropdown-->
-                <div class="dropdown-button-wrapper">
+                <div class="wrapper-dropdown">
 
                     <!--Dropdown-button-->
-                    <a href="javascript:void(0)" class="dropdown-btn nav-link" data-toggle="dropdown-button"
+                    <a href="javascript:void(0)" class="btn-dropdown nav-link" data-action="toggle-dropdown"
                         data-target="#dropdown-aside">
                         Dropdown menu 1
                         <span data-arrow="up"></span>
                     </a>
 
                     <!--Dropdown-content-->
-                    <div id="dropdown-aside" class="dropdown-content-push list-group-item bg-transparent-theme">
+                    <div id="dropdown-aside" class="dropdown-push list-group-item bg-transparent-theme">
                         <ul class="list-group-item">
                             <li><a class="nav-link" href="">Lorem ipsum.</a></li>
                             <li><a class="nav-link" href="">Lorem ipsum.</a></li>

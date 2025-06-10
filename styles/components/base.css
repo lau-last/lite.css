@@ -53,7 +53,7 @@ html {
         }
 
         a {
-            color: var(--link-color);
+             color: var(--link-color);
             text-decoration: none;
 
             &:focus {
@@ -61,7 +61,7 @@ html {
             }
 
             &:hover:not(.btn):not(.badge) {
-                filter: var(--link-hover-color);
+                 filter: var(--link-hover-color);
             }
         }
 

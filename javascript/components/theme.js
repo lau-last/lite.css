@@ -40,7 +40,7 @@ export default class ThemeManager {
             this.handleTransition();
             this.applyTheme(theme);
             localStorage.setItem('theme', theme);
-            window.dispatchEvent(new Event('themeChange'));
+            // window.dispatchEvent(new Event('themeChange'));
         });
     }
 

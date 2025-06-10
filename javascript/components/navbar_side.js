@@ -11,7 +11,7 @@ export default class NavbarSideManager {
 
 
     removeClass(currentButton) {
-        const openButtons = document.querySelectorAll('[data-toggle="navbar-side"]');
+        const openButtons = document.querySelectorAll('[data-action="toggle-sidebar"]');
         if (!openButtons) return;
 
         openButtons.forEach(button => {
@@ -30,7 +30,7 @@ export default class NavbarSideManager {
     };
 
     handleOpenButton() {
-        const openButtons = document.querySelectorAll('[data-toggle="navbar-side"]');
+        const openButtons = document.querySelectorAll('[data-action="toggle-sidebar"]');
         if (!openButtons) return;
 
         openButtons.forEach(button => {
@@ -48,7 +48,7 @@ export default class NavbarSideManager {
     };
 
     handleCloseButton() {
-        const closeButtons = document.querySelectorAll('[data-function="close-navbar-side"]');
+        const closeButtons = document.querySelectorAll('[data-action="close-sidebar"]');
         if (!closeButtons) return;
 
         closeButtons.forEach(button => {

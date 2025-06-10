@@ -16,7 +16,7 @@
                 <div>Lorem.</div>
 
                 <!--Navbar-burger-->
-                <div class="navbar-burger" data-toggle="navbar" data-target="#navbar" data-animated="true">
+                <div class="navbar-burger" data-action="toggle-navbar" data-target="#navbar" data-animated="true">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
